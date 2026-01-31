@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paradex-Var 价差监控</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+  <style>
+    :root { --bg:#0f1116; --card:#171a22; --text:#e8ecf5; --muted:#7c8597; --green:#4ad295; --red:#ff5f64; --line:#2c3546; --accent:#4d8dff; }
+    * { box-sizing: border-box; }
+    body { margin:0; padding:16px; font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; background:var(--bg); color:var(--text); }
+    .card { background:var(--card); border-radius:12px; padding:16px; box-shadow:0 10px 30px rgba(0,0,0,0.35); }
+    h1 { margin:0 0 8px; font-size:18px; letter-spacing:0.3px; }
+    .subtitle { color:var(--muted); font-size:12px; margin-bottom:12px; }
+    table { width:100%; border-collapse:collapse; border-radius:10px; overflow:hidden; }
+    thead { background:#10131b; }
+    th,td { padding:10px 8px; text-align:center; font-size:13px; }
+    th { color:var(--muted); font-weight:600; border-bottom:1px solid var(--line); }
+    tbody tr { border-bottom:1px solid var(--line); }
+    tbody tr:last-child { border-bottom:none; }
+    .green { color:var(--green); } .red { color:var(--red); }
+    .direction { font-weight:700; letter-spacing:0.3px; }
+    .status { display:inline-flex; align-items:center; gap:6px; font-size:12px; color:var(--muted); margin-top:8px; }
+    .dot { width:8px; height:8px; border-radius:50%; background:var(--green); box-shadow:0 0 10px rgba(74,210,149,0.8); }
+    .error .dot { background:var(--red); box-shadow:0 0 10px rgba(255,95,100,0.8); }
+    .controls { display:flex; gap:12px; align-items:center; margin-bottom:12px; flex-wrap:wrap; }
+    .controls label { color:var(--muted); font-size:12px; display:inline-flex; align-items:center; gap:6px; }
+    .controls input[type="checkbox"] { transform:scale(1.1); accent-color:var(--accent); }
+    .config-row { display:flex; gap:12px; align-items:center; flex-wrap:wrap; padding:6px 8px; border:1px solid var(--line); border-radius:8px; background:#0f131c; }
+    .pair-name { width:80px; font-weight:600; color:var(--text); font-size:12px; display:flex; align-items:center; gap:6px; }
+    .config-row label { font-size:12px; color:var(--muted); display:inline-flex; align-items:center; gap:6px; }
+    .config-row input[type="checkbox"] { transform:scale(1.05); accent-color:var(--accent); }
+    .inline-input { background:#0e1118; color:var(--text); border:1px solid var(--line); border-radius:6px; padding:6px 8px; width:90px; font-size:12px; }
+    .led { width:10px; height:10px; border-radius:50%; background:var(--line); box-shadow:0 0 4px rgba(0,0,0,0.5); flex-shrink:0; }
+    .led.green { background:var(--green); box-shadow:0 0 8px rgba(74,210,149,0.8); }
+    .led.red { background:var(--red); box-shadow:0 0 8px rgba(255,95,100,0.8); }
+    .led.blue { background:var(--accent); box-shadow:0 0 8px rgba(77,141,255,0.8); }
+    .tiny-select { background:#0e1118; color:var(--text); border:1px solid var(--line); border-radius:4px; padding:2px; font-size:11px; max-width:90px; }
+    .tiny-input { background:#0e1118; color:var(--text); border:1px solid var(--line); border-radius:4px; padding:2px 4px; width:50px; font-size:11px; }
+    .rule-group { display:flex; align-items:center; gap:4px; padding:2px 6px; border:1px dashed var(--line); border-radius:6px; background:rgba(0,0,0,0.2); }
+    
+    /* 图表弹窗样式 */
+    .modal { display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); z-index:1000; align-items:center; justify-content:center; }
+    .modal.active { display:flex; }
+    .modal-content { background:var(--card); width:90%; max-width:1000px; height:80vh; border-radius:12px; padding:20px; display:flex; flex-direction:column; }
+    .chart-controls { display:flex; gap:10px; margin-bottom:10px; }
+    .chart-btn { background:var(--accent); color:white; border:none; padding:4px 10px; border-radius:4px; cursor:pointer; font-size:12px; }
+  </style>
+</head>
+<body>
+  <div class="card" id="mainCard">
+    <h1>Paradex-Var 价差监控</h1>
+    <div class="subtitle">数据源：Paradex BBO / Variational | 连接 ws://localhost:8789</div>
+    <div class="status" id="status"><span class="dot"></span>等待连接...</div>
+    <div class="controls">
+      <label><input type="checkbox" id="muteAllChk"> 静音</label>
+      <span style="color:var(--muted);font-size:12px;">阈值设置见下方</span>
+      <button onclick="resetConfig()" style="background:var(--line);color:var(--text);border:none;padding:4px 8px;border-radius:4px;cursor:pointer;font-size:12px;">重置配置</button>
+      <button onclick="openChart()" class="chart-btn">📊 历史图表</button>
+    </div>
+    <div class="card" style="margin:10px 0;padding:12px;background:#11141c;" id="configPanel">
+      <h3 style="margin:0 0 8px;font-size:14px;color:var(--text);">阈值设置</h3>
+      <div id="configRows" style="display:flex;flex-direction:column;gap:8px;"></div>
+    </div>
+    <table>
+      <thead id="tableHead">
+        <tr>
+          <th>交易对</th>
+          <th>Var 卖 - Para 买</th>
+          <th>价差%</th>
+          <th>Para 卖 - Var 买</th>
+          <th>价差%</th>
+          <th>最佳方向</th>
+          <th title="A=Var买-对方卖, B=对方买-Var卖">均值1h (A/B)</th>
+          <th title="A=Var买-对方卖, B=对方买-Var卖">均值2h (A/B)</th>
+          <th>Var (Bid/Ask)</th>
+          <th>Paradex (Bid/Ask)</th>
+          <th>时间</th>
+        </tr>
+      </thead>
+      <tbody id="rows">
+        <tr><td colspan="10" style="text-align:center;color:var(--muted);">等待数据...</td></tr>
+        <tr><td colspan="11" style="text-align:center;color:var(--muted);">等待数据...</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 图表弹窗 -->
+  <div id="chartModal" class="modal">
+    <div class="modal-content">
+      <div class="chart-controls">
+        <select id="chartSymbol" class="tiny-select" style="width:120px;font-size:14px;padding:4px;" onchange="requestHistory()"></select>
+        <select id="chartRange" class="tiny-select" style="width:100px;font-size:14px;padding:4px;" onchange="updateChartRange()">
+          <option value="10">最近 10分钟</option>
+          <option value="30">最近 30分钟</option>
+          <option value="60" selected>最近 1小时</option>
+          <option value="120">最近 2小时</option>
+        </select>
+        <button onclick="closeChart()" style="margin-left:auto;background:var(--red);color:white;border:none;padding:4px 12px;border-radius:4px;cursor:pointer;">关闭</button>
+      </div>
+      <div style="flex:1;position:relative;">
+        <canvas id="spreadChart"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const rowsEl = document.getElementById('rows');
+    const statusEl = document.getElementById('status');
+    const muteChk = document.getElementById('muteAllChk');
+    const configRows = document.getElementById('configRows');
+    const STORAGE_MUTE = 'para_mute_all_v1';
+    const STORAGE_CFG = 'para_spread_config_v1';
+    let ws;
+    const ALERT_COOLDOWN = 5000;
+    const lastAlert = {};
+    let muteAll = false;
+    const pairConfig = {}; // symbol -> thresholds/sound
+    let controlsBuilt = false;
+
+    function loadMute(){ try { return localStorage.getItem(STORAGE_MUTE)==='1'; } catch(_) { return false; } }
+    function saveMute(){ try { localStorage.setItem(STORAGE_MUTE, muteAll?'1':'0'); } catch(_) {} }
+    muteAll = loadMute();
+    if (muteChk) { muteChk.checked = muteAll; muteChk.oninput=()=>{ muteAll = muteChk.checked; saveMute(); }; }
+
+    function loadCfg() { try { const raw = localStorage.getItem(STORAGE_CFG); return raw ? JSON.parse(raw) : {}; } catch(_) { return {}; } }
+    const savedCfg = loadCfg();
+
+    function getConfig(symbol) {
+      if (!pairConfig[symbol]) {
+        const saved = savedCfg[symbol] || {};
+        // 迁移旧配置或初始化新配置
+        pairConfig[symbol] = {
+          rule1: saved.rule1 || {
+            target: 'max_abs',
+            abs: false,
+            op: 'gt',
+            val: saved.threshold !== undefined ? saved.threshold : 1.0,
+            enabled: saved.enabled !== undefined ? saved.enabled : true,
+            sound: saved.sound !== undefined ? saved.sound : true
+          },
+          rule2: saved.rule2 || {
+            target: 'max_abs',
+            abs: false,
+            op: 'lt',          // <=
+            val: saved.converge !== undefined ? saved.converge : 0.2,
+            enabled: saved.convergeEnabled !== undefined ? saved.convergeEnabled : true,
+            sound: saved.convergeSound !== undefined ? saved.convergeSound : true
+          }
+        };
+      }
+      return pairConfig[symbol];
+    }
+
+    function saveCfg() { try { localStorage.setItem(STORAGE_CFG, JSON.stringify(pairConfig)); } catch(_) {} }
+    
+    function resetConfig() {
+      if(confirm('确定要重置所有配置吗？')) {
+        localStorage.removeItem(STORAGE_CFG);
+        location.reload();
+      }
+    }
+
+    let audioCtx;
+    function playBeep(freq = 880) {
+      if (muteAll) return;
+      try {
+        if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        if (audioCtx.state === 'suspended') audioCtx.resume();
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
+        gain.gain.setValueAtTime(0.1, audioCtx.currentTime);
+        osc.connect(gain).connect(audioCtx.destination);
+        osc.start(); osc.stop(audioCtx.currentTime + 0.2);
+      } catch (_) {}
+    }
+    // 确保用户交互后恢复音频上下文
+    document.addEventListener('click', () => { if (audioCtx && audioCtx.state === 'suspended') audioCtx.resume(); }, { once:true });
+
+    function connect() {
+      if (ws) { try { ws.close(); } catch (_) {} }
+      ws = new WebSocket('ws://localhost:8789');
+      ws.onopen = () => {
+        statusEl.innerHTML = '<span class="dot"></span>已连接';
+        statusEl.classList.remove('error');
+      };
+      ws.onclose = () => {
+        statusEl.innerHTML = '<span class="dot"></span>连接断开，重试中...';
+        statusEl.classList.add('error');
+        setTimeout(connect, 2000);
+      };
+      ws.onerror = () => {
+        statusEl.innerHTML = '<span class="dot"></span>连接错误，重试中...';
+        statusEl.classList.add('error');
+      };
+      ws.onmessage = (evt) => {
+        const data = JSON.parse(evt.data);
+        if (data.type === 'history') {
+          loadChartData(data);
+        } else {
+          render(data);
+          updateRealtimeChart(data);
+        }
+      };
+    }
+
+    function checkRule(rule, spread_a, spread_b) {
+      if (!rule.enabled) return false;
+      let val;
+      if (rule.target === 'spread_a') val = spread_a;
+      else if (rule.target === 'spread_b') val = spread_b;
+      else val = Math.max(Math.abs(spread_a), Math.abs(spread_b)); // max_abs
+
+      if (rule.abs && rule.target !== 'max_abs') val = Math.abs(val);
+
+      if (rule.op === 'gt') return val >= rule.val;
+      if (rule.op === 'lt') return val <= rule.val;
+      return false;
+    }
+
+    function render(data) {
+      const { pairs, timestamp } = data;
+      const timeStr = new Date(timestamp).toLocaleTimeString();
+      if (!pairs || !pairs.length) {
+        rowsEl.innerHTML = `<tr><td colspan="10" style="text-align:center;color:var(--muted);">暂无数据</td></tr>`;
+        return;
+      }
+      if (!controlsBuilt) {
+        buildControls(pairs);
+        controlsBuilt = true;
+        updateChartSymbolOptions(pairs);
+      }
+      rowsEl.innerHTML = pairs.map(p => {
+        const { symbol, var: vr, para, spread_a, spread_b, pct_a=0, pct_b=0, direction, avg_1h_a=0, avg_1h_b=0, avg_2h_a=0, avg_2h_b=0 } = p;
+        const bestDir = spread_a > spread_b ? 'long_para' : 'long_var';
+        const dirClass = bestDir === 'long_para' ? 'green' : 'red';
+        const cfg = getConfig(symbol);
+        
+        const r1Trigger = checkRule(cfg.rule1, spread_a, spread_b);
+        const r2Trigger = checkRule(cfg.rule2, spread_a, spread_b);
+
+        if (r1Trigger && (!lastAlert[symbol] || Date.now() - lastAlert[symbol] > ALERT_COOLDOWN)) {
+          lastAlert[symbol] = Date.now();
+          const led = document.querySelector(`div[data-symbol="${symbol}"] [data-role="led"]`);
+          if (!muteAll && cfg.rule1.sound && led) {
+            led.classList.remove('green'); led.classList.add('red');
+            setTimeout(()=>{ led.classList.remove('red'); led.classList.add('green'); },1200);
+            playBeep();
+          }
+        }
+        if (r2Trigger && (!lastAlert[symbol + '_cv'] || Date.now() - lastAlert[symbol + '_cv'] > ALERT_COOLDOWN)) {
+          lastAlert[symbol + '_cv'] = Date.now();
+          const led = document.querySelector(`div[data-symbol="${symbol}"] [data-role="led"]`);
+          if (!muteAll && cfg.rule2.sound && led) {
+            led.classList.remove('green'); led.classList.add('blue');
+            setTimeout(()=>{ led.classList.remove('blue'); led.classList.add('green'); },1200);
+            playBeep(440); // 收敛提示音用低音 (440Hz)
+          }
+        }
+        return `
+          <tr data-symbol="${symbol}">
+            <td>${symbol}</td>
+            <td class="${spread_a>=0?'green':'red'}">${spread_a.toFixed(2)}</td>
+            <td class="${pct_a>=0?'green':'red'}">${Math.abs(pct_a).toFixed(2)}%</td>
+            <td class="${spread_b>=0?'green':'red'}">${spread_b.toFixed(2)}</td>
+            <td class="${pct_b>=0?'green':'red'}">${Math.abs(pct_b).toFixed(2)}%</td>
+            <td class="${dirClass}">${bestDir}</td>
+            <td>${avg_1h_a.toFixed(2)} / ${avg_1h_b.toFixed(2)}</td>
+            <td>${avg_2h_a.toFixed(2)} / ${avg_2h_b.toFixed(2)}</td>
+            <td>${vr.ask.toFixed(2)} / ${vr.bid.toFixed(2)}</td>
+            <td>${para.bid.toFixed(2)} / ${para.ask.toFixed(2)}</td>
+            <td>${timeStr}</td>
+          </tr>
+        `;
+      }).join("");
+    }
+
+    function buildControls(pairs) {
+      configRows.innerHTML = pairs.map(p => {
+        const cfg = getConfig(p.symbol);
+        const renderRule = (r, id) => `
+          <div class="rule-group">
+            <span style="font-size:10px;color:var(--muted);font-weight:bold;">${id}</span>
+            <select data-key="target" class="tiny-select">
+              <option value="max_abs" ${r.target==='max_abs'?'selected':''}>MaxAbs</option>
+              <option value="spread_a" ${r.target==='spread_a'?'selected':''}>Spread A</option>
+              <option value="spread_b" ${r.target==='spread_b'?'selected':''}>Spread B</option>
+            </select>
+            <label style="font-size:10px;"><input type="checkbox" data-key="abs" ${r.abs?'checked':''}>Abs</label>
+            <select data-key="op" class="tiny-select">
+              <option value="gt" ${r.op==='gt'?'selected':''}>&ge;</option>
+              <option value="lt" ${r.op==='lt'?'selected':''}>&le;</option>
+            </select>
+            <input type="number" step="0.01" value="${r.val}" data-key="val" class="tiny-input">
+            <label style="font-size:10px;"><input type="checkbox" data-key="enabled" ${r.enabled?'checked':''}>开</label>
+            <label style="font-size:10px;"><input type="checkbox" data-key="sound" ${r.sound?'checked':''}>音</label>
+          </div>
+        `;
+        return `
+          <div data-symbol="${p.symbol}" class="config-row">
+            <div class="pair-name"><span class="led green" data-role="led"></span><span>${p.symbol}</span></div>
+            ${renderRule(cfg.rule1, 'R1')}
+            ${renderRule(cfg.rule2, 'R2')}
+          </div>
+        `;
+      }).join("");
+
+      document.querySelectorAll('#configRows > div[data-symbol]').forEach(div => {
+        const symbol = div.getAttribute('data-symbol');
+        const cfg = getConfig(symbol);
+        const led = div.querySelector('[data-role="led"]');
+        
+        const bindRule = (ruleObj, groupIdx) => {
+          const group = div.querySelectorAll('.rule-group')[groupIdx];
+          group.querySelector('[data-key="target"]').onchange = (e) => { ruleObj.target = e.target.value; saveCfg(); };
+          group.querySelector('[data-key="abs"]').onchange = (e) => { ruleObj.abs = e.target.checked; saveCfg(); };
+          group.querySelector('[data-key="op"]').onchange = (e) => { ruleObj.op = e.target.value; saveCfg(); };
+          group.querySelector('[data-key="val"]').oninput = (e) => { ruleObj.val = parseFloat(e.target.value || '0'); saveCfg(); };
+          group.querySelector('[data-key="enabled"]').onchange = (e) => { ruleObj.enabled = e.target.checked; saveCfg(); };
+          group.querySelector('[data-key="sound"]').onchange = (e) => { 
+            ruleObj.sound = e.target.checked; 
+            led.classList.toggle('green', cfg.rule1.sound || cfg.rule2.sound); 
+            saveCfg(); 
+          };
+        };
+
+        bindRule(cfg.rule1, 0);
+        bindRule(cfg.rule2, 1);
+        led.classList.toggle('green', cfg.rule1.sound || cfg.rule2.sound);
+      });
+    }
+
+    // --- 图表相关逻辑 ---
+    let myChart = null;
+    let chartDataA = [];
+    let chartDataB = [];
+    let isChartOpen = false;
+
+    function updateChartSymbolOptions(pairs) {
+      const sel = document.getElementById('chartSymbol');
+      if (sel.options.length === 0) {
+        pairs.forEach(p => {
+          const opt = document.createElement('option');
+          opt.value = p.symbol;
+          opt.text = p.symbol;
+          sel.appendChild(opt);
+        });
+      }
+    }
+
+    function openChart() {
+      document.getElementById('chartModal').classList.add('active');
+      isChartOpen = true;
+      if (!myChart) initChart();
+      requestHistory();
+    }
+
+    function closeChart() {
+      document.getElementById('chartModal').classList.remove('active');
+      isChartOpen = false;
+    }
+
+    function requestHistory() {
+      if (!ws || ws.readyState !== WebSocket.OPEN) return;
+      const symbol = document.getElementById('chartSymbol').value;
+      if (!symbol) return;
+      // 清空当前数据，显示加载状态
+      if(myChart) {
+        myChart.data.datasets[0].data = [];
+        myChart.data.datasets[1].data = [];
+        myChart.update();
+      }
+      ws.send(JSON.stringify({ action: "get_history", symbol: symbol }));
+    }
+
+    function initChart() {
+      const ctx = document.getElementById('spreadChart').getContext('2d');
+      myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          datasets: [
+            { label: 'Spread A (Var卖-Para买)', data: [], borderColor: '#ff5f64', borderWidth: 1.5, pointRadius: 0, tension: 0.1 },
+            { label: 'Spread B (Para卖-Var买)', data: [], borderColor: '#4d8dff', borderWidth: 1.5, pointRadius: 0, tension: 0.1 }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          animation: false,
+          interaction: { mode: 'index', intersect: false },
+          scales: {
+            x: { type: 'time', time: { unit: 'minute', displayFormats: { minute: 'HH:mm' } }, grid: { color: '#2c3546' }, ticks: { color: '#7c8597' } },
+            y: { grid: { color: '#2c3546' }, ticks: { color: '#7c8597' } }
+          },
+          plugins: { legend: { labels: { color: '#e8ecf5' } } }
+        }
+      });
+    }
+
+    function loadChartData(payload) {
+      if (!myChart) return;
+      // payload.data.a 是 [[ts_ms, val], ...]
+      chartDataA = payload.data.a.map(x => ({x: x[0], y: x[1]}));
+      chartDataB = payload.data.b.map(x => ({x: x[0], y: x[1]}));
+      updateChartRange();
+    }
+
+    function updateChartRange() {
+      if (!myChart) return;
+      const rangeMin = parseInt(document.getElementById('chartRange').value);
+      const cutoff = Date.now() - rangeMin * 60 * 1000;
+      
+      // 过滤数据
+      myChart.data.datasets[0].data = chartDataA.filter(d => d.x > cutoff);
+      myChart.data.datasets[1].data = chartDataB.filter(d => d.x > cutoff);
+      myChart.scales.x.min = cutoff;
+      myChart.scales.x.max = Date.now();
+      myChart.update();
+    }
+
+    function updateRealtimeChart(data) {
+      if (!isChartOpen || !myChart) return;
+      const symbol = document.getElementById('chartSymbol').value;
+      const pairData = data.pairs.find(p => p.symbol === symbol);
+      if (pairData) {
+        const now = Date.now();
+        const ptA = { x: now, y: pairData.spread_a };
+        const ptB = { x: now, y: pairData.spread_b };
+        chartDataA.push(ptA);
+        chartDataB.push(ptB);
+        
+        // 简单的实时更新，每秒更新一次视图即可，或者直接更新
+        // 为了性能，这里只在数据点增加时更新，且限制频率
+        // 由于 render 频率较高(20ms)，这里最好做个节流，或者直接依赖 updateChartRange 的逻辑
+        // 简单起见，直接追加并更新，Chart.js 处理几千个点没问题
+        const rangeMin = parseInt(document.getElementById('chartRange').value);
+        const cutoff = now - rangeMin * 60 * 1000;
+        
+        // 移除过旧数据 (内存中)
+        if (chartDataA.length > 0 && chartDataA[0].x < cutoff - 60000) chartDataA.shift();
+        if (chartDataB.length > 0 && chartDataB[0].x < cutoff - 60000) chartDataB.shift();
+
+        myChart.data.datasets[0].data.push(ptA);
+        myChart.data.datasets[1].data.push(ptB);
+        
+        // 移除图表中过旧数据
+        while(myChart.data.datasets[0].data.length > 0 && myChart.data.datasets[0].data[0].x < cutoff) myChart.data.datasets[0].data.shift();
+        while(myChart.data.datasets[1].data.length > 0 && myChart.data.datasets[1].data[0].x < cutoff) myChart.data.datasets[1].data.shift();
+
+        myChart.scales.x.min = cutoff;
+        myChart.scales.x.max = now;
+        myChart.update('none'); // 'none' mode for performance
+      }
+    }
+
+    connect();
+  </script>
+</body>
+</html>
