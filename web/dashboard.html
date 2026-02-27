@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lig-Var Market Overview</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #0E0E12;
+            color: #E0E0E0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        .header {
+            padding: 20px 24px;
+            background-color: #121216;
+            border-bottom: 1px solid #222;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #FFF;
+        }
+
+        .header-controls {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .toggle-btn {
+            background-color: #1C1C20;
+            color: #888;
+            border: 1px solid #333;
+            padding: 6px 14px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .toggle-btn:hover {
+            color: #FFF;
+            border-color: #555;
+        }
+
+        .global-thresh {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            background: #1C1C20;
+            border: 1px solid #333;
+            border-radius: 6px;
+            padding: 4px 10px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+
+        .global-thresh label {
+            white-space: nowrap;
+        }
+
+        .global-thresh input {
+            width: 36px;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid #555;
+            color: #FFF;
+            font-size: 0.85rem;
+            text-align: center;
+            outline: none;
+            font-variant-numeric: tabular-nums;
+        }
+
+        .global-thresh input:focus {
+            border-bottom-color: #F59E0B;
+        }
+
+        .global-thresh .apply-btn {
+            background: #2A2A2E;
+            border: 1px solid #444;
+            color: #ccc;
+            padding: 2px 8px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            transition: 0.15s;
+        }
+
+        .global-thresh .apply-btn:hover {
+            background: #F59E0B;
+            color: #000;
+            border-color: #F59E0B;
+        }
+
+        .container {
+            padding: 20px 24px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: right;
+        }
+
+        th,
+        td {
+            padding: 10px 10px;
+            border-bottom: 1px solid #1A1A20;
+        }
+
+        th {
+            color: #888;
+            font-weight: 500;
+            font-size: 0.78rem;
+            white-space: nowrap;
+        }
+
+        td {
+            font-size: 0.88rem;
+            font-variant-numeric: tabular-nums;
+        }
+
+        th:first-child,
+        td:first-child {
+            text-align: left;
+        }
+
+        tr:hover {
+            background-color: #141418;
+        }
+
+        .pair-name {
+            font-weight: 600;
+            color: #FFF;
+            font-size: 1rem;
+            text-decoration: none;
+        }
+
+        .pair-name:hover {
+            color: #3B82F6;
+        }
+
+        .positive {
+            color: #22C55E;
+        }
+
+        .negative {
+            color: #EF4444;
+        }
+
+        .neutral {
+            color: #888;
+        }
+
+        .avg-col {
+            background-color: rgba(255, 255, 255, 0.02);
+        }
+
+        .status-dot {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            margin-right: 6px;
+        }
+
+        .status-live {
+            background-color: #22C55E;
+        }
+
+        .status-wait {
+            background-color: #F59E0B;
+        }
+
+        .status-dead {
+            background-color: #EF4444;
+        }
+
+        .alert-cell {
+            text-align: center !important;
+            white-space: nowrap;
+        }
+
+        .alert-check {
+            width: 15px;
+            height: 15px;
+            cursor: pointer;
+            accent-color: #F59E0B;
+            vertical-align: middle;
+        }
+
+        /* Direction toggle button */
+        .dir-btn {
+            display: inline-block;
+            width: 22px;
+            height: 22px;
+            line-height: 22px;
+            text-align: center;
+            font-size: 0.85rem;
+            cursor: pointer;
+            user-select: none;
+            border-radius: 3px;
+            background: #1C1C20;
+            border: 1px solid #333;
+            color: #ccc;
+            vertical-align: middle;
+            margin: 0 2px;
+        }
+
+        .dir-btn:hover {
+            border-color: #F59E0B;
+            color: #F59E0B;
+        }
+
+        .dir-btn.up {
+            color: #22C55E;
+            border-color: #22C55E;
+        }
+
+        .dir-btn.down {
+            color: #EF4444;
+            border-color: #EF4444;
+        }
+
+        .threshold-wrap {
+            display: inline-flex;
+            align-items: center;
+            gap: 1px;
+            background: #1C1C20;
+            border: 1px solid #333;
+            border-radius: 4px;
+            padding: 1px 4px;
+            vertical-align: middle;
+            margin-left: 2px;
+        }
+
+        .threshold-wrap:focus-within {
+            border-color: #F59E0B;
+        }
+
+        .threshold-input {
+            width: 30px;
+            background: transparent;
+            border: none;
+            color: #FFF;
+            font-size: 0.78rem;
+            padding: 2px 0;
+            text-align: right;
+            font-variant-numeric: tabular-nums;
+            outline: none;
+        }
+
+        .threshold-pct {
+            color: #888;
+            font-size: 0.72rem;
+            user-select: none;
+        }
+
+        .alerting {
+            animation: alertPulse 0.8s ease-in-out infinite alternate;
+        }
+
+        @keyframes alertPulse {
+            from {
+                background-color: rgba(245, 158, 11, 0.05);
+            }
+
+            to {
+                background-color: rgba(245, 158, 11, 0.25);
+            }
+        }
+
+        .alert-icon {
+            font-size: 0.85rem;
+            margin-left: 2px;
+        }
+
+        .sep-col {
+            border-left: 2px solid #333 !important;
+        }
+
+        /* Header alert buttons */
+        .th-alert-btns {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2px;
+        }
+
+        .th-batch-btn {
+            font-size: 0.65rem;
+            padding: 1px 6px;
+            border-radius: 3px;
+            cursor: pointer;
+            border: 1px solid #444;
+            background: #1C1C20;
+            color: #999;
+            white-space: nowrap;
+        }
+
+        .th-batch-btn:hover {
+            color: #FFF;
+            border-color: #888;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>📊 全市场实时监控看板</h1>
+        <div class="header-controls">
+            <span id="connection-status" style="font-size: 0.9rem; color: #888;">
+                <span class="status-dot status-wait" id="ws-dot"></span>连接中...
+            </span>
+            <span class="global-thresh">
+                <label>全局阈值</label>
+                <input type="text" id="global-thresh-input" value="50">
+                <span style="color:#666;font-size:0.75rem;">%</span>
+                <button class="apply-btn" onclick="batchSetThreshold()">应用</button>
+            </span>
+            <button id="unit-toggle" class="toggle-btn">当前单位: 绝对值 ($)</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <table id="market-table">
+            <thead>
+                <tr>
+                    <th>交易对</th>
+                    <th>Var卖(实时)</th>
+                    <th class="avg-col">1m均</th>
+                    <th class="avg-col">30m均</th>
+                    <th class="avg-col">1h均</th>
+                    <th class="avg-col">2h均</th>
+                    <th class="alert-cell">
+                        <div class="th-alert-btns">
+                            <span>V卖🔔</span>
+                            <div>
+                                <button class="th-batch-btn" onclick="batchToggle('vs', true)">全选</button>
+                                <button class="th-batch-btn" onclick="batchToggle('vs', false)">全取消</button>
+                            </div>
+                        </div>
+                    </th>
+                    <th class="sep-col">Lig卖(实时)</th>
+                    <th class="avg-col">1m均</th>
+                    <th class="avg-col">30m均</th>
+                    <th class="avg-col">1h均</th>
+                    <th class="avg-col">2h均</th>
+                    <th class="alert-cell">
+                        <div class="th-alert-btns">
+                            <span>L卖🔔</span>
+                            <div>
+                                <button class="th-batch-btn" onclick="batchToggle('ls', true)">全选</button>
+                                <button class="th-batch-btn" onclick="batchToggle('ls', false)">全取消</button>
+                            </div>
+                        </div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="table-body"></tbody>
+        </table>
+    </div>
+
+    <script>
+        // ========== State ==========
+        const liveData = {};
+        const statsData = {};
+        let displayUnit = 'ABS';
+        let ws = null;
+        let lastUpdateTime = {};
+        const alertConfig = {};  // alertConfig[pair] = { vs: { enabled, threshold, dir }, ls: { ... } }
+        const alertActive = {};
+        const rowElements = {};
+
+        // ========== Audio ==========
+        let audioCtx = null;
+        let alertInterval = null;
+        function ensureAudioCtx() {
+            if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+            return audioCtx;
+        }
+        function playBeep() {
+            try {
+                const ctx = ensureAudioCtx();
+                const osc = ctx.createOscillator();
+                const gain = ctx.createGain();
+                osc.connect(gain); gain.connect(ctx.destination);
+                osc.type = 'sine'; osc.frequency.value = 880; gain.gain.value = 0.3;
+                osc.start();
+                gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.3);
+                osc.stop(ctx.currentTime + 0.3);
+            } catch (e) { console.error('Audio error:', e); }
+        }
+        function startAlertSound() {
+            if (alertInterval) return;
+            playBeep();
+            alertInterval = setInterval(playBeep, 2000);
+        }
+        function stopAlertSound() {
+            if (alertInterval) { clearInterval(alertInterval); alertInterval = null; }
+        }
+
+        // ========== Formatting ==========
+        function formatVal(val) {
+            if (val === undefined || val === null || isNaN(val)) return '-';
+            return displayUnit === 'BPS'
+                ? (val > 0 ? '+' : '') + val.toFixed(1)
+                : (val > 0 ? '+' : '') + val.toFixed(2);
+        }
+        function colorClass(val) {
+            if (val === undefined || val === null || isNaN(val)) return 'neutral';
+            return val > 0 ? 'positive' : val < 0 ? 'negative' : 'neutral';
+        }
+
+        // ========== Alert Config ==========
+        function getCfg(pair, dir) {
+            if (!alertConfig[pair]) alertConfig[pair] = {
+                vs: { enabled: false, threshold: 50, dir: 'up' },
+                ls: { enabled: false, threshold: 50, dir: 'up' }
+            };
+            return alertConfig[pair][dir];
+        }
+
+        // ========== Batch Toggle ==========
+        function batchToggle(dir, enabled) {
+            const allPairs = Object.keys(rowElements);
+            allPairs.forEach(pair => {
+                getCfg(pair, dir).enabled = enabled;
+                const { cells } = rowElements[pair];
+                const checkEl = cells[dir + '_check'];
+                if (checkEl) checkEl.checked = enabled;
+            });
+            checkAllAlerts();
+        }
+
+        function batchSetThreshold() {
+            const v = parseFloat(document.getElementById('global-thresh-input').value);
+            if (isNaN(v) || v <= 0) return;
+            const allPairs = Object.keys(rowElements);
+            allPairs.forEach(pair => {
+                ['vs', 'ls'].forEach(dir => {
+                    getCfg(pair, dir).threshold = v;
+                    const { cells } = rowElements[pair];
+                    const el = cells[dir + '_thresh'];
+                    if (el) el.value = String(v);
+                });
+            });
+            checkAllAlerts();
+        }
+
+        // ========== Alert Logic (SIGNED values, not absolute) ==========
+        function checkAllAlerts() {
+            let anyAlerting = false;
+            for (const key in alertActive) alertActive[key] = false;
+
+            for (const pair in statsData) {
+                const stats = statsData[pair];
+                const avg1m = stats["1m"] || {};
+                const avg30m = stats["30m"] || {};
+
+                ['vs', 'ls'].forEach(side => {
+                    const cfg = getCfg(pair, side);
+                    if (!cfg.enabled) return;
+
+                    // Use signed actual values
+                    const key = side === 'vs' ? 'vs_abs' : 'ls_abs';
+                    const val1m = avg1m[key] || 0;
+                    const val30m = avg30m[key] || 0;
+                    const deviation = Math.abs(val30m) * (cfg.threshold / 100);
+
+                    let triggered = false;
+                    if (cfg.dir === 'up') {
+                        // Alert when 1m avg is ABOVE 30m avg by threshold
+                        triggered = val1m > val30m + deviation;
+                    } else {
+                        // Alert when 1m avg is BELOW 30m avg by threshold
+                        triggered = val1m < val30m - deviation;
+                    }
+
+                    if (triggered && deviation > 0) {
+                        alertActive[pair + '_' + side] = true;
+                        anyAlerting = true;
+                    }
+                });
+            }
+
+            anyAlerting ? startAlertSound() : stopAlertSound();
+        }
+
+        // ========== DOM Row Builder ==========
+        function ensureRow(pair) {
+            if (rowElements[pair]) return rowElements[pair];
+
+            const tr = document.createElement('tr');
+            const cells = {};
+            function td(key, extraClass) {
+                const el = document.createElement('td');
+                if (extraClass) el.className = extraClass;
+                tr.appendChild(el);
+                cells[key] = el;
+                return el;
+            }
+
+            // Pair name
+            const nameTd = td('name');
+            const link = document.createElement('a');
+            link.href = 'lig_spread_chart.html'; link.target = '_blank';
+            link.className = 'pair-name'; link.textContent = pair;
+            nameTd.appendChild(link);
+
+            // --- VS side ---
+            td('vs_live');
+            td('vs_1m', 'avg-col');
+            td('vs_30m', 'avg-col');
+            td('vs_1h', 'avg-col');
+            td('vs_2h', 'avg-col');
+
+            const vsAlertTd = td('vs_alert', 'alert-cell');
+            buildAlertControls(vsAlertTd, cells, pair, 'vs');
+
+            // --- LS side ---
+            td('ls_live', 'sep-col');
+            td('ls_1m', 'avg-col');
+            td('ls_30m', 'avg-col');
+            td('ls_1h', 'avg-col');
+            td('ls_2h', 'avg-col');
+
+            const lsAlertTd = td('ls_alert', 'alert-cell');
+            buildAlertControls(lsAlertTd, cells, pair, 'ls');
+
+            rowElements[pair] = { tr, cells };
+
+            // Insert sorted
+            const tbody = document.getElementById('table-body');
+            const existingPairs = Object.keys(rowElements).sort();
+            const myIdx = existingPairs.indexOf(pair);
+            if (myIdx < existingPairs.length - 1) {
+                const nextPair = existingPairs[myIdx + 1];
+                tbody.insertBefore(tr, rowElements[nextPair].tr);
+            } else {
+                tbody.appendChild(tr);
+            }
+
+            return rowElements[pair];
+        }
+
+        function buildAlertControls(container, cells, pair, side) {
+            // Checkbox
+            const check = document.createElement('input');
+            check.type = 'checkbox';
+            check.className = 'alert-check';
+            check.addEventListener('change', () => {
+                getCfg(pair, side).enabled = check.checked;
+                checkAllAlerts();
+            });
+            container.appendChild(check);
+            cells[side + '_check'] = check;
+
+            // Direction button ▲/▼
+            const dirBtn = document.createElement('span');
+            dirBtn.className = 'dir-btn up';
+            dirBtn.textContent = '▲';
+            dirBtn.title = '当前: 1m均值 > 30m均值 时提醒\n点击切换方向';
+            dirBtn.addEventListener('click', () => {
+                const cfg = getCfg(pair, side);
+                if (cfg.dir === 'up') {
+                    cfg.dir = 'down';
+                    dirBtn.textContent = '▼';
+                    dirBtn.className = 'dir-btn down';
+                    dirBtn.title = '当前: 1m均值 < 30m均值 时提醒\n点击切换方向';
+                } else {
+                    cfg.dir = 'up';
+                    dirBtn.textContent = '▲';
+                    dirBtn.className = 'dir-btn up';
+                    dirBtn.title = '当前: 1m均值 > 30m均值 时提醒\n点击切换方向';
+                }
+                checkAllAlerts();
+            });
+            container.appendChild(dirBtn);
+            cells[side + '_dir'] = dirBtn;
+
+            // Threshold input with %
+            const wrap = document.createElement('span');
+            wrap.className = 'threshold-wrap';
+            const input = document.createElement('input');
+            input.type = 'text';
+            input.className = 'threshold-input';
+            input.value = '50';
+            input.addEventListener('input', () => {
+                const v = parseFloat(input.value);
+                if (!isNaN(v) && v > 0) getCfg(pair, side).threshold = v;
+            });
+            const pct = document.createElement('span');
+            pct.className = 'threshold-pct';
+            pct.textContent = '%';
+            wrap.appendChild(input);
+            wrap.appendChild(pct);
+            container.appendChild(wrap);
+            cells[side + '_thresh'] = input;
+        }
+
+        // ========== Update Cells ==========
+        function updateCell(cells, key, val, extraStyle) {
+            const el = cells[key];
+            el.textContent = formatVal(val);
+            el.className = el.className
+                .replace(/positive|negative|neutral/g, '').trim() + ' ' + colorClass(val);
+            if (extraStyle) Object.assign(el.style, extraStyle);
+        }
+
+        function renderTable() {
+            const pairs = Array.from(new Set([
+                ...Object.keys(liveData), ...Object.keys(statsData)
+            ])).sort();
+
+            pairs.forEach(pair => {
+                const { cells, tr } = ensureRow(pair);
+                const live = liveData[pair] || {};
+                const stats = statsData[pair] || {};
+
+                const vsKey = displayUnit === 'BPS' ? 'vs_bps' : 'spread_vs';
+                const lsKey = displayUnit === 'BPS' ? 'ls_bps' : 'spread_ls';
+                const sVsKey = displayUnit === 'BPS' ? 'vs_bps' : 'vs_abs';
+                const sLsKey = displayUnit === 'BPS' ? 'ls_bps' : 'ls_abs';
+
+                tr.style.opacity = (Date.now() - (lastUpdateTime[pair] || 0)) > 10000 ? '0.5' : '1';
+
+                // VS
+                updateCell(cells, 'vs_live', live[vsKey], { fontWeight: '600' });
+                updateCell(cells, 'vs_1m', stats["1m"] ? stats["1m"][sVsKey] : null);
+                updateCell(cells, 'vs_30m', stats["30m"] ? stats["30m"][sVsKey] : null);
+                updateCell(cells, 'vs_1h', stats["1h"] ? stats["1h"][sVsKey] : null);
+                updateCell(cells, 'vs_2h', stats["2h"] ? stats["2h"][sVsKey] : null);
+
+                // VS alert visual
+                toggleAlertVisual(cells, 'vs', alertActive[pair + '_vs']);
+
+                // LS
+                updateCell(cells, 'ls_live', live[lsKey], { fontWeight: '600' });
+                updateCell(cells, 'ls_1m', stats["1m"] ? stats["1m"][sLsKey] : null);
+                updateCell(cells, 'ls_30m', stats["30m"] ? stats["30m"][sLsKey] : null);
+                updateCell(cells, 'ls_1h', stats["1h"] ? stats["1h"][sLsKey] : null);
+                updateCell(cells, 'ls_2h', stats["2h"] ? stats["2h"][sLsKey] : null);
+
+                // LS alert visual
+                toggleAlertVisual(cells, 'ls', alertActive[pair + '_ls']);
+            });
+        }
+
+        function toggleAlertVisual(cells, side, isAlerting) {
+            const cell = cells[side + '_1m'];
+            if (isAlerting) {
+                cell.classList.add('alerting');
+                if (!cell.querySelector('.alert-icon')) {
+                    const icon = document.createElement('span');
+                    icon.className = 'alert-icon'; icon.textContent = '🔔';
+                    cell.appendChild(icon);
+                }
+            } else {
+                cell.classList.remove('alerting');
+                const icon = cell.querySelector('.alert-icon');
+                if (icon) icon.remove();
+            }
+        }
+
+        // ========== Unit Toggle ==========
+        document.getElementById('unit-toggle').addEventListener('click', (e) => {
+            if (displayUnit === 'ABS') {
+                displayUnit = 'BPS';
+                e.target.textContent = '当前单位: 基点 (bps)';
+            } else {
+                displayUnit = 'ABS';
+                e.target.textContent = '当前单位: 绝对值 ($)';
+            }
+            renderTable();
+        });
+
+        // ========== WebSocket ==========
+        function connectWS() {
+            ws = new WebSocket('ws://127.0.0.1:8765');
+            const dot = document.getElementById('ws-dot');
+            const statusText = document.getElementById('connection-status');
+
+            ws.onopen = () => {
+                dot.className = 'status-dot status-live';
+                statusText.innerHTML = '<span class="status-dot status-live" id="ws-dot"></span>已连接';
+                ensureAudioCtx();
+            };
+            ws.onmessage = (event) => {
+                try {
+                    const msg = JSON.parse(event.data);
+                    if (msg.type === 'update') {
+                        const d = msg.data;
+                        d.vs_bps = d.var_bid > 0 ? (d.spread_vs / d.var_bid) * 10000 : 0;
+                        d.ls_bps = d.lig_bid > 0 ? (d.spread_ls / d.lig_bid) * 10000 : 0;
+                        liveData[d.pair] = d;
+                        lastUpdateTime[d.pair] = Date.now();
+                        renderTable();
+                    } else if (msg.type === 'stats') {
+                        Object.assign(statsData, msg.data);
+                        checkAllAlerts();
+                        renderTable();
+                    }
+                } catch (e) { console.error('WS parse error:', e); }
+            };
+            ws.onclose = () => {
+                dot.className = 'status-dot status-dead';
+                statusText.innerHTML = '<span class="status-dot status-dead" id="ws-dot"></span>断开, 重连中...';
+                stopAlertSound();
+                setTimeout(connectWS, 3000);
+            };
+        }
+
+        setInterval(renderTable, 1000);
+        connectWS();
+    </script>
+</body>
+
+</html>

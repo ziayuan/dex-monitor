@@ -1,0 +1,50 @@
+2026-02-26 16:28:39.299 | INFO     | __main__:start:216 - Starting Lig-Var Spread Recorder
+2026-02-26 16:28:40.603 | INFO     | exchanges.lighter:fetch_markets:135 - Fetched 149 Lighter markets
+2026-02-26 16:28:40.736 | INFO     | exchanges.lighter:get_market_id:151 - Using dynamic ID for BTC: 1
+2026-02-26 16:28:40.745 | INFO     | __main__:start:235 - Started Lighter WS monitor for BTC-USD (BTC)
+2026-02-26 16:28:40.745 | INFO     | exchanges.lighter:get_market_id:151 - Using dynamic ID for ETH: 0
+2026-02-26 16:28:40.746 | INFO     | __main__:start:235 - Started Lighter WS monitor for ETH-USD (ETH)
+2026-02-26 16:28:40.746 | INFO     | exchanges.lighter:get_market_id:151 - Using dynamic ID for SOL: 2
+2026-02-26 16:28:40.747 | INFO     | __main__:start:235 - Started Lighter WS monitor for SOL-USD (SOL)
+2026-02-26 16:28:40.747 | INFO     | exchanges.lighter:get_market_id:151 - Using dynamic ID for AAVE: 27
+2026-02-26 16:28:40.750 | INFO     | __main__:start:235 - Started Lighter WS monitor for AAVE-USD (AAVE)
+2026-02-26 16:28:40.750 | INFO     | exchanges.lighter:get_market_id:151 - Using dynamic ID for BNB: 25
+2026-02-26 16:28:40.751 | INFO     | __main__:start:235 - Started Lighter WS monitor for BNB-USD (BNB)
+2026-02-26 16:28:40.752 | INFO     | exchanges.lighter:get_market_id:151 - Using dynamic ID for HYPE: 24
+2026-02-26 16:28:40.752 | INFO     | __main__:start:235 - Started Lighter WS monitor for HYPE-USD (HYPE)
+2026-02-26 16:28:40.752 | INFO     | exchanges.lighter:get_market_id:151 - Using dynamic ID for ZEC: 90
+2026-02-26 16:28:40.753 | INFO     | __main__:start:235 - Started Lighter WS monitor for ZEC-USD (ZEC)
+2026-02-26 16:28:40.753 | INFO     | exchanges.lighter:get_market_id:151 - Using dynamic ID for XRP: 7
+2026-02-26 16:28:40.754 | INFO     | __main__:start:235 - Started Lighter WS monitor for XRP-USD (XRP)
+2026-02-26 16:28:40.754 | INFO     | exchanges.lighter:get_market_id:151 - Using dynamic ID for SUI: 16
+2026-02-26 16:28:40.754 | INFO     | __main__:start:235 - Started Lighter WS monitor for SUI-USD (SUI)
+2026-02-26 16:28:40.764 | INFO     | exchanges.lighter_ws:connect:87 - Connecting to Lighter WS for market 1...
+2026-02-26 16:28:40.769 | INFO     | exchanges.lighter_ws:connect:87 - Connecting to Lighter WS for market 0...
+2026-02-26 16:28:40.771 | INFO     | exchanges.lighter_ws:connect:87 - Connecting to Lighter WS for market 2...
+2026-02-26 16:28:40.773 | INFO     | exchanges.lighter_ws:connect:87 - Connecting to Lighter WS for market 27...
+2026-02-26 16:28:40.779 | INFO     | exchanges.lighter_ws:connect:87 - Connecting to Lighter WS for market 25...
+2026-02-26 16:28:40.784 | INFO     | exchanges.lighter_ws:connect:87 - Connecting to Lighter WS for market 24...
+2026-02-26 16:28:40.787 | INFO     | exchanges.lighter_ws:connect:87 - Connecting to Lighter WS for market 90...
+2026-02-26 16:28:40.790 | INFO     | exchanges.lighter_ws:connect:87 - Connecting to Lighter WS for market 7...
+2026-02-26 16:28:40.794 | INFO     | exchanges.lighter_ws:connect:87 - Connecting to Lighter WS for market 16...
+2026-02-26 16:28:40.798 | INFO     | core.data_feeds:monitor_variational:112 - 🚀 Starting Variational direct API polling (no browser needed)
+2026-02-26 16:28:40.872 | INFO     | __main__:start:248 - WebSocket server listening on ws://0.0.0.0:8765
+2026-02-26 16:28:41.578 | INFO     | exchanges.lighter_ws:connect:96 - Connected to Lighter WS
+2026-02-26 16:28:41.579 | INFO     | exchanges.lighter_ws:connect:96 - Connected to Lighter WS
+2026-02-26 16:28:41.579 | INFO     | exchanges.lighter_ws:connect:96 - Connected to Lighter WS
+2026-02-26 16:28:41.579 | INFO     | exchanges.lighter_ws:connect:96 - Connected to Lighter WS
+2026-02-26 16:28:41.579 | INFO     | exchanges.lighter_ws:connect:96 - Connected to Lighter WS
+2026-02-26 16:28:41.580 | INFO     | exchanges.lighter_ws:connect:96 - Connected to Lighter WS
+2026-02-26 16:28:41.580 | INFO     | exchanges.lighter_ws:connect:96 - Connected to Lighter WS
+2026-02-26 16:28:41.581 | INFO     | exchanges.lighter_ws:connect:96 - Connected to Lighter WS
+2026-02-26 16:28:41.582 | INFO     | exchanges.lighter_ws:connect:96 - Connected to Lighter WS
+2026-02-26 16:28:41.811 | INFO     | exchanges.lighter_ws:connect:116 - Lighter snapshot loaded
+2026-02-26 16:28:41.813 | INFO     | exchanges.lighter_ws:connect:116 - Lighter snapshot loaded
+2026-02-26 16:28:41.814 | INFO     | exchanges.lighter_ws:connect:116 - Lighter snapshot loaded
+2026-02-26 16:28:41.814 | INFO     | exchanges.lighter_ws:connect:116 - Lighter snapshot loaded
+2026-02-26 16:28:41.815 | INFO     | exchanges.lighter_ws:connect:116 - Lighter snapshot loaded
+2026-02-26 16:28:41.821 | INFO     | __main__:ws_handler:128 - Chart client connected (1 total)
+2026-02-26 16:28:43.299 | INFO     | exchanges.lighter_ws:connect:116 - Lighter snapshot loaded
+2026-02-26 16:28:43.300 | INFO     | exchanges.lighter_ws:connect:116 - Lighter snapshot loaded
+2026-02-26 16:28:43.301 | INFO     | exchanges.lighter_ws:connect:116 - Lighter snapshot loaded
+2026-02-26 16:28:43.303 | INFO     | exchanges.lighter_ws:connect:116 - Lighter snapshot loaded

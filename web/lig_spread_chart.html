@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lig-Var Hedge Spreads (历史价差分析)</title>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #0E0E12;
+            color: #E0E0E0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .header {
+            padding: 20px 24px 10px 24px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #FFFFFF;
+        }
+
+        .toolbar {
+            display: flex;
+            align-items: flex-start;
+            gap: 40px;
+            padding: 10px 24px 20px 24px;
+            flex-wrap: wrap;
+        }
+
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .filter-group label {
+            font-size: 0.8rem;
+            color: #888;
+        }
+
+        select {
+            background-color: #1C1C20;
+            color: #FFF;
+            border: 1px solid #333;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            outline: none;
+            cursor: pointer;
+            min-width: 140px;
+        }
+
+        .time-toggles {
+            display: flex;
+            background-color: #121216;
+            border-radius: 6px;
+            border: 1px solid #222;
+            padding: 2px;
+        }
+
+        .time-toggles button {
+            background: none;
+            border: none;
+            color: #888;
+            padding: 6px 12px;
+            font-size: 0.85rem;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: all 0.2s;
+        }
+
+        .time-toggles button.active {
+            background-color: #EFEFEF;
+            color: #111;
+            font-weight: 500;
+        }
+
+        .time-toggles button:hover:not(.active) {
+            color: #FFF;
+        }
+
+        .exchange-checkboxes {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            height: 30px;
+        }
+
+        .exchange-checkboxes label {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.9rem;
+            color: #E0E0E0;
+            cursor: pointer;
+        }
+
+        .live-values {
+            display: flex;
+            gap: 30px;
+            margin-left: auto;
+            align-items: center;
+        }
+
+        .live-val {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .unit-toggle {
+            background-color: #1C1C20;
+            color: #888;
+            border: 1px solid #333;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .unit-toggle:hover {
+            color: #FFF;
+            border-color: #555;
+        }
+
+        #chart-container {
+            flex: 1;
+            padding: 0 20px 20px 20px;
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        /* Custom Checkbox Colors */
+        input[type="checkbox"] {
+            accent-color: #E0E0E0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>历史价差分析</h1>
+    </div>
+
+    <div class="toolbar">
+        <div class="filter-group">
+            <label>交易对</label>
+            <select id="pair-selector">
+                <option value="WAIT">等待数据...</option>
+            </select>
+        </div>
+
+        <div class="filter-group">
+            <label>时间范围</label>
+            <div class="time-toggles" id="time-toggles">
+                <button data-val="0.5">30m</button>
+                <button data-val="1">1h</button>
+                <button data-val="4" class="active">4h</button>
+                <button data-val="12">12h</button>
+                <button data-val="24">1d</button>
+                <button data-val="72">3d</button>
+            </div>
+        </div>
+
+        <div class="filter-group">
+            <label>交易所（选择2个）</label>
+            <div class="exchange-checkboxes">
+                <label><input type="checkbox" checked disabled> VAR</label>
+                <label><input type="checkbox" checked disabled> LIG</label>
+            </div>
+        </div>
+
+        <div class="filter-group" style="margin-left: auto; align-items: flex-end;">
+            <label>实时价差与单位</label>
+            <div class="live-values" id="live-panel" style="display: none;">
+                <button id="unit-toggle" class="unit-toggle">切换单位: bps (0.01%)</button>
+                <div class="live-val">
+                    <span style="color: #4CAF50;">Var卖(Lig买):</span>
+                    <span id="live-vs" style="color: #4CAF50;">--</span>
+                </div>
+                <div class="live-val">
+                    <span style="color: #2196F3;">Lig卖(Var买):</span>
+                    <span id="live-ls" style="color: #2196F3;">--</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="chart-container"></div>
+
+    <script>
+        // Init ECharts
+        const chartDom = document.getElementById('chart-container');
+        const myChart = echarts.init(chartDom, 'dark', { backgroundColor: 'transparent' });
+
+        // Data Store: { "BTC-USD": { times: [], vs: [], ls: [], vs_bps: [], ls_bps: [] } }
+        const spreadData = {};
+        let currentPair = null;
+        let ws = null;
+        let displayUnit = 'BPS'; // Default to BPS to match mockup
+        let timeRangeHours = 4; // Default to 4h
+        const MAX_POINTS = 15000;
+
+        // Colors mapping to mockup
+        const COLOR_GREEN = '#22C55E'; // Var 卖
+        const COLOR_BLUE = '#3B82F6';  // Lig 卖
+
+        const option = {
+            tooltip: {
+                trigger: 'axis',
+                axisPointer: { type: 'cross', label: { backgroundColor: '#333' } },
+                backgroundColor: 'rgba(20,20,24,0.9)',
+                borderColor: '#333',
+                textStyle: { color: '#FFF' }
+            },
+            legend: {
+                data: ['Var卖 (Lig买)', 'Lig卖 (Var买)'],
+                bottom: 0,
+                icon: 'circle',
+                textStyle: { color: '#888' }
+            },
+            grid: { left: '80px', right: '4%', bottom: '10%', top: '5%', containLabel: false },
+            xAxis: {
+                type: 'time',
+                splitLine: { show: false },
+                axisLine: { lineStyle: { color: '#333' } },
+                axisLabel: {
+                    color: '#888',
+                    formatter: function (value) {
+                        return echarts.format.formatTime('hh:mm:ss', value);
+                    }
+                }
+            },
+            yAxis: {
+                type: 'value',
+                scale: true,
+                splitLine: { lineStyle: { color: '#1A1A20', type: 'dashed' } },
+                axisLabel: {
+                    color: '#888',
+                    formatter: '{value}bp'
+                }
+            },
+            series: [
+                {
+                    name: 'Var卖 (Lig买)',
+                    type: 'line',
+                    showSymbol: false,
+                    smooth: 0.2, // matching mockup curved lines
+                    lineStyle: { width: 1.5, color: COLOR_GREEN },
+                    itemStyle: { color: COLOR_GREEN },
+                    data: [],
+                    markLine: {
+                        data: [{ yAxis: 0, lineStyle: { color: '#444', type: 'dashed' } }],
+                        symbol: 'none',
+                        label: { show: false }
+                    },
+                    markPoint: {
+                        symbol: 'roundRect',
+                        symbolSize: [50, 20],
+                        label: { color: COLOR_GREEN, fontSize: 10, fontWeight: 'bold' },
+                        itemStyle: { color: 'transparent', borderColor: COLOR_GREEN, borderWidth: 1 },
+                        data: [
+                            { type: 'max', name: 'Max' },
+                            { type: 'min', name: 'Min' }
+                        ]
+                    }
+                },
+                {
+                    name: 'Lig卖 (Var买)',
+                    type: 'line',
+                    showSymbol: false,
+                    smooth: 0.2,
+                    lineStyle: { width: 1.5, color: COLOR_BLUE },
+                    itemStyle: { color: COLOR_BLUE },
+                    data: [],
+                    markPoint: {
+                        symbol: 'roundRect',
+                        symbolSize: [50, 20],
+                        label: { color: COLOR_BLUE, fontSize: 10, fontWeight: 'bold' },
+                        itemStyle: { color: 'transparent', borderColor: COLOR_BLUE, borderWidth: 1 },
+                        data: [
+                            { type: 'max', name: 'Max' },
+                            { type: 'min', name: 'Min' }
+                        ]
+                    }
+                }
+            ]
+        };
+        myChart.setOption(option);
+
+        // Handle dropdown
+        document.getElementById('pair-selector').addEventListener('change', (e) => {
+            currentPair = e.target.value;
+            updateChart();
+        });
+
+        // Handle Time Range
+        document.getElementById('time-toggles').addEventListener('click', (e) => {
+            if (e.target.tagName === 'BUTTON') {
+                document.querySelectorAll('#time-toggles button').forEach(b => b.classList.remove('active'));
+                e.target.classList.add('active');
+                timeRangeHours = parseFloat(e.target.getAttribute('data-val'));
+                updateChart();
+            }
+        });
+
+        // Handle Unit Toggle
+        document.getElementById('unit-toggle').addEventListener('click', (e) => {
+            if (displayUnit === 'ABS') {
+                displayUnit = 'BPS';
+                e.target.textContent = '切换单位: $ (Abs)';
+            } else {
+                displayUnit = 'ABS';
+                e.target.textContent = '切换单位: bps (0.01%)';
+            }
+            updateChart();
+        });
+
+        function updateChart() {
+            if (!currentPair || !spreadData[currentPair]) return;
+
+            const data = spreadData[currentPair];
+            if (data.times.length === 0) return;
+
+            // Apply yAxis formatter
+            myChart.setOption({
+                yAxis: {
+                    axisLabel: {
+                        formatter: displayUnit === 'BPS' ? '{value}bp' : '${value}'
+                    }
+                }
+            });
+
+            // Filter data by timeRangeHours
+            const cutoffTime = Date.now() - (timeRangeHours * 3600 * 1000);
+
+            const vsSeries = [];
+            const lsSeries = [];
+
+            const vsKey = displayUnit === 'BPS' ? 'vs_bps' : 'vs';
+            const lsKey = displayUnit === 'BPS' ? 'ls_bps' : 'ls';
+
+            for (let i = 0; i < data.times.length; i++) {
+                const t = data.times[i];
+                if (t >= cutoffTime) {
+                    vsSeries.push([t, data[vsKey][i]]);
+                    lsSeries.push([t, data[lsKey][i]]);
+                }
+            }
+
+            // Update live values display
+            const latestVs = data[vsKey][data[vsKey].length - 1];
+            const latestLs = data[lsKey][data[lsKey].length - 1];
+
+            document.getElementById('live-panel').style.display = 'flex';
+
+            const formatVal = (val) => {
+                if (val === undefined || val === null || isNaN(val)) return '--';
+                return displayUnit === 'BPS' ? val.toFixed(1) + ' bp' : '$' + val.toFixed(2);
+            };
+
+            document.getElementById('live-vs').textContent = formatVal(latestVs);
+            document.getElementById('live-ls').textContent = formatVal(latestLs);
+
+            // Update Echarts custom markPoint formatter so it has correct suffix
+            const markPointLabelFormatter = function (param) {
+                return displayUnit === 'BPS' ? param.value.toFixed(1) + 'bp' : '$' + param.value.toFixed(1);
+            };
+
+            myChart.setOption({
+                series: [
+                    {
+                        data: vsSeries,
+                        markPoint: { label: { formatter: markPointLabelFormatter } }
+                    },
+                    {
+                        data: lsSeries,
+                        markPoint: { label: { formatter: markPointLabelFormatter } }
+                    }
+                ]
+            });
+        }
+
+        // Buffer for aggregating live data
+        const liveBuffer = {};
+
+        function addDataPoint(pair, item) {
+            if (!spreadData[pair]) {
+                spreadData[pair] = { times: [], vs: [], ls: [], vs_bps: [], ls_bps: [] };
+                liveBuffer[pair] = { count: 0, vs: 0, ls: 0, vs_bps: 0, ls_bps: 0 };
+            }
+
+            // Add to dropdown if new
+            const select = document.getElementById('pair-selector');
+            const existing = Array.from(select.options).map(o => o.value);
+
+            if (existing.includes("WAIT")) {
+                select.innerHTML = ''; // clear loading
+            }
+
+            if (!existing.includes(pair)) {
+                // Insert sorted alphabetically for better UX
+                let inserted = false;
+                const newOpt = document.createElement('option');
+                newOpt.value = pair;
+                newOpt.textContent = pair;
+
+                for (let i = 0; i < select.options.length; i++) {
+                    if (pair < select.options[i].value) {
+                        select.insertBefore(newOpt, select.options[i]);
+                        inserted = true;
+                        break;
+                    }
+                }
+                if (!inserted) select.appendChild(newOpt);
+
+                if (!currentPair) {
+                    currentPair = pair;
+                    select.value = pair;
+                }
+            }
+
+            const ts = item.timestamp * 1000; // ms
+            const vs_bps = item.var_bid > 0 ? (item.spread_vs / item.var_bid) * 10000 : 0;
+            const ls_bps = item.lig_bid > 0 ? (item.spread_ls / item.lig_bid) * 10000 : 0;
+
+            if (item.is_live) {
+                // Buffer the live point for drawing later
+                const buf = liveBuffer[pair];
+                buf.count += 1;
+                buf.vs += item.spread_vs;
+                buf.ls += item.spread_ls;
+                buf.vs_bps += vs_bps;
+                buf.ls_bps += ls_bps;
+                
+                // Update live text values ONLY immediately
+                document.getElementById('live-panel').style.display = 'flex';
+                const formatVal = (val) => {
+                    if (val === undefined || val === null || isNaN(val)) return '--';
+                    return displayUnit === 'BPS' ? val.toFixed(1) + ' bp' : '$' + val.toFixed(2);
+                };
+                
+                if (currentPair === pair) {
+                    document.getElementById('live-vs').textContent = formatVal(displayUnit === 'BPS' ? vs_bps : item.spread_vs);
+                    document.getElementById('live-ls').textContent = formatVal(displayUnit === 'BPS' ? ls_bps : item.spread_ls);
+                }
+            } else {
+                // Historical point - push directly to chart data
+                spreadData[pair].times.push(ts);
+                spreadData[pair].vs.push(item.spread_vs);
+                spreadData[pair].ls.push(item.spread_ls);
+                spreadData[pair].vs_bps.push(vs_bps);
+                spreadData[pair].ls_bps.push(ls_bps);
+
+                // Trim
+                if (spreadData[pair].times.length > MAX_POINTS) {
+                    spreadData[pair].times.shift();
+                    spreadData[pair].vs.shift();
+                    spreadData[pair].ls.shift();
+                    spreadData[pair].vs_bps.shift();
+                    spreadData[pair].ls_bps.shift();
+                }
+            }
+        }
+        
+        // Every 10 seconds, flush the buffer to the chart to create a perfectly smoothed point
+        setInterval(() => {
+            const now = Date.now();
+            let chartUpdated = false;
+            
+            for (const pair in liveBuffer) {
+                const buf = liveBuffer[pair];
+                if (buf.count > 0) {
+                    // Calculate average
+                    const avg_vs = buf.vs / buf.count;
+                    const avg_ls = buf.ls / buf.count;
+                    const avg_vs_bps = buf.vs_bps / buf.count;
+                    const avg_ls_bps = buf.ls_bps / buf.count;
+                    
+                    // Push rounded 10s timestamp
+                    const bucketTs = Math.floor(now / 10000) * 10000;
+                    
+                    spreadData[pair].times.push(bucketTs);
+                    spreadData[pair].vs.push(avg_vs);
+                    spreadData[pair].ls.push(avg_ls);
+                    spreadData[pair].vs_bps.push(avg_vs_bps);
+                    spreadData[pair].ls_bps.push(avg_ls_bps);
+                    
+                    // Trim
+                    if (spreadData[pair].times.length > MAX_POINTS) {
+                        spreadData[pair].times.shift();
+                        spreadData[pair].vs.shift();
+                        spreadData[pair].ls.shift();
+                        spreadData[pair].vs_bps.shift();
+                        spreadData[pair].ls_bps.shift();
+                    }
+                    
+                    // Reset buffer
+                    buf.count = 0;
+                    buf.vs = 0;
+                    buf.ls = 0;
+                    buf.vs_bps = 0;
+                    buf.ls_bps = 0;
+                    
+                    if (currentPair === pair) {
+                        chartUpdated = true;
+                    }
+                }
+            }
+            
+            if (chartUpdated) {
+                updateChart();
+            }
+        }, 10000);
+
+        function connectWS() {
+            ws = new WebSocket('ws://127.0.0.1:8765');
+
+            ws.onopen = () => {
+                console.log("Connected to local Spread WS server.");
+            };
+
+            ws.onmessage = (event) => {
+                try {
+                    const msg = JSON.parse(event.data);
+
+                    if (msg.type === 'history') {
+                        // EXTREMELY IMPORTANT FIX: history items contain their pair inside the data object
+                        // We must clear ALL history to avoid appending multiple times on reconnect
+                        for (let k in spreadData) {
+                            spreadData[k] = { times: [], vs: [], ls: [], vs_bps: [], ls_bps: [] };
+                            if(liveBuffer[k]) {
+                                liveBuffer[k] = { count: 0, vs: 0, ls: 0, vs_bps: 0, ls_bps: 0 };
+                            }
+                        }
+
+                        const rows = msg.data;
+                        rows.forEach(r => addDataPoint(r.pair, r));
+
+                        updateChart();
+
+                    } else if (msg.type === 'update') {
+                        const pair = msg.data.pair;
+                        addDataPoint(pair, msg.data);
+                        // Live updates update chart via 10s setInterval, no longer immediately!
+                    }
+                } catch (e) {
+                    console.error('WS parse error:', e);
+                }
+            };
+
+            ws.onclose = () => {
+                setTimeout(connectWS, 3000); // auto reconnect
+            };
+        }
+
+        window.addEventListener('resize', () => { myChart.resize(); });
+
+        // Start
+        connectWS();
+
+    </script>
+</body>
+
+</html>

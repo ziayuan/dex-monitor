@@ -1,0 +1,983 @@
+2026-02-11 16:33:22.104 | INFO     | __main__:_main_task:483 - Lighter client initialized in background loop
+2026-02-11 16:33:22.125 | INFO     | __main__:_update_lig_subscription:513 - Resolving market ID for BTC...
+2026-02-11 16:33:22.129 | INFO     | exchanges.lighter:get_market_id:109 - Using fallback ID for BTC: 1
+2026-02-11 16:33:22.132 | INFO     | __main__:_update_lig_subscription:517 - Subscribing to Lighter market 1
+2026-02-11 16:33:22.142 | INFO     | exchanges.lighter_ws:connect:86 - Connecting to Lighter WS for market 1...
+2026-02-11 16:33:23.128 | INFO     | exchanges.lighter_ws:connect:96 - Connected to Lighter WS
+2026-02-11 16:33:23.477 | INFO     | exchanges.lighter_ws:connect:116 - Lighter snapshot loaded
+2026-02-11 16:34:00.574 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 16:34:01.517 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -23.64 >= -24 -> EXECUTING CLICKS!
+2026-02-11 16:34:19.721 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -23.62 >= -24 -> EXECUTING CLICKS!
+2026-02-11 16:34:33.721 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -22.36 >= -24 -> EXECUTING CLICKS!
+2026-02-11 16:34:53.168 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -23.08 >= -24 -> EXECUTING CLICKS!
+2026-02-11 16:36:38.915 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -22.61 >= -24 -> EXECUTING CLICKS!
+2026-02-11 16:36:49.764 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -23.93 >= -24 -> EXECUTING CLICKS!
+2026-02-11 16:36:54.472 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -23.48 >= -24 -> EXECUTING CLICKS!
+2026-02-11 16:37:18.021 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -13.18 >= -24 -> EXECUTING CLICKS!
+2026-02-11 16:37:24.968 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -22.72 >= -24 -> EXECUTING CLICKS!
+2026-02-11 16:37:33.619 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -22.82 >= -24 -> EXECUTING CLICKS!
+2026-02-11 16:37:33.736 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 16:37:33.739 | INFO     | __main__:_on_trade:443 - 🔔 已达到最大交易次数，自动停止
+2026-02-11 16:40:04.677 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 16:40:05.675 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -22.25 >= -24 -> EXECUTING CLICKS!
+2026-02-11 16:40:10.321 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -23.86 >= -24 -> EXECUTING CLICKS!
+2026-02-11 16:40:31.169 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -23.14 >= -24 -> EXECUTING CLICKS!
+2026-02-11 16:40:36.960 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -19.60 >= -24 -> EXECUTING CLICKS!
+2026-02-11 16:40:50.885 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -23.10 >= -24 -> EXECUTING CLICKS!
+2026-02-11 16:40:59.798 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -22.67 >= -24 -> EXECUTING CLICKS!
+2026-02-11 16:41:03.801 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -21.17 >= -24 -> EXECUTING CLICKS!
+2026-02-11 16:41:11.142 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -22.98 >= -24 -> EXECUTING CLICKS!
+2026-02-11 16:41:36.869 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -22.95 >= -24 -> EXECUTING CLICKS!
+2026-02-11 16:41:41.769 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -23.15 >= -24 -> EXECUTING CLICKS!
+2026-02-11 16:41:48.667 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -21.03 >= -24 -> EXECUTING CLICKS!
+2026-02-11 16:42:10.052 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -22.04 >= -24 -> EXECUTING CLICKS!
+2026-02-11 16:42:13.422 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -23.74 >= -24 -> EXECUTING CLICKS!
+2026-02-11 16:42:16.563 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -23.97 >= -24 -> EXECUTING CLICKS!
+2026-02-11 16:42:36.315 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -23.82 >= -24 -> EXECUTING CLICKS!
+2026-02-11 16:42:40.275 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -22.53 >= -24 -> EXECUTING CLICKS!
+2026-02-11 16:42:44.988 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -19.71 >= -24 -> EXECUTING CLICKS!
+2026-02-11 16:42:56.723 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 17:15:01.246 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 17:15:06.161 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 38.51 >= 33 -> EXECUTING CLICKS!
+2026-02-11 17:15:12.965 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 34.81 >= 33 -> EXECUTING CLICKS!
+2026-02-11 17:15:28.221 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 34.23 >= 33 -> EXECUTING CLICKS!
+2026-02-11 17:15:46.198 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 33.61 >= 33 -> EXECUTING CLICKS!
+2026-02-11 17:16:01.970 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 33.07 >= 33 -> EXECUTING CLICKS!
+2026-02-11 17:16:05.257 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 17:48:11.533 | INFO     | __main__:_main_task:483 - Lighter client initialized in background loop
+2026-02-11 17:48:11.535 | INFO     | __main__:_update_lig_subscription:513 - Resolving market ID for BTC...
+2026-02-11 17:48:11.536 | INFO     | exchanges.lighter:get_market_id:109 - Using fallback ID for BTC: 1
+2026-02-11 17:48:11.536 | INFO     | __main__:_update_lig_subscription:517 - Subscribing to Lighter market 1
+2026-02-11 17:48:11.536 | INFO     | exchanges.lighter_ws:connect:86 - Connecting to Lighter WS for market 1...
+2026-02-11 17:48:12.134 | INFO     | exchanges.lighter_ws:connect:96 - Connected to Lighter WS
+2026-02-11 17:48:12.401 | INFO     | exchanges.lighter_ws:connect:116 - Lighter snapshot loaded
+2026-02-11 17:53:38.809 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 17:53:59.277 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 34.86 >= 33.0 -> EXECUTING CLICKS!
+2026-02-11 17:55:16.030 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 33.79 >= 33.0 -> EXECUTING CLICKS!
+2026-02-11 17:55:30.821 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 33.13 >= 33.0 -> EXECUTING CLICKS!
+2026-02-11 17:55:59.526 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 34.26 >= 33.0 -> EXECUTING CLICKS!
+2026-02-11 17:57:17.070 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 33.29 >= 33.0 -> EXECUTING CLICKS!
+2026-02-11 17:57:43.924 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 36.13 >= 33.0 -> EXECUTING CLICKS!
+2026-02-11 17:59:53.838 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 48.37 >= 33.0 -> EXECUTING CLICKS!
+2026-02-11 18:00:10.874 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 33.09 >= 33.0 -> EXECUTING CLICKS!
+2026-02-11 18:00:43.423 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 41.40 >= 33.0 -> EXECUTING CLICKS!
+2026-02-11 18:01:16.233 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 37.05 >= 33.0 -> EXECUTING CLICKS!
+2026-02-11 18:01:16.368 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 18:01:16.369 | INFO     | __main__:_on_trade:443 - 🔔 已达到最大交易次数，自动停止
+2026-02-11 18:10:51.331 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 18:10:56.247 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 18:11:16.948 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 18:11:25.482 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -15.56 >= -18 -> EXECUTING CLICKS!
+2026-02-11 18:11:28.633 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -17.82 >= -18 -> EXECUTING CLICKS!
+2026-02-11 18:11:34.579 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -16.57 >= -18 -> EXECUTING CLICKS!
+2026-02-11 18:11:41.030 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -16.90 >= -18 -> EXECUTING CLICKS!
+2026-02-11 18:11:44.798 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -17.42 >= -18 -> EXECUTING CLICKS!
+2026-02-11 18:11:58.023 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -16.98 >= -18 -> EXECUTING CLICKS!
+2026-02-11 18:12:03.576 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -17.55 >= -18 -> EXECUTING CLICKS!
+2026-02-11 18:12:09.226 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -17.76 >= -18 -> EXECUTING CLICKS!
+2026-02-11 18:12:12.930 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -16.85 >= -18 -> EXECUTING CLICKS!
+2026-02-11 18:12:23.235 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -17.37 >= -18 -> EXECUTING CLICKS!
+2026-02-11 18:12:28.026 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -15.98 >= -18 -> EXECUTING CLICKS!
+2026-02-11 18:12:31.131 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -16.78 >= -18 -> EXECUTING CLICKS!
+2026-02-11 18:12:34.883 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -16.67 >= -18 -> EXECUTING CLICKS!
+2026-02-11 18:12:38.022 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -17.37 >= -18 -> EXECUTING CLICKS!
+2026-02-11 18:12:42.109 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -17.64 >= -18 -> EXECUTING CLICKS!
+2026-02-11 18:12:45.231 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -16.57 >= -18 -> EXECUTING CLICKS!
+2026-02-11 18:12:48.335 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -10.23 >= -18 -> EXECUTING CLICKS!
+2026-02-11 18:12:51.476 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -16.61 >= -18 -> EXECUTING CLICKS!
+2026-02-11 18:12:54.573 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -17.46 >= -18 -> EXECUTING CLICKS!
+2026-02-11 18:12:57.927 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -17.04 >= -18 -> EXECUTING CLICKS!
+2026-02-11 18:12:58.050 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 18:12:58.054 | INFO     | __main__:_on_trade:443 - 🔔 已达到最大交易次数，自动停止
+2026-02-11 18:16:23.120 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 18:16:29.731 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 24.68 >= 24 -> EXECUTING CLICKS!
+2026-02-11 18:16:45.027 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 25.94 >= 24 -> EXECUTING CLICKS!
+2026-02-11 18:16:54.479 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 25.24 >= 24 -> EXECUTING CLICKS!
+2026-02-11 18:17:18.000 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 18:17:23.116 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 18:17:23.122 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 20.67 >= 20 -> EXECUTING CLICKS!
+2026-02-11 18:17:29.950 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 21.10 >= 20 -> EXECUTING CLICKS!
+2026-02-11 18:17:34.928 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 21.10 >= 20 -> EXECUTING CLICKS!
+2026-02-11 18:17:38.424 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 21.70 >= 20 -> EXECUTING CLICKS!
+2026-02-11 18:17:41.531 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 23.41 >= 20 -> EXECUTING CLICKS!
+2026-02-11 18:17:44.670 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 21.08 >= 20 -> EXECUTING CLICKS!
+2026-02-11 18:17:47.782 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 21.54 >= 20 -> EXECUTING CLICKS!
+2026-02-11 18:17:50.533 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 18:18:04.700 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 18:18:05.434 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 26.92 >= 21 -> EXECUTING CLICKS!
+2026-02-11 18:18:10.727 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 27.69 >= 21 -> EXECUTING CLICKS!
+2026-02-11 18:18:17.782 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 24.55 >= 21 -> EXECUTING CLICKS!
+2026-02-11 18:18:50.335 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 19:02:37.023 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 19:02:39.132 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 25.92 >= 21 -> EXECUTING CLICKS!
+2026-02-11 19:02:42.576 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 21.67 >= 21 -> EXECUTING CLICKS!
+2026-02-11 19:02:50.302 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 29.06 >= 21 -> EXECUTING CLICKS!
+2026-02-11 19:02:55.352 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 23.46 >= 21 -> EXECUTING CLICKS!
+2026-02-11 19:03:01.127 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 22.13 >= 21 -> EXECUTING CLICKS!
+2026-02-11 19:03:04.458 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 21.86 >= 21 -> EXECUTING CLICKS!
+2026-02-11 19:03:11.451 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 21.99 >= 21 -> EXECUTING CLICKS!
+2026-02-11 19:03:18.183 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 22.98 >= 21 -> EXECUTING CLICKS!
+2026-02-11 19:03:27.130 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 25.16 >= 21 -> EXECUTING CLICKS!
+2026-02-11 19:03:31.040 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 21.21 >= 21 -> EXECUTING CLICKS!
+2026-02-11 19:03:34.150 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 27.76 >= 21 -> EXECUTING CLICKS!
+2026-02-11 19:03:39.428 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 21.73 >= 21 -> EXECUTING CLICKS!
+2026-02-11 19:03:42.540 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 22.14 >= 21 -> EXECUTING CLICKS!
+2026-02-11 19:03:45.923 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 21.09 >= 21 -> EXECUTING CLICKS!
+2026-02-11 19:03:49.025 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 28.25 >= 21 -> EXECUTING CLICKS!
+2026-02-11 19:03:52.281 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 26.10 >= 21 -> EXECUTING CLICKS!
+2026-02-11 19:03:55.385 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 23.44 >= 21 -> EXECUTING CLICKS!
+2026-02-11 19:03:55.495 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 19:03:55.498 | INFO     | __main__:_on_trade:443 - 🔔 已达到最大交易次数，自动停止
+2026-02-11 19:03:58.015 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 19:03:59.316 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 19:17:42.305 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 19:17:45.329 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 25.46 >= 24 -> EXECUTING CLICKS!
+2026-02-11 19:17:48.951 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 25.23 >= 24 -> EXECUTING CLICKS!
+2026-02-11 19:17:54.313 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 28.78 >= 24 -> EXECUTING CLICKS!
+2026-02-11 19:17:54.422 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 19:17:54.424 | INFO     | __main__:_on_trade:443 - 🔔 已达到最大交易次数，自动停止
+2026-02-11 19:19:22.154 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 19:19:22.177 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 30.10 >= 27 -> EXECUTING CLICKS!
+2026-02-11 19:19:27.183 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 33.50 >= 27 -> EXECUTING CLICKS!
+2026-02-11 19:19:46.757 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 19:19:50.339 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 19:19:50.678 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 26.16 >= 25 -> EXECUTING CLICKS!
+2026-02-11 19:19:55.638 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 29.72 >= 25 -> EXECUTING CLICKS!
+2026-02-11 19:19:59.383 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 26.11 >= 25 -> EXECUTING CLICKS!
+2026-02-11 19:20:02.785 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 33.77 >= 25 -> EXECUTING CLICKS!
+2026-02-11 19:20:05.996 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 31.46 >= 25 -> EXECUTING CLICKS!
+2026-02-11 19:20:10.079 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 25.84 >= 25 -> EXECUTING CLICKS!
+2026-02-11 19:20:13.230 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 26.51 >= 25 -> EXECUTING CLICKS!
+2026-02-11 19:20:16.381 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 33.19 >= 25 -> EXECUTING CLICKS!
+2026-02-11 19:20:22.963 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 28.15 >= 25 -> EXECUTING CLICKS!
+2026-02-11 19:20:27.290 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 25.05 >= 25 -> EXECUTING CLICKS!
+2026-02-11 19:20:33.674 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 31.99 >= 25 -> EXECUTING CLICKS!
+2026-02-11 19:20:38.956 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 25.87 >= 25 -> EXECUTING CLICKS!
+2026-02-11 19:20:42.083 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 33.33 >= 25 -> EXECUTING CLICKS!
+2026-02-11 19:20:45.972 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 29.38 >= 25 -> EXECUTING CLICKS!
+2026-02-11 19:20:49.117 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 28.31 >= 25 -> EXECUTING CLICKS!
+2026-02-11 19:20:52.453 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 28.23 >= 25 -> EXECUTING CLICKS!
+2026-02-11 19:20:55.599 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 29.30 >= 25 -> EXECUTING CLICKS!
+2026-02-11 19:20:59.600 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 25.26 >= 25 -> EXECUTING CLICKS!
+2026-02-11 19:21:03.139 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 27.31 >= 25 -> EXECUTING CLICKS!
+2026-02-11 19:21:06.278 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 29.33 >= 25 -> EXECUTING CLICKS!
+2026-02-11 19:21:09.754 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 25.21 >= 25 -> EXECUTING CLICKS!
+2026-02-11 19:21:12.898 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 25.27 >= 25 -> EXECUTING CLICKS!
+2026-02-11 19:21:20.046 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 27.39 >= 25 -> EXECUTING CLICKS!
+2026-02-11 19:21:23.203 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 26.11 >= 25 -> EXECUTING CLICKS!
+2026-02-11 19:21:26.733 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 32.69 >= 25 -> EXECUTING CLICKS!
+2026-02-11 19:21:31.439 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 25.06 >= 25 -> EXECUTING CLICKS!
+2026-02-11 19:21:34.532 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 30.93 >= 25 -> EXECUTING CLICKS!
+2026-02-11 19:21:37.634 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 27.17 >= 25 -> EXECUTING CLICKS!
+2026-02-11 19:21:40.734 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 29.65 >= 25 -> EXECUTING CLICKS!
+2026-02-11 19:21:43.882 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 25.77 >= 25 -> EXECUTING CLICKS!
+2026-02-11 19:21:44.002 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 19:21:44.007 | INFO     | __main__:_on_trade:443 - 🔔 已达到最大交易次数，自动停止
+2026-02-11 19:23:11.239 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 19:23:25.431 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -21.19 >= -22 -> EXECUTING CLICKS!
+2026-02-11 19:23:42.661 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -21.02 >= -22 -> EXECUTING CLICKS!
+2026-02-11 19:23:52.179 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -21.69 >= -22 -> EXECUTING CLICKS!
+2026-02-11 19:24:01.027 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -20.89 >= -22 -> EXECUTING CLICKS!
+2026-02-11 19:24:17.573 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -21.02 >= -22 -> EXECUTING CLICKS!
+2026-02-11 19:24:24.126 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -21.37 >= -22 -> EXECUTING CLICKS!
+2026-02-11 19:24:47.227 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -21.95 >= -22 -> EXECUTING CLICKS!
+2026-02-11 19:25:17.627 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -20.56 >= -22 -> EXECUTING CLICKS!
+2026-02-11 19:25:23.630 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -17.23 >= -22 -> EXECUTING CLICKS!
+2026-02-11 19:25:29.333 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -21.33 >= -22 -> EXECUTING CLICKS!
+2026-02-11 19:25:39.243 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -20.19 >= -22 -> EXECUTING CLICKS!
+2026-02-11 19:25:47.173 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -21.72 >= -22 -> EXECUTING CLICKS!
+2026-02-11 19:25:53.401 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -18.60 >= -22 -> EXECUTING CLICKS!
+2026-02-11 19:26:05.877 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -20.26 >= -22 -> EXECUTING CLICKS!
+2026-02-11 19:26:34.884 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -21.72 >= -22 -> EXECUTING CLICKS!
+2026-02-11 19:26:57.182 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -21.94 >= -22 -> EXECUTING CLICKS!
+2026-02-11 19:27:00.323 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -20.95 >= -22 -> EXECUTING CLICKS!
+2026-02-11 19:27:03.462 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -20.92 >= -22 -> EXECUTING CLICKS!
+2026-02-11 19:27:08.183 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -21.01 >= -22 -> EXECUTING CLICKS!
+2026-02-11 19:27:25.279 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -17.98 >= -22 -> EXECUTING CLICKS!
+2026-02-11 19:27:32.125 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -21.03 >= -22 -> EXECUTING CLICKS!
+2026-02-11 19:27:33.839 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 19:57:28.304 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 19:57:30.679 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -19.55 >= -22 -> EXECUTING CLICKS!
+2026-02-11 19:57:41.093 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -21.95 >= -22 -> EXECUTING CLICKS!
+2026-02-11 19:59:01.927 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -20.54 >= -22 -> EXECUTING CLICKS!
+2026-02-11 19:59:09.502 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -21.46 >= -22 -> EXECUTING CLICKS!
+2026-02-11 19:59:15.270 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -20.31 >= -22 -> EXECUTING CLICKS!
+2026-02-11 19:59:27.932 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -21.29 >= -22 -> EXECUTING CLICKS!
+2026-02-11 19:59:31.377 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -21.82 >= -22 -> EXECUTING CLICKS!
+2026-02-11 19:59:46.100 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -20.46 >= -22 -> EXECUTING CLICKS!
+2026-02-11 19:59:50.183 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -21.72 >= -22 -> EXECUTING CLICKS!
+2026-02-11 19:59:58.826 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -20.74 >= -22 -> EXECUTING CLICKS!
+2026-02-11 20:00:03.919 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -19.63 >= -22 -> EXECUTING CLICKS!
+2026-02-11 20:00:08.940 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -21.48 >= -22 -> EXECUTING CLICKS!
+2026-02-11 20:00:12.084 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -20.93 >= -22 -> EXECUTING CLICKS!
+2026-02-11 20:00:18.258 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -20.46 >= -22 -> EXECUTING CLICKS!
+2026-02-11 20:00:21.629 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -21.82 >= -22 -> EXECUTING CLICKS!
+2026-02-11 20:00:25.524 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -21.98 >= -22 -> EXECUTING CLICKS!
+2026-02-11 20:00:31.297 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -13.25 >= -22 -> EXECUTING CLICKS!
+2026-02-11 20:00:34.960 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -19.11 >= -22 -> EXECUTING CLICKS!
+2026-02-11 20:00:47.872 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -20.40 >= -22 -> EXECUTING CLICKS!
+2026-02-11 20:00:51.524 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -19.20 >= -22 -> EXECUTING CLICKS!
+2026-02-11 20:01:05.128 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -19.16 >= -22 -> EXECUTING CLICKS!
+2026-02-11 20:01:12.389 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -19.43 >= -22 -> EXECUTING CLICKS!
+2026-02-11 20:01:30.730 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -19.93 >= -22 -> EXECUTING CLICKS!
+2026-02-11 20:01:38.079 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -21.96 >= -22 -> EXECUTING CLICKS!
+2026-02-11 20:01:41.580 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -20.91 >= -22 -> EXECUTING CLICKS!
+2026-02-11 20:01:44.692 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -20.69 >= -22 -> EXECUTING CLICKS!
+2026-02-11 20:01:51.376 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -21.84 >= -22 -> EXECUTING CLICKS!
+2026-02-11 20:01:56.005 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -20.82 >= -22 -> EXECUTING CLICKS!
+2026-02-11 20:01:59.133 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -20.06 >= -22 -> EXECUTING CLICKS!
+2026-02-11 20:02:02.273 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -20.71 >= -22 -> EXECUTING CLICKS!
+2026-02-11 20:02:02.378 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 20:02:02.381 | INFO     | __main__:_on_trade:443 - 🔔 已达到最大交易次数，自动停止
+2026-02-11 20:02:42.395 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 20:02:44.657 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -20.94 >= -22 -> EXECUTING CLICKS!
+2026-02-11 20:02:55.323 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -19.34 >= -22 -> EXECUTING CLICKS!
+2026-02-11 20:03:03.342 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -20.58 >= -22 -> EXECUTING CLICKS!
+2026-02-11 20:03:07.540 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -20.71 >= -22 -> EXECUTING CLICKS!
+2026-02-11 20:03:18.077 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -20.35 >= -22 -> EXECUTING CLICKS!
+2026-02-11 20:03:28.578 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -20.98 >= -22 -> EXECUTING CLICKS!
+2026-02-11 20:03:34.796 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -21.33 >= -22 -> EXECUTING CLICKS!
+2026-02-11 20:03:38.779 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -21.12 >= -22 -> EXECUTING CLICKS!
+2026-02-11 20:03:45.872 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -21.56 >= -22 -> EXECUTING CLICKS!
+2026-02-11 20:03:52.327 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -21.04 >= -22 -> EXECUTING CLICKS!
+2026-02-11 20:03:57.150 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -21.93 >= -22 -> EXECUTING CLICKS!
+2026-02-11 20:04:00.275 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -21.05 >= -22 -> EXECUTING CLICKS!
+2026-02-11 20:04:03.601 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 20:19:05.968 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 20:19:13.998 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 25.13 >= 25 -> EXECUTING CLICKS!
+2026-02-11 20:19:17.150 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 25.84 >= 25 -> EXECUTING CLICKS!
+2026-02-11 20:19:25.672 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 25.02 >= 25 -> EXECUTING CLICKS!
+2026-02-11 20:19:35.310 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 25.33 >= 25 -> EXECUTING CLICKS!
+2026-02-11 20:19:50.824 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 25.51 >= 25 -> EXECUTING CLICKS!
+2026-02-11 20:20:02.974 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 25.34 >= 25 -> EXECUTING CLICKS!
+2026-02-11 20:20:14.627 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 26.07 >= 25 -> EXECUTING CLICKS!
+2026-02-11 20:20:21.983 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 30.98 >= 25 -> EXECUTING CLICKS!
+2026-02-11 20:20:41.427 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 34.12 >= 25 -> EXECUTING CLICKS!
+2026-02-11 20:20:44.538 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 29.22 >= 25 -> EXECUTING CLICKS!
+2026-02-11 20:20:48.280 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 29.04 >= 25 -> EXECUTING CLICKS!
+2026-02-11 20:20:51.622 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 25.36 >= 25 -> EXECUTING CLICKS!
+2026-02-11 20:20:56.571 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 25.18 >= 25 -> EXECUTING CLICKS!
+2026-02-11 20:21:04.123 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 26.18 >= 25 -> EXECUTING CLICKS!
+2026-02-11 20:21:09.676 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 27.50 >= 25 -> EXECUTING CLICKS!
+2026-02-11 20:21:12.838 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 27.21 >= 25 -> EXECUTING CLICKS!
+2026-02-11 20:21:19.967 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 25.50 >= 25 -> EXECUTING CLICKS!
+2026-02-11 20:21:26.454 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 25.79 >= 25 -> EXECUTING CLICKS!
+2026-02-11 20:21:29.920 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 28.49 >= 25 -> EXECUTING CLICKS!
+2026-02-11 20:21:33.571 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 25.99 >= 25 -> EXECUTING CLICKS!
+2026-02-11 20:21:36.722 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 27.59 >= 25 -> EXECUTING CLICKS!
+2026-02-11 20:21:40.924 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 25.37 >= 25 -> EXECUTING CLICKS!
+2026-02-11 20:21:44.283 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 35.52 >= 25 -> EXECUTING CLICKS!
+2026-02-11 20:21:47.426 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 30.09 >= 25 -> EXECUTING CLICKS!
+2026-02-11 20:21:50.573 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 28.74 >= 25 -> EXECUTING CLICKS!
+2026-02-11 20:21:55.295 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 28.13 >= 25 -> EXECUTING CLICKS!
+2026-02-11 20:21:59.024 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 25.84 >= 25 -> EXECUTING CLICKS!
+2026-02-11 20:22:02.126 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 33.20 >= 25 -> EXECUTING CLICKS!
+2026-02-11 20:22:07.073 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 25.10 >= 25 -> EXECUTING CLICKS!
+2026-02-11 20:22:10.169 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 34.01 >= 25 -> EXECUTING CLICKS!
+2026-02-11 20:22:10.289 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 20:22:10.291 | INFO     | __main__:_on_trade:443 - 🔔 已达到最大交易次数，自动停止
+2026-02-11 20:22:53.717 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 20:22:55.328 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 25.30 >= 25 -> EXECUTING CLICKS!
+2026-02-11 20:22:59.529 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 30.97 >= 25 -> EXECUTING CLICKS!
+2026-02-11 20:22:59.648 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 20:22:59.667 | INFO     | __main__:_on_trade:443 - 🔔 已达到最大交易次数，自动停止
+2026-02-11 20:25:01.754 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 20:25:02.341 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 34.11 >= 30 -> EXECUTING CLICKS!
+2026-02-11 20:25:08.026 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 30.88 >= 30 -> EXECUTING CLICKS!
+2026-02-11 20:25:08.260 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 20:25:08.265 | INFO     | __main__:_on_trade:443 - 🔔 已达到最大交易次数，自动停止
+2026-02-11 20:26:10.718 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 20:26:28.102 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 20:26:57.365 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 20:27:23.920 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 30.00 >= 30 -> EXECUTING CLICKS!
+2026-02-11 20:27:31.929 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 31.78 >= 30 -> EXECUTING CLICKS!
+2026-02-11 20:27:39.331 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 32.90 >= 30 -> EXECUTING CLICKS!
+2026-02-11 20:27:52.180 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 30.22 >= 30 -> EXECUTING CLICKS!
+2026-02-11 20:27:55.677 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 30.77 >= 30 -> EXECUTING CLICKS!
+2026-02-11 20:28:10.725 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 30.87 >= 30 -> EXECUTING CLICKS!
+2026-02-11 20:28:35.133 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 36.04 >= 30 -> EXECUTING CLICKS!
+2026-02-11 20:28:51.775 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 38.02 >= 30 -> EXECUTING CLICKS!
+2026-02-11 20:30:19.380 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 31.63 >= 30 -> EXECUTING CLICKS!
+2026-02-11 20:30:30.349 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 30.45 >= 30 -> EXECUTING CLICKS!
+2026-02-11 20:30:57.149 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 32.40 >= 30 -> EXECUTING CLICKS!
+2026-02-11 20:31:00.564 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 36.29 >= 30 -> EXECUTING CLICKS!
+2026-02-11 20:31:15.764 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 32.75 >= 30 -> EXECUTING CLICKS!
+2026-02-11 20:32:02.480 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 34.42 >= 30 -> EXECUTING CLICKS!
+2026-02-11 20:32:08.908 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 30.02 >= 30 -> EXECUTING CLICKS!
+2026-02-11 20:32:12.791 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 32.85 >= 30 -> EXECUTING CLICKS!
+2026-02-11 20:32:54.333 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 31.06 >= 30 -> EXECUTING CLICKS!
+2026-02-11 20:33:02.228 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 32.53 >= 30 -> EXECUTING CLICKS!
+2026-02-11 20:33:10.923 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 32.64 >= 30 -> EXECUTING CLICKS!
+2026-02-11 20:33:14.075 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 32.57 >= 30 -> EXECUTING CLICKS!
+2026-02-11 20:33:21.594 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 30.91 >= 30 -> EXECUTING CLICKS!
+2026-02-11 20:33:40.201 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 30.32 >= 30 -> EXECUTING CLICKS!
+2026-02-11 20:34:01.122 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 30.90 >= 30 -> EXECUTING CLICKS!
+2026-02-11 20:34:11.729 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 30.45 >= 30 -> EXECUTING CLICKS!
+2026-02-11 20:34:40.896 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 20:35:28.771 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 20:35:38.476 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -20.86 >= -21 -> EXECUTING CLICKS!
+2026-02-11 20:35:57.722 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -19.04 >= -21 -> EXECUTING CLICKS!
+2026-02-11 20:36:01.699 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -20.85 >= -21 -> EXECUTING CLICKS!
+2026-02-11 20:36:10.688 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -20.16 >= -21 -> EXECUTING CLICKS!
+2026-02-11 20:36:21.626 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -19.61 >= -21 -> EXECUTING CLICKS!
+2026-02-11 20:36:32.106 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -20.33 >= -21 -> EXECUTING CLICKS!
+2026-02-11 20:36:37.169 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -17.46 >= -21 -> EXECUTING CLICKS!
+2026-02-11 20:36:40.726 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -19.96 >= -21 -> EXECUTING CLICKS!
+2026-02-11 20:36:48.993 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 20:37:17.039 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 20:37:18.246 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -6.54 >= -21 -> EXECUTING CLICKS!
+2026-02-11 20:37:21.389 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -18.77 >= -21 -> EXECUTING CLICKS!
+2026-02-11 20:37:28.370 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -20.89 >= -21 -> EXECUTING CLICKS!
+2026-02-11 20:37:36.402 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -18.79 >= -21 -> EXECUTING CLICKS!
+2026-02-11 20:37:43.217 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -19.62 >= -21 -> EXECUTING CLICKS!
+2026-02-11 20:37:46.889 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -20.64 >= -21 -> EXECUTING CLICKS!
+2026-02-11 20:37:52.657 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -20.72 >= -21 -> EXECUTING CLICKS!
+2026-02-11 20:38:01.279 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -16.46 >= -21 -> EXECUTING CLICKS!
+2026-02-11 20:38:17.303 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -20.88 >= -21 -> EXECUTING CLICKS!
+2026-02-11 20:38:39.376 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -20.30 >= -21 -> EXECUTING CLICKS!
+2026-02-11 20:38:44.384 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -18.34 >= -21 -> EXECUTING CLICKS!
+2026-02-11 20:38:52.948 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -20.66 >= -21 -> EXECUTING CLICKS!
+2026-02-11 20:39:00.482 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -13.95 >= -21 -> EXECUTING CLICKS!
+2026-02-11 20:39:19.359 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -20.54 >= -21 -> EXECUTING CLICKS!
+2026-02-11 20:39:25.031 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -20.31 >= -21 -> EXECUTING CLICKS!
+2026-02-11 20:39:28.274 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -20.41 >= -21 -> EXECUTING CLICKS!
+2026-02-11 20:39:37.517 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -19.97 >= -21 -> EXECUTING CLICKS!
+2026-02-11 20:39:43.287 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 20:41:08.107 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 20:41:10.029 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -22.82 >= -23 -> EXECUTING CLICKS!
+2026-02-11 20:41:15.770 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -22.73 >= -23 -> EXECUTING CLICKS!
+2026-02-11 20:41:20.376 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -20.03 >= -23 -> EXECUTING CLICKS!
+2026-02-11 20:41:24.138 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -22.16 >= -23 -> EXECUTING CLICKS!
+2026-02-11 20:41:29.477 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -20.38 >= -23 -> EXECUTING CLICKS!
+2026-02-11 20:41:35.789 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -22.86 >= -23 -> EXECUTING CLICKS!
+2026-02-11 20:41:44.480 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -18.58 >= -23 -> EXECUTING CLICKS!
+2026-02-11 20:41:48.476 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -21.39 >= -23 -> EXECUTING CLICKS!
+2026-02-11 20:41:53.618 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -22.03 >= -23 -> EXECUTING CLICKS!
+2026-02-11 20:42:04.047 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -19.78 >= -23 -> EXECUTING CLICKS!
+2026-02-11 20:42:07.235 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -20.77 >= -23 -> EXECUTING CLICKS!
+2026-02-11 20:42:14.995 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -20.24 >= -23 -> EXECUTING CLICKS!
+2026-02-11 20:42:23.427 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -16.25 >= -23 -> EXECUTING CLICKS!
+2026-02-11 20:42:29.035 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -16.08 >= -23 -> EXECUTING CLICKS!
+2026-02-11 20:42:32.172 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -16.20 >= -23 -> EXECUTING CLICKS!
+2026-02-11 20:42:37.916 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -22.62 >= -23 -> EXECUTING CLICKS!
+2026-02-11 20:42:47.724 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -22.67 >= -23 -> EXECUTING CLICKS!
+2026-02-11 20:43:03.039 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -17.15 >= -23 -> EXECUTING CLICKS!
+2026-02-11 20:43:12.015 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -22.90 >= -23 -> EXECUTING CLICKS!
+2026-02-11 20:43:16.524 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -22.81 >= -23 -> EXECUTING CLICKS!
+2026-02-11 20:43:19.669 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -15.76 >= -23 -> EXECUTING CLICKS!
+2026-02-11 20:43:28.932 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -22.90 >= -23 -> EXECUTING CLICKS!
+2026-02-11 20:43:38.231 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -22.57 >= -23 -> EXECUTING CLICKS!
+2026-02-11 20:43:51.279 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -21.12 >= -23 -> EXECUTING CLICKS!
+2026-02-11 20:44:04.574 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -22.94 >= -23 -> EXECUTING CLICKS!
+2026-02-11 20:44:17.027 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -21.08 >= -23 -> EXECUTING CLICKS!
+2026-02-11 20:44:30.070 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -21.85 >= -23 -> EXECUTING CLICKS!
+2026-02-11 20:44:46.571 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -18.89 >= -23 -> EXECUTING CLICKS!
+2026-02-11 20:45:03.366 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -22.08 >= -23 -> EXECUTING CLICKS!
+2026-02-11 20:45:09.820 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -21.11 >= -23 -> EXECUTING CLICKS!
+2026-02-11 20:45:09.948 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 20:45:09.952 | INFO     | __main__:_on_trade:443 - 🔔 已达到最大交易次数，自动停止
+2026-02-11 20:56:59.548 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 20:57:00.071 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 31.81 >= 30 -> EXECUTING CLICKS!
+2026-02-11 20:57:03.482 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 30.27 >= 30 -> EXECUTING CLICKS!
+2026-02-11 20:57:08.734 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 30.70 >= 30 -> EXECUTING CLICKS!
+2026-02-11 20:57:13.445 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 31.35 >= 30 -> EXECUTING CLICKS!
+2026-02-11 20:57:16.590 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 32.45 >= 30 -> EXECUTING CLICKS!
+2026-02-11 20:57:33.039 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 31.40 >= 30 -> EXECUTING CLICKS!
+2026-02-11 20:57:45.227 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 32.24 >= 30 -> EXECUTING CLICKS!
+2026-02-11 20:57:50.471 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 30.09 >= 30 -> EXECUTING CLICKS!
+2026-02-11 20:57:57.486 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 35.19 >= 30 -> EXECUTING CLICKS!
+2026-02-11 20:58:04.925 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 31.68 >= 30 -> EXECUTING CLICKS!
+2026-02-11 20:58:18.011 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 36.21 >= 30 -> EXECUTING CLICKS!
+2026-02-11 20:58:31.271 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 30.71 >= 30 -> EXECUTING CLICKS!
+2026-02-11 20:58:39.955 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 30.89 >= 30 -> EXECUTING CLICKS!
+2026-02-11 20:58:46.662 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 31.91 >= 30 -> EXECUTING CLICKS!
+2026-02-11 20:58:50.441 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 31.38 >= 30 -> EXECUTING CLICKS!
+2026-02-11 20:59:03.804 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 30.73 >= 30 -> EXECUTING CLICKS!
+2026-02-11 20:59:11.971 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 30.11 >= 30 -> EXECUTING CLICKS!
+2026-02-11 20:59:20.226 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 30.26 >= 30 -> EXECUTING CLICKS!
+2026-02-11 20:59:56.502 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 31.08 >= 30 -> EXECUTING CLICKS!
+2026-02-11 21:00:05.431 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 30.56 >= 30 -> EXECUTING CLICKS!
+2026-02-11 21:00:17.379 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 31.78 >= 30 -> EXECUTING CLICKS!
+2026-02-11 21:00:21.682 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 31.57 >= 30 -> EXECUTING CLICKS!
+2026-02-11 21:00:33.532 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 30.40 >= 30 -> EXECUTING CLICKS!
+2026-02-11 21:00:50.819 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 32.52 >= 30 -> EXECUTING CLICKS!
+2026-02-11 21:00:59.462 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 31.95 >= 30 -> EXECUTING CLICKS!
+2026-02-11 21:01:08.564 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 30.80 >= 30 -> EXECUTING CLICKS!
+2026-02-11 21:01:58.014 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 30.55 >= 30 -> EXECUTING CLICKS!
+2026-02-11 21:02:03.049 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 30.35 >= 30 -> EXECUTING CLICKS!
+2026-02-11 21:02:07.575 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 31.21 >= 30 -> EXECUTING CLICKS!
+2026-02-11 21:03:03.022 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 30.23 >= 30 -> EXECUTING CLICKS!
+2026-02-11 21:03:03.175 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 21:03:03.177 | INFO     | __main__:_on_trade:443 - 🔔 已达到最大交易次数，自动停止
+2026-02-11 21:03:55.769 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 21:04:05.435 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 21:04:15.303 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 21:04:21.602 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 21:04:24.934 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 21:04:31.824 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 27.19 >= 27 -> EXECUTING CLICKS!
+2026-02-11 21:04:38.332 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 27.67 >= 27 -> EXECUTING CLICKS!
+2026-02-11 21:04:41.522 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 27.68 >= 27 -> EXECUTING CLICKS!
+2026-02-11 21:04:44.726 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 27.14 >= 27 -> EXECUTING CLICKS!
+2026-02-11 21:04:47.893 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 28.76 >= 27 -> EXECUTING CLICKS!
+2026-02-11 21:04:51.026 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 29.14 >= 27 -> EXECUTING CLICKS!
+2026-02-11 21:04:54.307 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 34.53 >= 27 -> EXECUTING CLICKS!
+2026-02-11 21:04:57.455 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 28.14 >= 27 -> EXECUTING CLICKS!
+2026-02-11 21:05:01.547 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 27.52 >= 27 -> EXECUTING CLICKS!
+2026-02-11 21:05:06.776 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 28.06 >= 27 -> EXECUTING CLICKS!
+2026-02-11 21:05:11.924 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 28.38 >= 27 -> EXECUTING CLICKS!
+2026-02-11 21:05:15.277 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 28.85 >= 27 -> EXECUTING CLICKS!
+2026-02-11 21:05:18.423 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 27.81 >= 27 -> EXECUTING CLICKS!
+2026-02-11 21:05:21.569 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 33.07 >= 27 -> EXECUTING CLICKS!
+2026-02-11 21:05:26.481 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 29.61 >= 27 -> EXECUTING CLICKS!
+2026-02-11 21:05:30.279 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 27.54 >= 27 -> EXECUTING CLICKS!
+2026-02-11 21:05:33.533 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 28.38 >= 27 -> EXECUTING CLICKS!
+2026-02-11 21:05:39.082 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 27.77 >= 27 -> EXECUTING CLICKS!
+2026-02-11 21:05:45.477 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 28.20 >= 27 -> EXECUTING CLICKS!
+2026-02-11 21:05:48.724 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 27.90 >= 27 -> EXECUTING CLICKS!
+2026-02-11 21:05:52.173 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 27.76 >= 27 -> EXECUTING CLICKS!
+2026-02-11 21:05:59.320 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 27.04 >= 27 -> EXECUTING CLICKS!
+2026-02-11 21:06:02.465 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 31.62 >= 27 -> EXECUTING CLICKS!
+2026-02-11 21:06:06.977 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 27.02 >= 27 -> EXECUTING CLICKS!
+2026-02-11 21:06:10.079 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 27.96 >= 27 -> EXECUTING CLICKS!
+2026-02-11 21:06:13.227 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 28.31 >= 27 -> EXECUTING CLICKS!
+2026-02-11 21:06:16.373 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 28.99 >= 27 -> EXECUTING CLICKS!
+2026-02-11 21:06:21.376 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 27.71 >= 27 -> EXECUTING CLICKS!
+2026-02-11 21:06:24.486 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 29.68 >= 27 -> EXECUTING CLICKS!
+2026-02-11 21:06:27.883 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 30.19 >= 27 -> EXECUTING CLICKS!
+2026-02-11 21:06:28.017 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 21:06:28.017 | INFO     | __main__:_on_trade:443 - 🔔 已达到最大交易次数，自动停止
+2026-02-11 21:07:32.305 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 21:09:00.497 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 37.35 >= 36 -> EXECUTING CLICKS!
+2026-02-11 21:10:12.959 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 42.50 >= 36 -> EXECUTING CLICKS!
+2026-02-11 21:10:22.073 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 37.30 >= 36 -> EXECUTING CLICKS!
+2026-02-11 21:10:27.423 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 37.36 >= 36 -> EXECUTING CLICKS!
+2026-02-11 21:11:51.381 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 40.85 >= 36 -> EXECUTING CLICKS!
+2026-02-11 21:12:29.685 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 40.16 >= 36 -> EXECUTING CLICKS!
+2026-02-11 21:12:33.278 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 36.89 >= 36 -> EXECUTING CLICKS!
+2026-02-11 21:12:43.218 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 37.09 >= 36 -> EXECUTING CLICKS!
+2026-02-11 21:12:59.086 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 36.87 >= 36 -> EXECUTING CLICKS!
+2026-02-11 21:13:08.276 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 36.04 >= 36 -> EXECUTING CLICKS!
+2026-02-11 21:13:08.408 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 21:13:08.411 | INFO     | __main__:_on_trade:443 - 🔔 已达到最大交易次数，自动停止
+2026-02-11 21:14:34.775 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 21:14:36.275 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -21.43 >= -24 -> EXECUTING CLICKS!
+2026-02-11 21:14:39.421 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -22.84 >= -24 -> EXECUTING CLICKS!
+2026-02-11 21:14:44.980 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -21.46 >= -24 -> EXECUTING CLICKS!
+2026-02-11 21:14:51.504 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 21:15:24.288 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 21:15:27.144 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -23.85 >= -24 -> EXECUTING CLICKS!
+2026-02-11 21:15:32.626 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -16.14 >= -24 -> EXECUTING CLICKS!
+2026-02-11 21:15:36.076 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -22.15 >= -24 -> EXECUTING CLICKS!
+2026-02-11 21:15:39.578 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -23.18 >= -24 -> EXECUTING CLICKS!
+2026-02-11 21:15:42.720 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -23.28 >= -24 -> EXECUTING CLICKS!
+2026-02-11 21:15:48.190 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -23.72 >= -24 -> EXECUTING CLICKS!
+2026-02-11 21:15:51.326 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -23.93 >= -24 -> EXECUTING CLICKS!
+2026-02-11 21:15:57.022 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -23.99 >= -24 -> EXECUTING CLICKS!
+2026-02-11 21:16:08.378 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -23.91 >= -24 -> EXECUTING CLICKS!
+2026-02-11 21:16:11.474 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -22.73 >= -24 -> EXECUTING CLICKS!
+2026-02-11 21:16:11.606 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 21:16:11.608 | INFO     | __main__:_on_trade:443 - 🔔 已达到最大交易次数，自动停止
+2026-02-11 21:17:45.320 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 21:17:47.640 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -23.85 >= -24 -> EXECUTING CLICKS!
+2026-02-11 21:17:55.181 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -23.81 >= -24 -> EXECUTING CLICKS!
+2026-02-11 21:17:58.324 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -17.94 >= -24 -> EXECUTING CLICKS!
+2026-02-11 21:18:01.464 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -23.70 >= -24 -> EXECUTING CLICKS!
+2026-02-11 21:18:04.610 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -20.04 >= -24 -> EXECUTING CLICKS!
+2026-02-11 21:18:08.716 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -22.99 >= -24 -> EXECUTING CLICKS!
+2026-02-11 21:18:12.580 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -23.51 >= -24 -> EXECUTING CLICKS!
+2026-02-11 21:18:19.627 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -21.26 >= -24 -> EXECUTING CLICKS!
+2026-02-11 21:18:22.769 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -21.80 >= -24 -> EXECUTING CLICKS!
+2026-02-11 21:18:27.017 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -23.55 >= -24 -> EXECUTING CLICKS!
+2026-02-11 21:18:27.148 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 21:18:27.150 | INFO     | __main__:_on_trade:443 - 🔔 已达到最大交易次数，自动停止
+2026-02-11 21:19:28.324 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 21:19:32.515 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -21.24 >= -24 -> EXECUTING CLICKS!
+2026-02-11 21:19:35.646 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -19.22 >= -24 -> EXECUTING CLICKS!
+2026-02-11 21:19:38.801 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -23.60 >= -24 -> EXECUTING CLICKS!
+2026-02-11 21:19:44.050 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -19.99 >= -24 -> EXECUTING CLICKS!
+2026-02-11 21:19:47.710 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -21.79 >= -24 -> EXECUTING CLICKS!
+2026-02-11 21:19:53.223 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -23.51 >= -24 -> EXECUTING CLICKS!
+2026-02-11 21:20:05.274 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -23.92 >= -24 -> EXECUTING CLICKS!
+2026-02-11 21:20:08.873 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -22.23 >= -24 -> EXECUTING CLICKS!
+2026-02-11 21:20:13.776 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -23.13 >= -24 -> EXECUTING CLICKS!
+2026-02-11 21:20:17.786 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -23.84 >= -24 -> EXECUTING CLICKS!
+2026-02-11 21:20:21.123 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -23.18 >= -24 -> EXECUTING CLICKS!
+2026-02-11 21:20:27.029 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -22.01 >= -24 -> EXECUTING CLICKS!
+2026-02-11 21:20:30.519 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -23.70 >= -24 -> EXECUTING CLICKS!
+2026-02-11 21:20:36.879 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -23.34 >= -24 -> EXECUTING CLICKS!
+2026-02-11 21:20:41.979 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -22.88 >= -24 -> EXECUTING CLICKS!
+2026-02-11 21:20:51.733 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -23.87 >= -24 -> EXECUTING CLICKS!
+2026-02-11 21:20:55.153 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -23.05 >= -24 -> EXECUTING CLICKS!
+2026-02-11 21:20:59.539 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -21.98 >= -24 -> EXECUTING CLICKS!
+2026-02-11 21:21:03.729 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -23.93 >= -24 -> EXECUTING CLICKS!
+2026-02-11 21:21:07.171 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -23.75 >= -24 -> EXECUTING CLICKS!
+2026-02-11 21:21:10.974 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -20.71 >= -24 -> EXECUTING CLICKS!
+2026-02-11 21:21:14.483 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -21.34 >= -24 -> EXECUTING CLICKS!
+2026-02-11 21:21:22.426 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -24.00 >= -24 -> EXECUTING CLICKS!
+2026-02-11 21:21:25.578 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -1.78 >= -24 -> EXECUTING CLICKS!
+2026-02-11 21:21:29.671 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -23.61 >= -24 -> EXECUTING CLICKS!
+2026-02-11 21:21:33.286 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -23.24 >= -24 -> EXECUTING CLICKS!
+2026-02-11 21:21:37.653 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -23.51 >= -24 -> EXECUTING CLICKS!
+2026-02-11 21:21:45.149 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -18.71 >= -24 -> EXECUTING CLICKS!
+2026-02-11 21:21:56.950 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -23.31 >= -24 -> EXECUTING CLICKS!
+2026-02-11 21:22:00.075 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -21.51 >= -24 -> EXECUTING CLICKS!
+2026-02-11 21:22:00.204 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 21:22:00.206 | INFO     | __main__:_on_trade:443 - 🔔 已达到最大交易次数，自动停止
+2026-02-11 21:30:52.945 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 21:30:53.226 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 29.31 >= 27 -> EXECUTING CLICKS!
+2026-02-11 21:30:53.493 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 21:30:53.495 | INFO     | __main__:_on_trade:443 - 🔔 已达到最大交易次数，自动停止
+2026-02-11 21:31:12.963 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 21:31:13.032 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 32.04 >= 27 -> EXECUTING CLICKS!
+2026-02-11 21:31:16.221 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 33.87 >= 27 -> EXECUTING CLICKS!
+2026-02-11 21:31:19.384 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 63.82 >= 27 -> EXECUTING CLICKS!
+2026-02-11 21:31:22.923 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 29.01 >= 27 -> EXECUTING CLICKS!
+2026-02-11 21:31:26.127 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 56.48 >= 27 -> EXECUTING CLICKS!
+2026-02-11 21:31:29.270 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 41.36 >= 27 -> EXECUTING CLICKS!
+2026-02-11 21:31:32.371 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 41.66 >= 27 -> EXECUTING CLICKS!
+2026-02-11 21:31:35.506 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 52.89 >= 27 -> EXECUTING CLICKS!
+2026-02-11 21:31:38.651 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 31.67 >= 27 -> EXECUTING CLICKS!
+2026-02-11 21:31:42.739 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 32.44 >= 27 -> EXECUTING CLICKS!
+2026-02-11 21:31:42.843 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 21:31:42.845 | INFO     | __main__:_on_trade:443 - 🔔 已达到最大交易次数，自动停止
+2026-02-11 21:32:11.262 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 21:32:11.278 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 32.04 >= 28 -> EXECUTING CLICKS!
+2026-02-11 21:32:15.730 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 31.10 >= 28 -> EXECUTING CLICKS!
+2026-02-11 21:32:19.324 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 36.91 >= 28 -> EXECUTING CLICKS!
+2026-02-11 21:32:22.469 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 32.69 >= 28 -> EXECUTING CLICKS!
+2026-02-11 21:32:25.626 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 28.72 >= 28 -> EXECUTING CLICKS!
+2026-02-11 21:32:29.370 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 34.67 >= 28 -> EXECUTING CLICKS!
+2026-02-11 21:32:32.523 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 35.49 >= 28 -> EXECUTING CLICKS!
+2026-02-11 21:32:35.676 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 33.75 >= 28 -> EXECUTING CLICKS!
+2026-02-11 21:32:38.824 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 28.00 >= 28 -> EXECUTING CLICKS!
+2026-02-11 21:32:41.929 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 33.95 >= 28 -> EXECUTING CLICKS!
+2026-02-11 21:32:45.136 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 30.91 >= 28 -> EXECUTING CLICKS!
+2026-02-11 21:32:48.276 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 44.96 >= 28 -> EXECUTING CLICKS!
+2026-02-11 21:32:51.932 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 32.40 >= 28 -> EXECUTING CLICKS!
+2026-02-11 21:32:56.600 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 31.30 >= 28 -> EXECUTING CLICKS!
+2026-02-11 21:33:00.153 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 37.64 >= 28 -> EXECUTING CLICKS!
+2026-02-11 21:33:03.721 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 39.81 >= 28 -> EXECUTING CLICKS!
+2026-02-11 21:33:07.372 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 33.32 >= 28 -> EXECUTING CLICKS!
+2026-02-11 21:33:10.476 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 148.27 >= 28 -> EXECUTING CLICKS!
+2026-02-11 21:33:13.583 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 75.58 >= 28 -> EXECUTING CLICKS!
+2026-02-11 21:33:16.692 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 39.53 >= 28 -> EXECUTING CLICKS!
+2026-02-11 21:33:19.842 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 44.67 >= 28 -> EXECUTING CLICKS!
+2026-02-11 21:33:23.280 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 32.77 >= 28 -> EXECUTING CLICKS!
+2026-02-11 21:33:26.885 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 43.76 >= 28 -> EXECUTING CLICKS!
+2026-02-11 21:33:30.019 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 36.04 >= 28 -> EXECUTING CLICKS!
+2026-02-11 21:33:33.131 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 46.72 >= 28 -> EXECUTING CLICKS!
+2026-02-11 21:33:33.250 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 21:33:33.252 | INFO     | __main__:_on_trade:443 - 🔔 已达到最大交易次数，自动停止
+2026-02-11 21:35:21.131 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 21:35:21.177 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -15.45 >= -20 -> EXECUTING CLICKS!
+2026-02-11 21:35:24.625 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -19.15 >= -20 -> EXECUTING CLICKS!
+2026-02-11 21:35:31.473 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -19.25 >= -20 -> EXECUTING CLICKS!
+2026-02-11 21:35:35.524 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -13.39 >= -20 -> EXECUTING CLICKS!
+2026-02-11 21:35:40.381 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -19.20 >= -20 -> EXECUTING CLICKS!
+2026-02-11 21:35:44.549 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -17.18 >= -20 -> EXECUTING CLICKS!
+2026-02-11 21:36:03.680 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -11.62 >= -20 -> EXECUTING CLICKS!
+2026-02-11 21:36:10.266 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -18.24 >= -20 -> EXECUTING CLICKS!
+2026-02-11 21:36:16.918 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -18.66 >= -20 -> EXECUTING CLICKS!
+2026-02-11 21:36:24.624 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -19.49 >= -20 -> EXECUTING CLICKS!
+2026-02-11 21:36:28.626 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -18.18 >= -20 -> EXECUTING CLICKS!
+2026-02-11 21:36:46.732 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -17.04 >= -20 -> EXECUTING CLICKS!
+2026-02-11 21:37:00.916 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -18.73 >= -20 -> EXECUTING CLICKS!
+2026-02-11 21:37:19.968 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -18.62 >= -20 -> EXECUTING CLICKS!
+2026-02-11 21:37:26.027 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -15.38 >= -20 -> EXECUTING CLICKS!
+2026-02-11 21:37:29.133 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -13.36 >= -20 -> EXECUTING CLICKS!
+2026-02-11 21:37:32.272 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -18.60 >= -20 -> EXECUTING CLICKS!
+2026-02-11 21:37:37.581 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -18.49 >= -20 -> EXECUTING CLICKS!
+2026-02-11 21:37:45.272 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -18.25 >= -20 -> EXECUTING CLICKS!
+2026-02-11 21:38:01.784 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -18.93 >= -20 -> EXECUTING CLICKS!
+2026-02-11 21:38:10.827 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -18.48 >= -20 -> EXECUTING CLICKS!
+2026-02-11 21:38:18.476 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -19.33 >= -20 -> EXECUTING CLICKS!
+2026-02-11 21:38:23.406 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -19.59 >= -20 -> EXECUTING CLICKS!
+2026-02-11 21:38:26.725 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -17.54 >= -20 -> EXECUTING CLICKS!
+2026-02-11 21:38:33.028 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -14.50 >= -20 -> EXECUTING CLICKS!
+2026-02-11 21:38:33.213 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 21:38:33.235 | INFO     | __main__:_on_trade:443 - 🔔 已达到最大交易次数，自动停止
+2026-02-11 21:39:53.923 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 21:39:54.218 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -18.39 >= -20 -> EXECUTING CLICKS!
+2026-02-11 21:39:57.470 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -19.95 >= -20 -> EXECUTING CLICKS!
+2026-02-11 21:40:01.721 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -16.69 >= -20 -> EXECUTING CLICKS!
+2026-02-11 21:40:05.479 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -12.87 >= -20 -> EXECUTING CLICKS!
+2026-02-11 21:40:08.918 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -19.48 >= -20 -> EXECUTING CLICKS!
+2026-02-11 21:40:13.376 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -19.84 >= -20 -> EXECUTING CLICKS!
+2026-02-11 21:40:19.123 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -11.84 >= -20 -> EXECUTING CLICKS!
+2026-02-11 21:40:22.947 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -18.90 >= -20 -> EXECUTING CLICKS!
+2026-02-11 21:40:26.095 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -17.19 >= -20 -> EXECUTING CLICKS!
+2026-02-11 21:40:33.473 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -18.86 >= -20 -> EXECUTING CLICKS!
+2026-02-11 21:40:41.182 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -18.73 >= -20 -> EXECUTING CLICKS!
+2026-02-11 21:40:46.424 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -18.84 >= -20 -> EXECUTING CLICKS!
+2026-02-11 21:41:00.280 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -15.18 >= -20 -> EXECUTING CLICKS!
+2026-02-11 21:41:12.758 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -17.01 >= -20 -> EXECUTING CLICKS!
+2026-02-11 21:41:15.901 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -13.63 >= -20 -> EXECUTING CLICKS!
+2026-02-11 21:41:19.323 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -15.88 >= -20 -> EXECUTING CLICKS!
+2026-02-11 21:41:26.918 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -19.77 >= -20 -> EXECUTING CLICKS!
+2026-02-11 21:41:37.661 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -19.28 >= -20 -> EXECUTING CLICKS!
+2026-02-11 21:41:45.262 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -18.92 >= -20 -> EXECUTING CLICKS!
+2026-02-11 21:41:49.635 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -17.04 >= -20 -> EXECUTING CLICKS!
+2026-02-11 21:42:11.476 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -17.41 >= -20 -> EXECUTING CLICKS!
+2026-02-11 21:42:15.725 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -19.07 >= -20 -> EXECUTING CLICKS!
+2026-02-11 21:42:20.922 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -19.59 >= -20 -> EXECUTING CLICKS!
+2026-02-11 21:42:28.730 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 21:52:35.548 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 21:52:35.632 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 25.13 >= 24 -> EXECUTING CLICKS!
+2026-02-11 21:52:38.924 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 30.42 >= 24 -> EXECUTING CLICKS!
+2026-02-11 21:52:43.488 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 25.43 >= 24 -> EXECUTING CLICKS!
+2026-02-11 21:52:46.631 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 35.40 >= 24 -> EXECUTING CLICKS!
+2026-02-11 21:52:51.373 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 24.08 >= 24 -> EXECUTING CLICKS!
+2026-02-11 21:52:56.174 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 25.78 >= 24 -> EXECUTING CLICKS!
+2026-02-11 21:52:59.533 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 21:53:19.059 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 21:53:20.514 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 33.07 >= 24 -> EXECUTING CLICKS!
+2026-02-11 21:53:37.255 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 27.52 >= 24 -> EXECUTING CLICKS!
+2026-02-11 21:53:40.400 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 33.53 >= 24 -> EXECUTING CLICKS!
+2026-02-11 21:53:43.611 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 29.51 >= 24 -> EXECUTING CLICKS!
+2026-02-11 21:53:49.627 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 26.84 >= 24 -> EXECUTING CLICKS!
+2026-02-11 21:53:53.618 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 26.20 >= 24 -> EXECUTING CLICKS!
+2026-02-11 21:53:58.972 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 26.99 >= 24 -> EXECUTING CLICKS!
+2026-02-11 21:54:02.079 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 29.07 >= 24 -> EXECUTING CLICKS!
+2026-02-11 21:54:05.183 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 21:54:41.595 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 21:54:50.881 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 30.47 >= 30 -> EXECUTING CLICKS!
+2026-02-11 21:55:01.148 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 32.31 >= 30 -> EXECUTING CLICKS!
+2026-02-11 21:55:15.624 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 31.03 >= 30 -> EXECUTING CLICKS!
+2026-02-11 21:55:21.224 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 30.87 >= 30 -> EXECUTING CLICKS!
+2026-02-11 21:55:24.331 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 30.63 >= 30 -> EXECUTING CLICKS!
+2026-02-11 21:55:29.527 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 32.01 >= 30 -> EXECUTING CLICKS!
+2026-02-11 21:55:32.639 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 32.92 >= 30 -> EXECUTING CLICKS!
+2026-02-11 21:55:38.943 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 45.07 >= 30 -> EXECUTING CLICKS!
+2026-02-11 21:55:58.573 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 30.91 >= 30 -> EXECUTING CLICKS!
+2026-02-11 21:56:01.676 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 39.86 >= 30 -> EXECUTING CLICKS!
+2026-02-11 21:56:04.827 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 35.86 >= 30 -> EXECUTING CLICKS!
+2026-02-11 21:56:17.169 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 37.78 >= 30 -> EXECUTING CLICKS!
+2026-02-11 21:56:34.330 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 32.50 >= 30 -> EXECUTING CLICKS!
+2026-02-11 21:56:39.187 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 30.84 >= 30 -> EXECUTING CLICKS!
+2026-02-11 21:56:48.181 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 31.74 >= 30 -> EXECUTING CLICKS!
+2026-02-11 21:56:57.581 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 34.18 >= 30 -> EXECUTING CLICKS!
+2026-02-11 21:57:02.061 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 30.46 >= 30 -> EXECUTING CLICKS!
+2026-02-11 21:57:08.572 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 34.42 >= 30 -> EXECUTING CLICKS!
+2026-02-11 21:57:13.790 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 31.72 >= 30 -> EXECUTING CLICKS!
+2026-02-11 21:57:16.937 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 30.96 >= 30 -> EXECUTING CLICKS!
+2026-02-11 21:57:20.470 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 30.64 >= 30 -> EXECUTING CLICKS!
+2026-02-11 21:57:23.615 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 31.20 >= 30 -> EXECUTING CLICKS!
+2026-02-11 21:57:30.088 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 30.03 >= 30 -> EXECUTING CLICKS!
+2026-02-11 21:57:41.372 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 32.77 >= 30 -> EXECUTING CLICKS!
+2026-02-11 21:57:47.079 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 31.94 >= 30 -> EXECUTING CLICKS!
+2026-02-11 21:57:47.339 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 21:57:47.343 | INFO     | __main__:_on_trade:443 - 🔔 已达到最大交易次数，自动停止
+2026-02-11 21:58:47.824 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 21:58:50.638 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 33.89 >= 30 -> EXECUTING CLICKS!
+2026-02-11 21:58:54.451 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 31.42 >= 30 -> EXECUTING CLICKS!
+2026-02-11 21:58:58.673 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 34.12 >= 30 -> EXECUTING CLICKS!
+2026-02-11 21:59:04.637 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 30.22 >= 30 -> EXECUTING CLICKS!
+2026-02-11 21:59:15.429 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 30.87 >= 30 -> EXECUTING CLICKS!
+2026-02-11 21:59:23.096 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 30.04 >= 30 -> EXECUTING CLICKS!
+2026-02-11 21:59:26.224 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 69.21 >= 30 -> EXECUTING CLICKS!
+2026-02-11 21:59:32.777 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 30.92 >= 30 -> EXECUTING CLICKS!
+2026-02-11 21:59:32.893 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 21:59:32.895 | INFO     | __main__:_on_trade:443 - 🔔 已达到最大交易次数，自动停止
+2026-02-11 22:01:56.814 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 22:02:01.107 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -21.71 >= -24 -> EXECUTING CLICKS!
+2026-02-11 22:02:04.275 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -20.22 >= -24 -> EXECUTING CLICKS!
+2026-02-11 22:02:06.536 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 22:02:23.431 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 22:02:23.497 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 30.13 >= 27 -> EXECUTING CLICKS!
+2026-02-11 22:02:26.676 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 29.53 >= 27 -> EXECUTING CLICKS!
+2026-02-11 22:02:30.304 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 30.19 >= 27 -> EXECUTING CLICKS!
+2026-02-11 22:02:33.674 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 28.06 >= 27 -> EXECUTING CLICKS!
+2026-02-11 22:02:38.336 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 28.39 >= 27 -> EXECUTING CLICKS!
+2026-02-11 22:02:40.821 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 22:02:44.440 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 22:02:49.673 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 35.42 >= 35 -> EXECUTING CLICKS!
+2026-02-11 22:02:52.823 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 93.26 >= 35 -> EXECUTING CLICKS!
+2026-02-11 22:02:58.378 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 36.59 >= 35 -> EXECUTING CLICKS!
+2026-02-11 22:03:01.529 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 38.70 >= 35 -> EXECUTING CLICKS!
+2026-02-11 22:03:04.881 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 41.04 >= 35 -> EXECUTING CLICKS!
+2026-02-11 22:03:20.481 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 37.81 >= 35 -> EXECUTING CLICKS!
+2026-02-11 22:03:29.186 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 36.35 >= 35 -> EXECUTING CLICKS!
+2026-02-11 22:03:34.679 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 35.05 >= 35 -> EXECUTING CLICKS!
+2026-02-11 22:03:39.372 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 35.50 >= 35 -> EXECUTING CLICKS!
+2026-02-11 22:03:55.405 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 37.28 >= 35 -> EXECUTING CLICKS!
+2026-02-11 22:04:13.286 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 37.26 >= 35 -> EXECUTING CLICKS!
+2026-02-11 22:04:19.627 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 36.55 >= 35 -> EXECUTING CLICKS!
+2026-02-11 22:04:23.280 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 35.79 >= 35 -> EXECUTING CLICKS!
+2026-02-11 22:04:28.035 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 53.04 >= 35 -> EXECUTING CLICKS!
+2026-02-11 22:04:31.328 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 35.44 >= 35 -> EXECUTING CLICKS!
+2026-02-11 22:04:34.478 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 35.06 >= 35 -> EXECUTING CLICKS!
+2026-02-11 22:04:46.782 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 37.77 >= 35 -> EXECUTING CLICKS!
+2026-02-11 22:04:53.596 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 35.67 >= 35 -> EXECUTING CLICKS!
+2026-02-11 22:05:03.178 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 36.70 >= 35 -> EXECUTING CLICKS!
+2026-02-11 22:05:28.724 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 36.43 >= 35 -> EXECUTING CLICKS!
+2026-02-11 22:05:34.630 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 35.21 >= 35 -> EXECUTING CLICKS!
+2026-02-11 22:05:39.459 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 36.05 >= 35 -> EXECUTING CLICKS!
+2026-02-11 22:05:42.572 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 36.42 >= 35 -> EXECUTING CLICKS!
+2026-02-11 22:06:00.272 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 38.77 >= 35 -> EXECUTING CLICKS!
+2026-02-11 22:06:08.571 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 35.93 >= 35 -> EXECUTING CLICKS!
+2026-02-11 22:06:13.084 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 37.53 >= 35 -> EXECUTING CLICKS!
+2026-02-11 22:06:33.567 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 35.80 >= 35 -> EXECUTING CLICKS!
+2026-02-11 22:06:42.874 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 36.01 >= 35 -> EXECUTING CLICKS!
+2026-02-11 22:06:45.977 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 50.78 >= 35 -> EXECUTING CLICKS!
+2026-02-11 22:06:49.468 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 35.89 >= 35 -> EXECUTING CLICKS!
+2026-02-11 22:06:49.576 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 22:06:49.578 | INFO     | __main__:_on_trade:443 - 🔔 已达到最大交易次数，自动停止
+2026-02-11 22:07:25.120 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 22:07:25.121 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 27.27 >= -20 -> EXECUTING CLICKS!
+2026-02-11 22:07:28.265 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 11.29 >= -20 -> EXECUTING CLICKS!
+2026-02-11 22:07:31.408 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 5.73 >= -20 -> EXECUTING CLICKS!
+2026-02-11 22:07:34.554 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 18.99 >= -20 -> EXECUTING CLICKS!
+2026-02-11 22:07:36.613 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 22:07:39.205 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 22:07:39.278 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -18.77 >= -20 -> EXECUTING CLICKS!
+2026-02-11 22:07:42.591 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -16.37 >= -20 -> EXECUTING CLICKS!
+2026-02-11 22:07:47.193 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 22:07:58.733 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 22:07:59.412 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -13.11 >= -20 -> EXECUTING CLICKS!
+2026-02-11 22:08:02.688 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -19.92 >= -20 -> EXECUTING CLICKS!
+2026-02-11 22:08:10.211 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -18.88 >= -20 -> EXECUTING CLICKS!
+2026-02-11 22:08:15.333 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -16.68 >= -20 -> EXECUTING CLICKS!
+2026-02-11 22:08:21.966 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -15.21 >= -20 -> EXECUTING CLICKS!
+2026-02-11 22:08:25.997 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -17.45 >= -20 -> EXECUTING CLICKS!
+2026-02-11 22:08:29.607 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -17.58 >= -20 -> EXECUTING CLICKS!
+2026-02-11 22:08:34.926 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -16.14 >= -20 -> EXECUTING CLICKS!
+2026-02-11 22:08:39.568 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -16.05 >= -20 -> EXECUTING CLICKS!
+2026-02-11 22:08:47.728 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -14.03 >= -20 -> EXECUTING CLICKS!
+2026-02-11 22:08:58.444 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -16.64 >= -20 -> EXECUTING CLICKS!
+2026-02-11 22:09:01.728 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -19.86 >= -20 -> EXECUTING CLICKS!
+2026-02-11 22:09:04.877 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -11.57 >= -20 -> EXECUTING CLICKS!
+2026-02-11 22:09:08.031 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -12.22 >= -20 -> EXECUTING CLICKS!
+2026-02-11 22:09:23.376 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 22:09:50.811 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 22:09:52.826 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 27.03 >= 26 -> EXECUTING CLICKS!
+2026-02-11 22:09:56.293 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 28.41 >= 26 -> EXECUTING CLICKS!
+2026-02-11 22:10:00.575 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 28.24 >= 26 -> EXECUTING CLICKS!
+2026-02-11 22:10:04.254 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 26.59 >= 26 -> EXECUTING CLICKS!
+2026-02-11 22:10:10.274 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 30.67 >= 26 -> EXECUTING CLICKS!
+2026-02-11 22:10:13.471 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 26.16 >= 26 -> EXECUTING CLICKS!
+2026-02-11 22:10:16.573 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 139.15 >= 26 -> EXECUTING CLICKS!
+2026-02-11 22:10:19.707 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 68.57 >= 26 -> EXECUTING CLICKS!
+2026-02-11 22:10:22.888 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 34.54 >= 26 -> EXECUTING CLICKS!
+2026-02-11 22:10:25.195 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 22:10:59.979 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 22:11:00.080 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 7.02 >= -18 -> EXECUTING CLICKS!
+2026-02-11 22:11:04.534 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -6.88 >= -18 -> EXECUTING CLICKS!
+2026-02-11 22:11:07.670 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -12.37 >= -18 -> EXECUTING CLICKS!
+2026-02-11 22:11:11.872 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -17.22 >= -18 -> EXECUTING CLICKS!
+2026-02-11 22:11:14.975 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -10.57 >= -18 -> EXECUTING CLICKS!
+2026-02-11 22:11:18.132 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -8.52 >= -18 -> EXECUTING CLICKS!
+2026-02-11 22:11:22.871 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -16.94 >= -18 -> EXECUTING CLICKS!
+2026-02-11 22:11:26.333 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -15.41 >= -18 -> EXECUTING CLICKS!
+2026-02-11 22:11:29.441 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -7.46 >= -18 -> EXECUTING CLICKS!
+2026-02-11 22:11:32.371 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 22:11:46.624 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 22:11:46.625 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -15.79 >= -18 -> EXECUTING CLICKS!
+2026-02-11 22:11:46.741 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 22:11:46.742 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 22:11:46.742 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -13.79 >= -18 -> EXECUTING CLICKS!
+2026-02-11 22:11:46.743 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 22:20:58.278 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 22:21:09.872 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 29.16 >= 29 -> EXECUTING CLICKS!
+2026-02-11 22:21:15.380 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 30.92 >= 29 -> EXECUTING CLICKS!
+2026-02-11 22:21:18.748 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 29.69 >= 29 -> EXECUTING CLICKS!
+2026-02-11 22:21:21.894 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 46.66 >= 29 -> EXECUTING CLICKS!
+2026-02-11 22:21:26.380 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 30.69 >= 29 -> EXECUTING CLICKS!
+2026-02-11 22:21:29.759 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 29.06 >= 29 -> EXECUTING CLICKS!
+2026-02-11 22:21:32.061 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 22:21:48.719 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 22:21:49.480 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -12.93 >= -15 -> EXECUTING CLICKS!
+2026-02-11 22:21:59.524 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -14.14 >= -15 -> EXECUTING CLICKS!
+2026-02-11 22:22:03.326 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -10.89 >= -15 -> EXECUTING CLICKS!
+2026-02-11 22:22:06.725 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -13.74 >= -15 -> EXECUTING CLICKS!
+2026-02-11 22:22:12.321 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -8.76 >= -15 -> EXECUTING CLICKS!
+2026-02-11 22:22:15.782 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -13.38 >= -15 -> EXECUTING CLICKS!
+2026-02-11 22:22:25.920 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -10.51 >= -15 -> EXECUTING CLICKS!
+2026-02-11 22:22:29.420 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 0.90 >= -15 -> EXECUTING CLICKS!
+2026-02-11 22:22:38.033 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -12.23 >= -15 -> EXECUTING CLICKS!
+2026-02-11 22:22:45.521 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -14.69 >= -15 -> EXECUTING CLICKS!
+2026-02-11 22:22:57.842 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -14.73 >= -15 -> EXECUTING CLICKS!
+2026-02-11 22:23:01.828 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -10.81 >= -15 -> EXECUTING CLICKS!
+2026-02-11 22:23:08.326 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -14.23 >= -15 -> EXECUTING CLICKS!
+2026-02-11 22:23:27.067 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -14.70 >= -15 -> EXECUTING CLICKS!
+2026-02-11 22:23:31.175 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -13.62 >= -15 -> EXECUTING CLICKS!
+2026-02-11 22:23:36.882 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -11.37 >= -15 -> EXECUTING CLICKS!
+2026-02-11 22:23:46.073 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -14.96 >= -15 -> EXECUTING CLICKS!
+2026-02-11 22:23:51.318 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -12.30 >= -15 -> EXECUTING CLICKS!
+2026-02-11 22:23:54.462 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -6.04 >= -15 -> EXECUTING CLICKS!
+2026-02-11 22:23:59.975 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -12.77 >= -15 -> EXECUTING CLICKS!
+2026-02-11 22:24:03.382 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -5.95 >= -15 -> EXECUTING CLICKS!
+2026-02-11 22:24:30.639 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -13.01 >= -15 -> EXECUTING CLICKS!
+2026-02-11 22:24:33.786 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -3.13 >= -15 -> EXECUTING CLICKS!
+2026-02-11 22:24:40.077 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -14.99 >= -15 -> EXECUTING CLICKS!
+2026-02-11 22:24:44.920 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -11.91 >= -15 -> EXECUTING CLICKS!
+2026-02-11 22:24:48.226 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -14.69 >= -15 -> EXECUTING CLICKS!
+2026-02-11 22:24:52.525 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -14.96 >= -15 -> EXECUTING CLICKS!
+2026-02-11 22:25:01.430 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -13.50 >= -15 -> EXECUTING CLICKS!
+2026-02-11 22:25:22.974 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -14.70 >= -15 -> EXECUTING CLICKS!
+2026-02-11 22:25:26.084 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -11.93 >= -15 -> EXECUTING CLICKS!
+2026-02-11 22:25:26.197 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 22:25:26.200 | INFO     | __main__:_on_trade:443 - 🔔 已达到最大交易次数，自动停止
+2026-02-11 22:26:48.574 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 22:26:48.622 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 24.08 >= 18 -> EXECUTING CLICKS!
+2026-02-11 22:26:52.229 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 18.82 >= 18 -> EXECUTING CLICKS!
+2026-02-11 22:26:56.995 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 19.80 >= 18 -> EXECUTING CLICKS!
+2026-02-11 22:27:00.459 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 19.32 >= 18 -> EXECUTING CLICKS!
+2026-02-11 22:27:03.913 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 19.20 >= 18 -> EXECUTING CLICKS!
+2026-02-11 22:27:07.024 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 19.48 >= 18 -> EXECUTING CLICKS!
+2026-02-11 22:27:10.705 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 18.14 >= 18 -> EXECUTING CLICKS!
+2026-02-11 22:27:15.822 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 19.39 >= 18 -> EXECUTING CLICKS!
+2026-02-11 22:27:20.227 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 20.74 >= 18 -> EXECUTING CLICKS!
+2026-02-11 22:27:24.181 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 20.87 >= 18 -> EXECUTING CLICKS!
+2026-02-11 22:27:29.792 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 21.73 >= 18 -> EXECUTING CLICKS!
+2026-02-11 22:27:32.916 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 23.40 >= 18 -> EXECUTING CLICKS!
+2026-02-11 22:27:44.672 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 18.00 >= 18 -> EXECUTING CLICKS!
+2026-02-11 22:27:51.629 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 19.51 >= 18 -> EXECUTING CLICKS!
+2026-02-11 22:28:00.424 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 18.07 >= 18 -> EXECUTING CLICKS!
+2026-02-11 22:28:04.225 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 18.24 >= 18 -> EXECUTING CLICKS!
+2026-02-11 22:28:07.323 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 21.56 >= 18 -> EXECUTING CLICKS!
+2026-02-11 22:28:17.134 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 20.02 >= 18 -> EXECUTING CLICKS!
+2026-02-11 22:28:20.283 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 19.54 >= 18 -> EXECUTING CLICKS!
+2026-02-11 22:28:23.669 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 19.24 >= 18 -> EXECUTING CLICKS!
+2026-02-11 22:28:31.834 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 20.22 >= 18 -> EXECUTING CLICKS!
+2026-02-11 22:28:35.663 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 18.06 >= 18 -> EXECUTING CLICKS!
+2026-02-11 22:28:38.443 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 22:41:11.709 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 22:41:13.127 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -18.82 >= -24 -> EXECUTING CLICKS!
+2026-02-11 22:41:19.455 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -23.35 >= -24 -> EXECUTING CLICKS!
+2026-02-11 22:41:23.117 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -20.45 >= -24 -> EXECUTING CLICKS!
+2026-02-11 22:41:26.521 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -23.75 >= -24 -> EXECUTING CLICKS!
+2026-02-11 22:41:30.921 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -21.72 >= -24 -> EXECUTING CLICKS!
+2026-02-11 22:41:35.173 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -18.13 >= -24 -> EXECUTING CLICKS!
+2026-02-11 22:41:38.824 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -20.47 >= -24 -> EXECUTING CLICKS!
+2026-02-11 22:41:41.928 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -14.68 >= -24 -> EXECUTING CLICKS!
+2026-02-11 22:41:44.052 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 22:42:31.367 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 22:42:33.067 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 27.35 >= 24 -> EXECUTING CLICKS!
+2026-02-11 22:42:36.221 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 25.33 >= 24 -> EXECUTING CLICKS!
+2026-02-11 22:42:40.651 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 24.72 >= 24 -> EXECUTING CLICKS!
+2026-02-11 22:42:47.074 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 25.13 >= 24 -> EXECUTING CLICKS!
+2026-02-11 22:42:50.219 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 26.41 >= 24 -> EXECUTING CLICKS!
+2026-02-11 22:42:53.322 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 28.32 >= 24 -> EXECUTING CLICKS!
+2026-02-11 22:42:56.423 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 24.77 >= 24 -> EXECUTING CLICKS!
+2026-02-11 22:42:59.528 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 32.11 >= 24 -> EXECUTING CLICKS!
+2026-02-11 22:43:03.476 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 32.61 >= 24 -> EXECUTING CLICKS!
+2026-02-11 22:43:06.594 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 29.44 >= 24 -> EXECUTING CLICKS!
+2026-02-11 22:43:10.285 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 24.67 >= 24 -> EXECUTING CLICKS!
+2026-02-11 22:43:13.573 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 26.42 >= 24 -> EXECUTING CLICKS!
+2026-02-11 22:43:18.824 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 24.12 >= 24 -> EXECUTING CLICKS!
+2026-02-11 22:43:21.930 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 26.59 >= 24 -> EXECUTING CLICKS!
+2026-02-11 22:43:25.862 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 26.66 >= 24 -> EXECUTING CLICKS!
+2026-02-11 22:43:29.025 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 33.07 >= 24 -> EXECUTING CLICKS!
+2026-02-11 22:43:32.684 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 24.53 >= 24 -> EXECUTING CLICKS!
+2026-02-11 22:43:35.823 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 26.29 >= 24 -> EXECUTING CLICKS!
+2026-02-11 22:43:38.917 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 26.39 >= 24 -> EXECUTING CLICKS!
+2026-02-11 22:43:42.024 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 24.36 >= 24 -> EXECUTING CLICKS!
+2026-02-11 22:43:45.136 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 57.45 >= 24 -> EXECUTING CLICKS!
+2026-02-11 22:43:48.476 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 27.64 >= 24 -> EXECUTING CLICKS!
+2026-02-11 22:43:52.216 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 27.28 >= 24 -> EXECUTING CLICKS!
+2026-02-11 22:43:55.319 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 49.40 >= 24 -> EXECUTING CLICKS!
+2026-02-11 22:43:58.429 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 37.97 >= 24 -> EXECUTING CLICKS!
+2026-02-11 22:44:01.582 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 38.71 >= 24 -> EXECUTING CLICKS!
+2026-02-11 22:44:04.823 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 27.92 >= 24 -> EXECUTING CLICKS!
+2026-02-11 22:44:08.267 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 27.71 >= 24 -> EXECUTING CLICKS!
+2026-02-11 22:44:11.371 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 29.81 >= 24 -> EXECUTING CLICKS!
+2026-02-11 22:44:14.500 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 28.47 >= 24 -> EXECUTING CLICKS!
+2026-02-11 22:44:14.608 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 22:44:14.613 | INFO     | __main__:_on_trade:443 - 🔔 已达到最大交易次数，自动停止
+2026-02-11 22:46:49.182 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 22:46:50.378 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -16.18 >= -18 -> EXECUTING CLICKS!
+2026-02-11 22:46:56.374 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -13.71 >= -18 -> EXECUTING CLICKS!
+2026-02-11 22:47:01.290 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -17.65 >= -18 -> EXECUTING CLICKS!
+2026-02-11 22:47:04.421 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -8.88 >= -18 -> EXECUTING CLICKS!
+2026-02-11 22:47:07.829 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -17.72 >= -18 -> EXECUTING CLICKS!
+2026-02-11 22:47:10.976 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 1.85 >= -18 -> EXECUTING CLICKS!
+2026-02-11 22:47:14.080 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -4.96 >= -18 -> EXECUTING CLICKS!
+2026-02-11 22:47:18.175 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -9.56 >= -18 -> EXECUTING CLICKS!
+2026-02-11 22:47:21.371 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 1.77 >= -18 -> EXECUTING CLICKS!
+2026-02-11 22:47:24.523 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -13.31 >= -18 -> EXECUTING CLICKS!
+2026-02-11 22:47:28.711 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -11.53 >= -18 -> EXECUTING CLICKS!
+2026-02-11 22:47:32.424 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -14.46 >= -18 -> EXECUTING CLICKS!
+2026-02-11 22:47:39.330 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -16.80 >= -18 -> EXECUTING CLICKS!
+2026-02-11 22:47:42.930 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -17.80 >= -18 -> EXECUTING CLICKS!
+2026-02-11 22:47:46.915 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -5.71 >= -18 -> EXECUTING CLICKS!
+2026-02-11 22:47:50.116 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -13.48 >= -18 -> EXECUTING CLICKS!
+2026-02-11 22:47:53.892 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -14.23 >= -18 -> EXECUTING CLICKS!
+2026-02-11 22:47:57.727 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -17.75 >= -18 -> EXECUTING CLICKS!
+2026-02-11 22:48:01.678 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -17.04 >= -18 -> EXECUTING CLICKS!
+2026-02-11 22:48:05.522 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -16.37 >= -18 -> EXECUTING CLICKS!
+2026-02-11 22:48:08.862 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -18.00 >= -18 -> EXECUTING CLICKS!
+2026-02-11 22:48:12.004 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -16.23 >= -18 -> EXECUTING CLICKS!
+2026-02-11 22:48:15.151 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 17.08 >= -18 -> EXECUTING CLICKS!
+2026-02-11 22:48:18.299 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 3.64 >= -18 -> EXECUTING CLICKS!
+2026-02-11 22:48:24.473 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -17.53 >= -18 -> EXECUTING CLICKS!
+2026-02-11 22:48:27.586 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 7.66 >= -18 -> EXECUTING CLICKS!
+2026-02-11 22:48:31.717 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -17.19 >= -18 -> EXECUTING CLICKS!
+2026-02-11 22:48:34.822 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -8.23 >= -18 -> EXECUTING CLICKS!
+2026-02-11 22:48:38.824 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -16.85 >= -18 -> EXECUTING CLICKS!
+2026-02-11 22:48:42.629 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -16.93 >= -18 -> EXECUTING CLICKS!
+2026-02-11 22:48:42.746 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 22:48:42.747 | INFO     | __main__:_on_trade:443 - 🔔 已达到最大交易次数，自动停止
+2026-02-11 22:50:01.760 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 22:50:03.294 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 22:50:10.030 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 22:50:14.022 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -17.68 >= -18 -> EXECUTING CLICKS!
+2026-02-11 22:50:17.321 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -17.94 >= -18 -> EXECUTING CLICKS!
+2026-02-11 22:50:22.380 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -17.66 >= -18 -> EXECUTING CLICKS!
+2026-02-11 22:50:26.753 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -17.72 >= -18 -> EXECUTING CLICKS!
+2026-02-11 22:50:29.897 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -14.26 >= -18 -> EXECUTING CLICKS!
+2026-02-11 22:50:33.325 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -16.31 >= -18 -> EXECUTING CLICKS!
+2026-02-11 22:50:39.581 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -17.07 >= -18 -> EXECUTING CLICKS!
+2026-02-11 22:50:45.626 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -15.58 >= -18 -> EXECUTING CLICKS!
+2026-02-11 22:50:49.973 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -11.13 >= -18 -> EXECUTING CLICKS!
+2026-02-11 22:50:56.315 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -16.83 >= -18 -> EXECUTING CLICKS!
+2026-02-11 22:50:59.422 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -14.52 >= -18 -> EXECUTING CLICKS!
+2026-02-11 22:51:02.566 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -2.42 >= -18 -> EXECUTING CLICKS!
+2026-02-11 22:51:06.305 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -15.69 >= -18 -> EXECUTING CLICKS!
+2026-02-11 22:51:11.476 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -7.48 >= -18 -> EXECUTING CLICKS!
+2026-02-11 22:51:18.512 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -15.10 >= -18 -> EXECUTING CLICKS!
+2026-02-11 22:51:23.900 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -17.27 >= -18 -> EXECUTING CLICKS!
+2026-02-11 22:51:30.574 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -14.76 >= -18 -> EXECUTING CLICKS!
+2026-02-11 22:51:38.580 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -16.35 >= -18 -> EXECUTING CLICKS!
+2026-02-11 22:51:41.772 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -17.26 >= -18 -> EXECUTING CLICKS!
+2026-02-11 22:51:46.096 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -14.35 >= -18 -> EXECUTING CLICKS!
+2026-02-11 22:51:46.202 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 22:51:46.206 | INFO     | __main__:_on_trade:443 - 🔔 已达到最大交易次数，自动停止
+2026-02-11 23:16:34.320 | INFO     | __main__:_main_task:483 - Lighter client initialized in background loop
+2026-02-11 23:16:34.321 | INFO     | __main__:_update_lig_subscription:513 - Resolving market ID for BTC...
+2026-02-11 23:16:34.321 | INFO     | exchanges.lighter:get_market_id:109 - Using fallback ID for BTC: 1
+2026-02-11 23:16:34.321 | INFO     | __main__:_update_lig_subscription:517 - Subscribing to Lighter market 1
+2026-02-11 23:16:34.322 | INFO     | exchanges.lighter_ws:connect:86 - Connecting to Lighter WS for market 1...
+2026-02-11 23:16:34.772 | INFO     | exchanges.lighter_ws:connect:96 - Connected to Lighter WS
+2026-02-11 23:16:35.069 | INFO     | exchanges.lighter_ws:connect:116 - Lighter snapshot loaded
+2026-02-11 23:16:56.636 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 23:16:56.960 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 22.85 >= 22 -> EXECUTING CLICKS!
+2026-02-11 23:17:00.333 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 29.27 >= 22 -> EXECUTING CLICKS!
+2026-02-11 23:17:03.485 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 26.40 >= 22 -> EXECUTING CLICKS!
+2026-02-11 23:17:06.591 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 28.00 >= 22 -> EXECUTING CLICKS!
+2026-02-11 23:17:12.535 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 26.20 >= 22 -> EXECUTING CLICKS!
+2026-02-11 23:17:15.927 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 25.45 >= 22 -> EXECUTING CLICKS!
+2026-02-11 23:17:19.491 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 24.43 >= 22 -> EXECUTING CLICKS!
+2026-02-11 23:17:23.392 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 24.94 >= 22 -> EXECUTING CLICKS!
+2026-02-11 23:17:26.627 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 25.00 >= 22 -> EXECUTING CLICKS!
+2026-02-11 23:17:29.730 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 27.52 >= 22 -> EXECUTING CLICKS!
+2026-02-11 23:17:30.039 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 23:17:30.042 | INFO     | __main__:_on_trade:443 - 🔔 已达到最大交易次数，自动停止
+2026-02-11 23:18:06.036 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 23:18:06.152 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 26.59 >= 22 -> EXECUTING CLICKS!
+2026-02-11 23:18:09.301 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 27.78 >= 22 -> EXECUTING CLICKS!
+2026-02-11 23:18:12.800 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 31.85 >= 22 -> EXECUTING CLICKS!
+2026-02-11 23:18:15.935 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 38.27 >= 22 -> EXECUTING CLICKS!
+2026-02-11 23:18:19.431 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 22.09 >= 22 -> EXECUTING CLICKS!
+2026-02-11 23:18:22.689 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 36.68 >= 22 -> EXECUTING CLICKS!
+2026-02-11 23:18:25.833 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 47.41 >= 22 -> EXECUTING CLICKS!
+2026-02-11 23:18:28.928 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 23.55 >= 22 -> EXECUTING CLICKS!
+2026-02-11 23:18:32.032 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 60.14 >= 22 -> EXECUTING CLICKS!
+2026-02-11 23:18:35.129 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 46.85 >= 22 -> EXECUTING CLICKS!
+2026-02-11 23:18:35.265 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 23:18:35.268 | INFO     | __main__:_on_trade:443 - 🔔 已达到最大交易次数，自动停止
+2026-02-11 23:18:48.352 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 23:18:48.393 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 53.31 >= 22 -> EXECUTING CLICKS!
+2026-02-11 23:18:48.445 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 23:18:48.445 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-11 23:18:48.626 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-11 23:18:48.661 | INFO     | __main__:_on_trade:443 - 🔔 已达到最大交易次数，自动停止

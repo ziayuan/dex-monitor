@@ -1,0 +1,575 @@
+2026-02-02 13:13:13.478 | INFO     | exchanges.backpack:subscribe_bbo:114 - Connecting to Backpack bookTicker WebSocket for BTC_USDC_PERP...
+2026-02-02 13:13:13.491 | INFO     | exchanges.backpack:subscribe_order_updates:191 - Connecting to Backpack Order WebSocket for BTC_USDC_PERP...
+2026-02-02 13:13:14.149 | INFO     | exchanges.backpack:subscribe_order_updates:210 - Subscribed to order updates for BTC_USDC_PERP
+2026-02-02 13:13:14.404 | INFO     | exchanges.backpack:subscribe_bbo:124 - Subscribed to bookTicker.BTC_USDC_PERP
+2026-02-02 13:13:17.128 | INFO     | __main__:_cycle_pair:370 - Switched to ETH_USDC_PERP
+2026-02-02 13:13:17.829 | INFO     | __main__:_cycle_pair:370 - Switched to SOL_USDC_PERP
+2026-02-02 13:13:18.428 | INFO     | __main__:_cycle_pair:370 - Switched to BTC_USDC_PERP
+2026-02-02 13:13:19.128 | INFO     | __main__:_cycle_pair:370 - Switched to ETH_USDC_PERP
+2026-02-02 13:13:19.578 | INFO     | __main__:_cycle_pair:370 - Switched to SOL_USDC_PERP
+2026-02-02 13:13:19.928 | INFO     | __main__:_cycle_pair:370 - Switched to BTC_USDC_PERP
+2026-02-02 13:13:20.363 | INFO     | __main__:_cycle_pair:370 - Switched to ETH_USDC_PERP
+2026-02-02 13:13:20.613 | INFO     | __main__:_cycle_pair:370 - Switched to SOL_USDC_PERP
+2026-02-02 13:13:20.795 | INFO     | __main__:_cycle_pair:370 - Switched to BTC_USDC_PERP
+2026-02-02 13:13:20.961 | INFO     | __main__:_cycle_pair:370 - Switched to ETH_USDC_PERP
+2026-02-02 13:14:52.176 | INFO     | exchanges.backpack:subscribe_bbo:114 - Connecting to Backpack bookTicker WebSocket for BTC_USDC_PERP...
+2026-02-02 13:14:52.179 | INFO     | exchanges.backpack:subscribe_order_updates:191 - Connecting to Backpack Order WebSocket for BTC_USDC_PERP...
+2026-02-02 13:14:52.624 | INFO     | exchanges.backpack:subscribe_bbo:124 - Subscribed to bookTicker.BTC_USDC_PERP
+2026-02-02 13:14:52.630 | INFO     | exchanges.backpack:subscribe_order_updates:210 - Subscribed to order updates for BTC_USDC_PERP
+2026-02-02 13:14:54.322 | INFO     | __main__:_cycle_pair:370 - Switched to ETH_USDC_PERP
+2026-02-02 13:14:55.413 | INFO     | __main__:_cycle_pair:370 - Switched to SOL_USDC_PERP
+2026-02-02 13:14:56.446 | INFO     | __main__:_cycle_pair:370 - Switched to BNB_USDC_PERP
+2026-02-02 14:13:29.566 | INFO     | __main__:_update_bp_subscription:612 - Starting BP subscription for BTC_USDC_PERP
+2026-02-02 14:13:29.575 | INFO     | exchanges.backpack:subscribe_bbo:114 - Connecting to Backpack bookTicker WebSocket for BTC_USDC_PERP...
+2026-02-02 14:13:29.993 | INFO     | exchanges.backpack:subscribe_order_updates:191 - Connecting to Backpack Order WebSocket for BTC_USDC_PERP...
+2026-02-02 14:13:30.535 | INFO     | exchanges.backpack:subscribe_bbo:124 - Subscribed to bookTicker.BTC_USDC_PERP
+2026-02-02 14:13:30.538 | INFO     | exchanges.backpack:subscribe_order_updates:210 - Subscribed to order updates for BTC_USDC_PERP
+2026-02-02 14:13:36.205 | INFO     | __main__:_countdown_tick:416 - Var坐标已更新: (465, -824)
+2026-02-02 14:13:40.329 | INFO     | __main__:_cycle_pair:373 - Switched to ETH_USDC_PERP
+2026-02-02 14:13:40.330 | INFO     | __main__:_update_bp_subscription:602 - Cancelling previous BP tasks...
+2026-02-02 14:13:40.456 | INFO     | __main__:_update_bp_subscription:612 - Starting BP subscription for ETH_USDC_PERP
+2026-02-02 14:13:40.456 | INFO     | exchanges.backpack:subscribe_bbo:114 - Connecting to Backpack bookTicker WebSocket for ETH_USDC_PERP...
+2026-02-02 14:13:40.469 | INFO     | exchanges.backpack:subscribe_order_updates:191 - Connecting to Backpack Order WebSocket for ETH_USDC_PERP...
+2026-02-02 14:13:40.904 | INFO     | exchanges.backpack:subscribe_order_updates:210 - Subscribed to order updates for ETH_USDC_PERP
+2026-02-02 14:13:41.421 | INFO     | exchanges.backpack:subscribe_bbo:124 - Subscribed to bookTicker.ETH_USDC_PERP
+2026-02-02 14:13:42.330 | INFO     | __main__:_cycle_pair:373 - Switched to SOL_USDC_PERP
+2026-02-02 14:13:42.331 | INFO     | __main__:_update_bp_subscription:602 - Cancelling previous BP tasks...
+2026-02-02 14:13:42.712 | INFO     | __main__:_update_bp_subscription:612 - Starting BP subscription for SOL_USDC_PERP
+2026-02-02 14:13:42.712 | INFO     | exchanges.backpack:subscribe_bbo:114 - Connecting to Backpack bookTicker WebSocket for SOL_USDC_PERP...
+2026-02-02 14:13:42.714 | INFO     | exchanges.backpack:subscribe_order_updates:191 - Connecting to Backpack Order WebSocket for SOL_USDC_PERP...
+2026-02-02 14:13:43.084 | INFO     | exchanges.backpack:subscribe_bbo:124 - Subscribed to bookTicker.SOL_USDC_PERP
+2026-02-02 14:13:43.084 | INFO     | exchanges.backpack:subscribe_order_updates:210 - Subscribed to order updates for SOL_USDC_PERP
+2026-02-02 14:13:44.645 | INFO     | __main__:_cycle_pair:373 - Switched to BNB_USDC_PERP
+2026-02-02 14:13:44.646 | INFO     | __main__:_update_bp_subscription:602 - Cancelling previous BP tasks...
+2026-02-02 14:13:44.730 | INFO     | __main__:_update_bp_subscription:612 - Starting BP subscription for BNB_USDC_PERP
+2026-02-02 14:13:44.730 | INFO     | exchanges.backpack:subscribe_bbo:114 - Connecting to Backpack bookTicker WebSocket for BNB_USDC_PERP...
+2026-02-02 14:13:44.737 | INFO     | exchanges.backpack:subscribe_order_updates:191 - Connecting to Backpack Order WebSocket for BNB_USDC_PERP...
+2026-02-02 14:13:45.188 | INFO     | exchanges.backpack:subscribe_order_updates:210 - Subscribed to order updates for BNB_USDC_PERP
+2026-02-02 14:13:45.296 | INFO     | exchanges.backpack:subscribe_bbo:124 - Subscribed to bookTicker.BNB_USDC_PERP
+2026-02-02 14:14:11.128 | INFO     | strategies.var_backpack:start:324 - 🚀 Strategy started: BNB_USDC_PERP, Direction: bp_sell, Threshold: 0.0
+2026-02-02 14:14:11.202 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:14:11.208 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 737.0
+2026-02-02 14:14:11.708 | INFO     | exchanges.backpack:place_limit_order:305 - Order placed: 29754657958 Ask 1 @ 737.0
+2026-02-02 14:14:11.709 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → pending
+2026-02-02 14:14:11.710 | INFO     | strategies.var_backpack:_place_bp_order:237 - ✅ BP Order placed: 29754657958
+2026-02-02 14:14:11.741 | INFO     | exchanges.backpack:_handle_order_message:257 - 📋 Order update: orderAccepted id=29754657958 Ask filled=0/1.000 @ 737.00
+2026-02-02 14:14:11.747 | DEBUG    | strategies.var_backpack:on_bp_order_update:159 - 📥 Order update received: id=29754657958, event=orderAccepted, filled=False, pending=29754657958
+2026-02-02 14:14:11.946 | INFO     | strategies.var_backpack:_cancel_bp_order:247 - 📤 Cancelling BP order: 29754657958 (spread dropped)
+2026-02-02 14:14:12.361 | INFO     | exchanges.backpack:cancel_order:329 - Order cancelled: 29754657958
+2026-02-02 14:14:12.361 | DEBUG    | strategies.var_backpack:_set_state:312 - State: pending → idle
+2026-02-02 14:14:12.461 | INFO     | exchanges.backpack:_handle_order_message:257 - 📋 Order update: orderCancelled id=29754657958 Ask filled=0/1.000 @ 737.00
+2026-02-02 14:14:12.464 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:14:12.468 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 737.0
+2026-02-02 14:14:12.892 | INFO     | exchanges.backpack:place_limit_order:305 - Order placed: 29754662283 Ask 1 @ 737.0
+2026-02-02 14:14:12.892 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → pending
+2026-02-02 14:14:12.892 | INFO     | strategies.var_backpack:_place_bp_order:237 - ✅ BP Order placed: 29754662283
+2026-02-02 14:14:12.897 | DEBUG    | strategies.var_backpack:on_bp_order_update:159 - 📥 Order update received: id=29754657958, event=orderCancelled, filled=False, pending=29754662283
+2026-02-02 14:14:12.897 | DEBUG    | strategies.var_backpack:on_bp_order_update:163 - Ignoring order 29754657958 - not our pending order
+2026-02-02 14:14:12.900 | INFO     | exchanges.backpack:_handle_order_message:257 - 📋 Order update: orderAccepted id=29754662283 Ask filled=0/1.000 @ 737.00
+2026-02-02 14:14:12.900 | DEBUG    | strategies.var_backpack:on_bp_order_update:159 - 📥 Order update received: id=29754662283, event=orderAccepted, filled=False, pending=29754662283
+2026-02-02 14:14:15.281 | INFO     | strategies.var_backpack:_cancel_bp_order:247 - 📤 Cancelling BP order: 29754662283 (spread dropped)
+2026-02-02 14:14:16.029 | INFO     | exchanges.backpack:cancel_order:329 - Order cancelled: 29754662283
+2026-02-02 14:14:16.029 | DEBUG    | strategies.var_backpack:_set_state:312 - State: pending → idle
+2026-02-02 14:14:16.033 | INFO     | exchanges.backpack:_handle_order_message:257 - 📋 Order update: orderCancelled id=29754662283 Ask filled=0/1.000 @ 737.00
+2026-02-02 14:14:16.035 | DEBUG    | strategies.var_backpack:on_bp_order_update:159 - 📥 Order update received: id=29754662283, event=orderCancelled, filled=False, pending=
+2026-02-02 14:14:16.036 | DEBUG    | strategies.var_backpack:on_bp_order_update:163 - Ignoring order 29754662283 - not our pending order
+2026-02-02 14:14:16.145 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:14:16.157 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 737.0
+2026-02-02 14:14:16.804 | INFO     | exchanges.backpack:place_limit_order:305 - Order placed: 29754670487 Ask 1 @ 737.0
+2026-02-02 14:14:16.818 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → pending
+2026-02-02 14:14:16.821 | INFO     | strategies.var_backpack:_place_bp_order:237 - ✅ BP Order placed: 29754670487
+2026-02-02 14:14:16.885 | INFO     | exchanges.backpack:_handle_order_message:257 - 📋 Order update: orderAccepted id=29754670487 Ask filled=0/1.000 @ 737.00
+2026-02-02 14:14:16.910 | DEBUG    | strategies.var_backpack:on_bp_order_update:159 - 📥 Order update received: id=29754670487, event=orderAccepted, filled=False, pending=29754670487
+2026-02-02 14:14:20.841 | INFO     | strategies.var_backpack:_cancel_bp_order:247 - 📤 Cancelling BP order: 29754670487 (spread dropped)
+2026-02-02 14:14:21.279 | INFO     | exchanges.backpack:cancel_order:329 - Order cancelled: 29754670487
+2026-02-02 14:14:21.279 | DEBUG    | strategies.var_backpack:_set_state:312 - State: pending → idle
+2026-02-02 14:14:21.283 | INFO     | exchanges.backpack:_handle_order_message:257 - 📋 Order update: orderFill id=29754670487 Ask filled=0.233/1.000 @ 737.00
+2026-02-02 14:14:21.284 | INFO     | exchanges.backpack:_handle_order_message:257 - 📋 Order update: orderFill id=29754670487 Ask filled=0.293/1.000 @ 737.00
+2026-02-02 14:14:21.284 | INFO     | exchanges.backpack:_handle_order_message:257 - 📋 Order update: orderFill id=29754670487 Ask filled=0.353/1.000 @ 737.00
+2026-02-02 14:14:21.288 | INFO     | exchanges.backpack:_handle_order_message:257 - 📋 Order update: orderFill id=29754670487 Ask filled=0.613/1.000 @ 737.00
+2026-02-02 14:14:21.289 | INFO     | exchanges.backpack:_handle_order_message:257 - 📋 Order update: orderCancelled id=29754670487 Ask filled=0.613/1.000 @ 737.00
+2026-02-02 14:14:21.290 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:14:21.296 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 737.0
+2026-02-02 14:14:21.955 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:14:21.955 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:14:22.006 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:14:22.007 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 737.0
+2026-02-02 14:14:22.493 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:14:22.494 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:14:22.494 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:14:22.495 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 737.0
+2026-02-02 14:14:22.846 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:14:22.846 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:14:22.847 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:14:22.847 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 737.0
+2026-02-02 14:14:23.461 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:14:23.462 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:14:23.462 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:14:23.462 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 737.0
+2026-02-02 14:14:23.894 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:14:23.894 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:14:23.894 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:14:23.894 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 737.0
+2026-02-02 14:14:24.317 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:14:24.318 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:14:24.318 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:14:24.319 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 737.0
+2026-02-02 14:14:24.764 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:14:24.765 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:14:24.826 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:14:24.828 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 737.0
+2026-02-02 14:14:25.282 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:14:25.282 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:14:25.282 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:14:25.282 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 737.0
+2026-02-02 14:14:25.647 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:14:25.647 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:14:25.647 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:14:25.648 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 737.0
+2026-02-02 14:14:26.519 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:14:26.520 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:14:26.521 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:14:26.522 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 737.0
+2026-02-02 14:14:26.904 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:14:26.904 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:14:26.905 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:14:26.905 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 737.0
+2026-02-02 14:14:27.314 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:14:27.315 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:14:27.317 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:14:27.336 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 737.0
+2026-02-02 14:14:27.745 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:14:27.745 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:14:27.746 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:14:27.747 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 737.0
+2026-02-02 14:14:28.185 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:14:28.187 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:14:28.188 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:14:28.189 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 737.0
+2026-02-02 14:14:28.714 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:14:28.715 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:14:28.715 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:14:28.716 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 737.0
+2026-02-02 14:14:29.139 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:14:29.140 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:14:29.140 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:14:29.141 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 737.0
+2026-02-02 14:14:29.429 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:14:29.429 | INFO     | strategies.var_backpack:stop:343 - 🛑 Strategy stopped. Trades: 0, Total PnL: +0.0000
+2026-02-02 14:14:29.515 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:14:29.519 | DEBUG    | strategies.var_backpack:on_bp_order_update:159 - 📥 Order update received: id=29754670487, event=orderFill, filled=False, pending=
+2026-02-02 14:14:29.519 | DEBUG    | strategies.var_backpack:on_bp_order_update:163 - Ignoring order 29754670487 - not our pending order
+2026-02-02 14:14:29.519 | DEBUG    | strategies.var_backpack:on_bp_order_update:159 - 📥 Order update received: id=29754670487, event=orderFill, filled=False, pending=
+2026-02-02 14:14:29.519 | DEBUG    | strategies.var_backpack:on_bp_order_update:163 - Ignoring order 29754670487 - not our pending order
+2026-02-02 14:14:29.519 | DEBUG    | strategies.var_backpack:on_bp_order_update:159 - 📥 Order update received: id=29754670487, event=orderFill, filled=False, pending=
+2026-02-02 14:14:29.519 | DEBUG    | strategies.var_backpack:on_bp_order_update:163 - Ignoring order 29754670487 - not our pending order
+2026-02-02 14:14:29.519 | DEBUG    | strategies.var_backpack:on_bp_order_update:159 - 📥 Order update received: id=29754670487, event=orderFill, filled=False, pending=
+2026-02-02 14:14:29.519 | DEBUG    | strategies.var_backpack:on_bp_order_update:163 - Ignoring order 29754670487 - not our pending order
+2026-02-02 14:14:29.519 | DEBUG    | strategies.var_backpack:on_bp_order_update:159 - 📥 Order update received: id=29754670487, event=orderCancelled, filled=False, pending=
+2026-02-02 14:14:29.519 | DEBUG    | strategies.var_backpack:on_bp_order_update:163 - Ignoring order 29754670487 - not our pending order
+2026-02-02 14:14:38.338 | INFO     | exchanges.backpack:_handle_order_message:257 - 📋 Order update: orderAccepted id=29754726951 Bid filled=0/0.613 @ 737.51
+2026-02-02 14:14:38.346 | DEBUG    | strategies.var_backpack:on_bp_order_update:159 - 📥 Order update received: id=29754726951, event=orderAccepted, filled=False, pending=
+2026-02-02 14:14:38.346 | DEBUG    | strategies.var_backpack:on_bp_order_update:163 - Ignoring order 29754726951 - not our pending order
+2026-02-02 14:14:43.332 | INFO     | exchanges.backpack:_handle_order_message:257 - 📋 Order update: orderFill id=29754726951 Bid filled=0.200/0.613 @ 737.51
+2026-02-02 14:14:43.334 | DEBUG    | strategies.var_backpack:on_bp_order_update:159 - 📥 Order update received: id=29754726951, event=orderFill, filled=False, pending=
+2026-02-02 14:14:43.334 | DEBUG    | strategies.var_backpack:on_bp_order_update:163 - Ignoring order 29754726951 - not our pending order
+2026-02-02 14:14:55.685 | INFO     | exchanges.backpack:_handle_order_message:257 - 📋 Order update: orderAccepted id=29754759109 Bid filled=0/0.413 @ 737.87
+2026-02-02 14:14:55.687 | INFO     | exchanges.backpack:_handle_order_message:257 - 📋 Order update: orderFill id=29754759109 Bid filled=0.413/0.413 @ 737.87
+2026-02-02 14:14:55.687 | DEBUG    | strategies.var_backpack:on_bp_order_update:159 - 📥 Order update received: id=29754759109, event=orderAccepted, filled=False, pending=
+2026-02-02 14:14:55.687 | DEBUG    | strategies.var_backpack:on_bp_order_update:163 - Ignoring order 29754759109 - not our pending order
+2026-02-02 14:14:55.687 | DEBUG    | strategies.var_backpack:on_bp_order_update:159 - 📥 Order update received: id=29754759109, event=orderFill, filled=True, pending=
+2026-02-02 14:14:55.687 | DEBUG    | strategies.var_backpack:on_bp_order_update:163 - Ignoring order 29754759109 - not our pending order
+2026-02-02 14:14:55.687 | INFO     | exchanges.backpack:_handle_order_message:257 - 📋 Order update: orderCancelled id=29754726951 Bid filled=0.200/0.613 @ 737.51
+2026-02-02 14:14:55.688 | DEBUG    | strategies.var_backpack:on_bp_order_update:159 - 📥 Order update received: id=29754726951, event=orderCancelled, filled=False, pending=
+2026-02-02 14:14:55.688 | DEBUG    | strategies.var_backpack:on_bp_order_update:163 - Ignoring order 29754726951 - not our pending order
+2026-02-02 14:16:11.415 | INFO     | strategies.var_backpack:start:324 - 🚀 Strategy started: BNB_USDC_PERP, Direction: bp_sell, Threshold: 0.0
+2026-02-02 14:16:11.486 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:16:11.487 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 739.0
+2026-02-02 14:16:11.960 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:16:11.960 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:16:11.964 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:16:11.964 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 740.0
+2026-02-02 14:16:12.571 | INFO     | exchanges.backpack:place_limit_order:305 - Order placed: 29755019783 Ask 1 @ 740.0
+2026-02-02 14:16:12.571 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → pending
+2026-02-02 14:16:12.642 | INFO     | strategies.var_backpack:_place_bp_order:237 - ✅ BP Order placed: 29755019783
+2026-02-02 14:16:12.648 | INFO     | exchanges.backpack:_handle_order_message:257 - 📋 Order update: orderAccepted id=29755019783 Ask filled=0/1.000 @ 740.00
+2026-02-02 14:16:12.663 | DEBUG    | strategies.var_backpack:on_bp_order_update:159 - 📥 Order update received: id=29755019783, event=orderAccepted, filled=False, pending=29755019783
+2026-02-02 14:16:12.779 | INFO     | strategies.var_backpack:_cancel_bp_order:247 - 📤 Cancelling BP order: 29755019783 (spread dropped)
+2026-02-02 14:16:13.161 | INFO     | exchanges.backpack:cancel_order:329 - Order cancelled: 29755019783
+2026-02-02 14:16:13.162 | DEBUG    | strategies.var_backpack:_set_state:312 - State: pending → idle
+2026-02-02 14:16:13.170 | INFO     | exchanges.backpack:_handle_order_message:257 - 📋 Order update: orderCancelled id=29755019783 Ask filled=0/1.000 @ 740.00
+2026-02-02 14:16:13.170 | DEBUG    | strategies.var_backpack:on_bp_order_update:159 - 📥 Order update received: id=29755019783, event=orderCancelled, filled=False, pending=
+2026-02-02 14:16:13.170 | DEBUG    | strategies.var_backpack:on_bp_order_update:163 - Ignoring order 29755019783 - not our pending order
+2026-02-02 14:16:13.474 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:16:13.475 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 740.0
+2026-02-02 14:16:13.835 | INFO     | exchanges.backpack:place_limit_order:305 - Order placed: 29755025505 Ask 1 @ 740.0
+2026-02-02 14:16:13.836 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → pending
+2026-02-02 14:16:13.851 | INFO     | strategies.var_backpack:_place_bp_order:237 - ✅ BP Order placed: 29755025505
+2026-02-02 14:16:13.855 | INFO     | exchanges.backpack:_handle_order_message:257 - 📋 Order update: orderAccepted id=29755025505 Ask filled=0/1.000 @ 740.00
+2026-02-02 14:16:13.855 | DEBUG    | strategies.var_backpack:on_bp_order_update:159 - 📥 Order update received: id=29755025505, event=orderAccepted, filled=False, pending=29755025505
+2026-02-02 14:16:14.110 | INFO     | strategies.var_backpack:_cancel_bp_order:247 - 📤 Cancelling BP order: 29755025505 (spread dropped)
+2026-02-02 14:16:14.738 | INFO     | exchanges.backpack:cancel_order:329 - Order cancelled: 29755025505
+2026-02-02 14:16:14.738 | DEBUG    | strategies.var_backpack:_set_state:312 - State: pending → idle
+2026-02-02 14:16:14.756 | INFO     | exchanges.backpack:_handle_order_message:257 - 📋 Order update: orderCancelled id=29755025505 Ask filled=0/1.000 @ 740.00
+2026-02-02 14:16:14.758 | DEBUG    | strategies.var_backpack:on_bp_order_update:159 - 📥 Order update received: id=29755025505, event=orderCancelled, filled=False, pending=
+2026-02-02 14:16:14.759 | DEBUG    | strategies.var_backpack:on_bp_order_update:163 - Ignoring order 29755025505 - not our pending order
+2026-02-02 14:16:16.355 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:16:16.356 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 740.0
+2026-02-02 14:16:17.027 | INFO     | exchanges.backpack:place_limit_order:305 - Order placed: 29755038486 Ask 1 @ 740.0
+2026-02-02 14:16:17.040 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → pending
+2026-02-02 14:16:17.041 | INFO     | strategies.var_backpack:_place_bp_order:237 - ✅ BP Order placed: 29755038486
+2026-02-02 14:16:17.186 | INFO     | exchanges.backpack:_handle_order_message:257 - 📋 Order update: orderAccepted id=29755038486 Ask filled=0/1.000 @ 740.00
+2026-02-02 14:16:17.190 | INFO     | strategies.var_backpack:_cancel_bp_order:247 - 📤 Cancelling BP order: 29755038486 (spread dropped)
+2026-02-02 14:16:17.767 | INFO     | exchanges.backpack:cancel_order:329 - Order cancelled: 29755038486
+2026-02-02 14:16:17.842 | DEBUG    | strategies.var_backpack:_set_state:312 - State: pending → idle
+2026-02-02 14:16:17.966 | DEBUG    | strategies.var_backpack:on_bp_order_update:159 - 📥 Order update received: id=29755038486, event=orderAccepted, filled=False, pending=
+2026-02-02 14:16:17.966 | DEBUG    | strategies.var_backpack:on_bp_order_update:163 - Ignoring order 29755038486 - not our pending order
+2026-02-02 14:16:17.971 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:16:17.972 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 740.0
+2026-02-02 14:16:18.620 | INFO     | exchanges.backpack:place_limit_order:305 - Order placed: 29755045976 Ask 1 @ 740.0
+2026-02-02 14:16:18.621 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → pending
+2026-02-02 14:16:18.621 | INFO     | strategies.var_backpack:_place_bp_order:237 - ✅ BP Order placed: 29755045976
+2026-02-02 14:16:18.622 | INFO     | exchanges.backpack:_handle_order_message:257 - 📋 Order update: orderCancelled id=29755038486 Ask filled=0/1.000 @ 740.00
+2026-02-02 14:16:18.625 | DEBUG    | strategies.var_backpack:on_bp_order_update:159 - 📥 Order update received: id=29755038486, event=orderCancelled, filled=False, pending=29755045976
+2026-02-02 14:16:18.626 | DEBUG    | strategies.var_backpack:on_bp_order_update:163 - Ignoring order 29755038486 - not our pending order
+2026-02-02 14:16:18.723 | INFO     | exchanges.backpack:_handle_order_message:257 - 📋 Order update: orderAccepted id=29755045976 Ask filled=0/1.000 @ 740.00
+2026-02-02 14:16:18.725 | DEBUG    | strategies.var_backpack:on_bp_order_update:159 - 📥 Order update received: id=29755045976, event=orderAccepted, filled=False, pending=29755045976
+2026-02-02 14:16:19.392 | INFO     | strategies.var_backpack:_cancel_bp_order:247 - 📤 Cancelling BP order: 29755045976 (spread dropped)
+2026-02-02 14:16:19.991 | INFO     | exchanges.backpack:cancel_order:329 - Order cancelled: 29755045976
+2026-02-02 14:16:19.992 | DEBUG    | strategies.var_backpack:_set_state:312 - State: pending → idle
+2026-02-02 14:16:19.999 | INFO     | exchanges.backpack:_handle_order_message:257 - 📋 Order update: orderCancelled id=29755045976 Ask filled=0/1.000 @ 740.00
+2026-02-02 14:16:19.999 | DEBUG    | strategies.var_backpack:on_bp_order_update:159 - 📥 Order update received: id=29755045976, event=orderCancelled, filled=False, pending=
+2026-02-02 14:16:19.999 | DEBUG    | strategies.var_backpack:on_bp_order_update:163 - Ignoring order 29755045976 - not our pending order
+2026-02-02 14:16:22.794 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:16:22.800 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 739.0
+2026-02-02 14:16:23.289 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:16:23.291 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:16:23.292 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:16:23.292 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 739.0
+2026-02-02 14:16:23.820 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:16:23.820 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:16:23.821 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:16:23.821 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 739.0
+2026-02-02 14:16:24.483 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:16:24.483 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:16:24.487 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:16:24.487 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 739.0
+2026-02-02 14:16:25.009 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:16:25.010 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:16:25.010 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:16:25.011 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 739.0
+2026-02-02 14:16:26.163 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:16:26.165 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:16:26.166 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:16:26.166 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 739.0
+2026-02-02 14:16:26.584 | INFO     | exchanges.backpack:place_limit_order:305 - Order placed: 29755073966 Ask 1 @ 739.0
+2026-02-02 14:16:26.584 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → pending
+2026-02-02 14:16:26.584 | INFO     | strategies.var_backpack:_place_bp_order:237 - ✅ BP Order placed: 29755073966
+2026-02-02 14:16:26.595 | INFO     | strategies.var_backpack:_cancel_bp_order:247 - 📤 Cancelling BP order: 29755073966 (spread dropped)
+2026-02-02 14:16:27.115 | INFO     | exchanges.backpack:cancel_order:329 - Order cancelled: 29755073966
+2026-02-02 14:16:27.117 | DEBUG    | strategies.var_backpack:_set_state:312 - State: pending → idle
+2026-02-02 14:16:27.271 | INFO     | exchanges.backpack:_handle_order_message:257 - 📋 Order update: orderAccepted id=29755073966 Ask filled=0/1.000 @ 739.00
+2026-02-02 14:16:27.271 | INFO     | exchanges.backpack:_handle_order_message:257 - 📋 Order update: orderCancelled id=29755073966 Ask filled=0/1.000 @ 739.00
+2026-02-02 14:16:27.293 | DEBUG    | strategies.var_backpack:on_bp_order_update:159 - 📥 Order update received: id=29755073966, event=orderAccepted, filled=False, pending=
+2026-02-02 14:16:27.293 | DEBUG    | strategies.var_backpack:on_bp_order_update:163 - Ignoring order 29755073966 - not our pending order
+2026-02-02 14:16:27.293 | DEBUG    | strategies.var_backpack:on_bp_order_update:159 - 📥 Order update received: id=29755073966, event=orderCancelled, filled=False, pending=
+2026-02-02 14:16:27.293 | DEBUG    | strategies.var_backpack:on_bp_order_update:163 - Ignoring order 29755073966 - not our pending order
+2026-02-02 14:16:27.381 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:16:27.382 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 739.0
+2026-02-02 14:16:27.938 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:16:27.938 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:16:27.940 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:16:27.942 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 739.0
+2026-02-02 14:16:28.436 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:16:28.437 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:16:28.437 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:16:28.437 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 739.0
+2026-02-02 14:16:29.269 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:16:29.270 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:16:29.271 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:16:29.272 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 739.0
+2026-02-02 14:16:29.725 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:16:29.725 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:16:29.725 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:16:29.725 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 739.0
+2026-02-02 14:16:30.081 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:16:30.081 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:16:30.082 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:16:30.082 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 739.0
+2026-02-02 14:16:30.439 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:16:30.440 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:16:30.440 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:16:30.440 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 739.0
+2026-02-02 14:16:31.153 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:16:31.154 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:16:31.169 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:16:31.171 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 739.0
+2026-02-02 14:16:31.827 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:16:31.827 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:16:31.828 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:16:31.828 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 739.0
+2026-02-02 14:16:32.447 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:16:32.448 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:16:32.449 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:16:32.449 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 739.0
+2026-02-02 14:16:32.874 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:16:32.874 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:16:32.874 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:16:32.874 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 739.0
+2026-02-02 14:16:33.235 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:16:33.235 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:16:33.236 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:16:33.236 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 739.0
+2026-02-02 14:16:33.673 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:16:33.673 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:16:33.674 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:16:33.674 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 739.0
+2026-02-02 14:16:34.089 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:16:34.089 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:16:34.089 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:16:34.090 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 739.0
+2026-02-02 14:16:34.447 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:16:34.447 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:16:34.449 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:16:34.450 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 739.0
+2026-02-02 14:16:34.780 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:16:34.780 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:16:34.780 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:16:34.781 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 739.0
+2026-02-02 14:16:35.292 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:16:35.292 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:16:35.292 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:16:35.293 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 739.0
+2026-02-02 14:16:35.721 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:16:35.721 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:16:35.721 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:16:35.722 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 739.0
+2026-02-02 14:16:36.320 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:16:36.320 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:16:36.406 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:16:36.407 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 739.0
+2026-02-02 14:16:36.811 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:16:36.811 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:16:36.813 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:16:36.813 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 739.0
+2026-02-02 14:16:37.286 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:16:37.286 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:16:37.415 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:16:37.417 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 739.0
+2026-02-02 14:16:37.798 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:16:37.799 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:16:37.800 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:16:37.800 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 739.0
+2026-02-02 14:16:38.217 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:16:38.217 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:16:38.217 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:16:38.218 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 739.0
+2026-02-02 14:16:38.639 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:16:38.639 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:16:38.640 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:16:38.640 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 739.0
+2026-02-02 14:16:39.001 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:16:39.001 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:16:39.001 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:16:39.002 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 739.0
+2026-02-02 14:16:39.346 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:16:39.346 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:16:39.347 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:16:39.347 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 739.0
+2026-02-02 14:16:39.810 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:16:39.810 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:16:39.833 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:16:39.835 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 739.0
+2026-02-02 14:16:40.435 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:16:40.435 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:16:40.436 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:16:40.436 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 739.0
+2026-02-02 14:16:40.965 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:16:40.965 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:16:40.966 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:16:40.967 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 739.0
+2026-02-02 14:16:41.381 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:16:41.381 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:16:41.381 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:16:41.382 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 739.0
+2026-02-02 14:16:41.789 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:16:41.790 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:16:41.854 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:16:41.855 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 739.0
+2026-02-02 14:16:42.442 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:16:42.442 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:16:42.459 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:16:42.460 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 739.0
+2026-02-02 14:16:42.836 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:16:42.836 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:16:42.837 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:16:42.837 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 739.0
+2026-02-02 14:16:43.883 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:16:43.883 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:16:43.883 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:16:43.884 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 739.0
+2026-02-02 14:16:44.271 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:16:44.271 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:16:44.273 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:16:44.273 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 739.0
+2026-02-02 14:16:44.711 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:16:44.712 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:16:44.713 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:16:44.714 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 739.0
+2026-02-02 14:16:45.115 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:16:45.115 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:16:45.115 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:16:45.116 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 739.0
+2026-02-02 14:16:46.117 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:16:46.117 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:16:46.118 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:16:46.119 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 739.0
+2026-02-02 14:16:46.805 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:16:46.806 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:16:46.806 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:16:46.807 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 739.0
+2026-02-02 14:16:47.224 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:16:47.225 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:16:47.225 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:16:47.226 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 739.0
+2026-02-02 14:16:47.723 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:16:47.726 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:16:47.738 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:16:47.739 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 739.0
+2026-02-02 14:16:48.229 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:16:48.231 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:16:48.231 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:16:48.232 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 739.0
+2026-02-02 14:16:48.604 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:16:48.605 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:16:48.605 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:16:48.606 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 739.0
+2026-02-02 14:16:49.147 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:16:49.148 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:16:49.149 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:16:49.149 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 739.0
+2026-02-02 14:16:49.657 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:16:49.658 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:16:49.658 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:16:49.659 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 739.0
+2026-02-02 14:16:50.057 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:16:50.057 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:16:50.057 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:16:50.058 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 739.0
+2026-02-02 14:16:50.579 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:16:50.579 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:16:50.580 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:16:50.580 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 739.0
+2026-02-02 14:16:51.047 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:16:51.047 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:16:51.047 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:16:51.048 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 739.0
+2026-02-02 14:16:51.458 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:16:51.458 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:16:51.458 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:16:51.458 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 739.0
+2026-02-02 14:16:51.859 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:16:51.860 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:16:51.860 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:16:51.861 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 739.0
+2026-02-02 14:16:52.310 | ERROR    | strategies.var_backpack:_place_bp_order:239 - ❌ Failed to place BP order: Order would immediately match and take
+2026-02-02 14:16:52.312 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → idle
+2026-02-02 14:16:52.545 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:16:52.552 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 741.0
+2026-02-02 14:16:53.010 | INFO     | exchanges.backpack:place_limit_order:305 - Order placed: 29755188370 Ask 1 @ 741.0
+2026-02-02 14:16:53.011 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → pending
+2026-02-02 14:16:53.011 | INFO     | strategies.var_backpack:_place_bp_order:237 - ✅ BP Order placed: 29755188370
+2026-02-02 14:16:53.023 | INFO     | strategies.var_backpack:_cancel_bp_order:247 - 📤 Cancelling BP order: 29755188370 (spread dropped)
+2026-02-02 14:16:53.449 | INFO     | exchanges.backpack:cancel_order:329 - Order cancelled: 29755188370
+2026-02-02 14:16:53.450 | DEBUG    | strategies.var_backpack:_set_state:312 - State: pending → idle
+2026-02-02 14:16:53.453 | DEBUG    | strategies.var_backpack:_set_state:312 - State: idle → placing
+2026-02-02 14:16:53.459 | INFO     | strategies.var_backpack:_place_bp_order:223 - 📤 Placing BP order: Ask 1 @ 741.0
+2026-02-02 14:16:54.400 | INFO     | exchanges.backpack:place_limit_order:305 - Order placed: 29755196233 Ask 1 @ 741.0
+2026-02-02 14:16:54.401 | DEBUG    | strategies.var_backpack:_set_state:312 - State: placing → pending
+2026-02-02 14:16:54.401 | INFO     | strategies.var_backpack:_place_bp_order:237 - ✅ BP Order placed: 29755196233
+2026-02-02 14:16:54.402 | INFO     | exchanges.backpack:_handle_order_message:257 - 📋 Order update: orderAccepted id=29755188370 Ask filled=0/1.000 @ 741.00
+2026-02-02 14:16:54.404 | DEBUG    | strategies.var_backpack:on_bp_order_update:159 - 📥 Order update received: id=29755188370, event=orderAccepted, filled=False, pending=29755196233
+2026-02-02 14:16:54.404 | DEBUG    | strategies.var_backpack:on_bp_order_update:163 - Ignoring order 29755188370 - not our pending order
+2026-02-02 14:16:54.405 | INFO     | exchanges.backpack:_handle_order_message:257 - 📋 Order update: orderCancelled id=29755188370 Ask filled=0/1.000 @ 741.00
+2026-02-02 14:16:54.406 | DEBUG    | strategies.var_backpack:on_bp_order_update:159 - 📥 Order update received: id=29755188370, event=orderCancelled, filled=False, pending=29755196233
+2026-02-02 14:16:54.408 | DEBUG    | strategies.var_backpack:on_bp_order_update:163 - Ignoring order 29755188370 - not our pending order
+2026-02-02 14:16:54.521 | INFO     | strategies.var_backpack:_cancel_bp_order:247 - 📤 Cancelling BP order: 29755196233 (spread dropped)
+2026-02-02 14:16:55.057 | WARNING  | exchanges.backpack:cancel_order:332 - Failed to cancel order 29755196233: {'code': 'INVALID_CLIENT_REQUEST', 'message': 'Order not found'}
+2026-02-02 14:16:55.059 | INFO     | exchanges.backpack:_handle_order_message:257 - 📋 Order update: orderAccepted id=29755196233 Ask filled=0/1.000 @ 741.00
+2026-02-02 14:16:55.060 | INFO     | exchanges.backpack:_handle_order_message:257 - 📋 Order update: orderFill id=29755196233 Ask filled=1.000/1.000 @ 741.00
+2026-02-02 14:16:55.063 | INFO     | strategies.var_backpack:_cancel_bp_order:247 - 📤 Cancelling BP order: 29755196233 (spread dropped)
+2026-02-02 14:16:55.556 | WARNING  | exchanges.backpack:cancel_order:332 - Failed to cancel order 29755196233: {'code': 'INVALID_CLIENT_REQUEST', 'message': 'Order not found'}
+2026-02-02 14:16:55.556 | INFO     | strategies.var_backpack:_cancel_bp_order:247 - 📤 Cancelling BP order: 29755196233 (spread dropped)
+2026-02-02 14:16:56.223 | WARNING  | exchanges.backpack:cancel_order:332 - Failed to cancel order 29755196233: {'code': 'INVALID_CLIENT_REQUEST', 'message': 'Order not found'}
+2026-02-02 14:16:56.224 | INFO     | strategies.var_backpack:_cancel_bp_order:247 - 📤 Cancelling BP order: 29755196233 (spread dropped)
+2026-02-02 14:16:56.763 | WARNING  | exchanges.backpack:cancel_order:332 - Failed to cancel order 29755196233: {'code': 'INVALID_CLIENT_REQUEST', 'message': 'Order not found'}
+2026-02-02 14:16:56.763 | INFO     | strategies.var_backpack:_cancel_bp_order:247 - 📤 Cancelling BP order: 29755196233 (spread dropped)
+2026-02-02 14:16:57.229 | WARNING  | exchanges.backpack:cancel_order:332 - Failed to cancel order 29755196233: {'code': 'INVALID_CLIENT_REQUEST', 'message': 'Order not found'}
+2026-02-02 14:16:57.229 | INFO     | strategies.var_backpack:_cancel_bp_order:247 - 📤 Cancelling BP order: 29755196233 (spread dropped)
+2026-02-02 14:16:57.801 | WARNING  | exchanges.backpack:cancel_order:332 - Failed to cancel order 29755196233: {'code': 'INVALID_CLIENT_REQUEST', 'message': 'Order not found'}
+2026-02-02 14:16:57.802 | INFO     | strategies.var_backpack:_cancel_bp_order:247 - 📤 Cancelling BP order: 29755196233 (spread dropped)
+2026-02-02 14:16:58.321 | WARNING  | exchanges.backpack:cancel_order:332 - Failed to cancel order 29755196233: {'code': 'INVALID_CLIENT_REQUEST', 'message': 'Order not found'}
+2026-02-02 14:16:58.322 | INFO     | strategies.var_backpack:_cancel_bp_order:247 - 📤 Cancelling BP order: 29755196233 (spread dropped)
+2026-02-02 14:16:58.770 | WARNING  | exchanges.backpack:cancel_order:332 - Failed to cancel order 29755196233: {'code': 'INVALID_CLIENT_REQUEST', 'message': 'Order not found'}
+2026-02-02 14:16:58.770 | INFO     | strategies.var_backpack:_cancel_bp_order:247 - 📤 Cancelling BP order: 29755196233 (spread dropped)
+2026-02-02 14:16:59.253 | WARNING  | exchanges.backpack:cancel_order:332 - Failed to cancel order 29755196233: {'code': 'INVALID_CLIENT_REQUEST', 'message': 'Order not found'}
+2026-02-02 14:16:59.253 | INFO     | strategies.var_backpack:_cancel_bp_order:247 - 📤 Cancelling BP order: 29755196233 (spread dropped)
+2026-02-02 14:16:59.997 | WARNING  | exchanges.backpack:cancel_order:332 - Failed to cancel order 29755196233: {'code': 'INVALID_CLIENT_REQUEST', 'message': 'Order not found'}
+2026-02-02 14:16:59.998 | INFO     | strategies.var_backpack:_cancel_bp_order:247 - 📤 Cancelling BP order: 29755196233 (spread dropped)
+2026-02-02 14:17:00.690 | WARNING  | exchanges.backpack:cancel_order:332 - Failed to cancel order 29755196233: {'code': 'INVALID_CLIENT_REQUEST', 'message': 'Order not found'}
+2026-02-02 14:17:00.692 | INFO     | strategies.var_backpack:_cancel_bp_order:247 - 📤 Cancelling BP order: 29755196233 (spread dropped)
+2026-02-02 14:17:01.197 | WARNING  | exchanges.backpack:cancel_order:332 - Failed to cancel order 29755196233: {'code': 'INVALID_CLIENT_REQUEST', 'message': 'Order not found'}
+2026-02-02 14:17:01.198 | INFO     | strategies.var_backpack:_cancel_bp_order:247 - 📤 Cancelling BP order: 29755196233 (spread dropped)
+2026-02-02 14:17:01.711 | WARNING  | exchanges.backpack:cancel_order:332 - Failed to cancel order 29755196233: {'code': 'INVALID_CLIENT_REQUEST', 'message': 'Order not found'}
+2026-02-02 14:17:01.711 | INFO     | strategies.var_backpack:_cancel_bp_order:247 - 📤 Cancelling BP order: 29755196233 (spread dropped)
+2026-02-02 14:17:02.264 | WARNING  | exchanges.backpack:cancel_order:332 - Failed to cancel order 29755196233: {'code': 'INVALID_CLIENT_REQUEST', 'message': 'Order not found'}
+2026-02-02 14:17:02.264 | INFO     | strategies.var_backpack:_cancel_bp_order:247 - 📤 Cancelling BP order: 29755196233 (spread dropped)
+2026-02-02 14:17:02.759 | WARNING  | exchanges.backpack:cancel_order:332 - Failed to cancel order 29755196233: {'code': 'INVALID_CLIENT_REQUEST', 'message': 'Order not found'}
+2026-02-02 14:17:02.760 | INFO     | strategies.var_backpack:_cancel_bp_order:247 - 📤 Cancelling BP order: 29755196233 (spread dropped)
+2026-02-02 14:17:03.285 | WARNING  | exchanges.backpack:cancel_order:332 - Failed to cancel order 29755196233: {'code': 'INVALID_CLIENT_REQUEST', 'message': 'Order not found'}
+2026-02-02 14:17:03.285 | INFO     | strategies.var_backpack:_cancel_bp_order:247 - 📤 Cancelling BP order: 29755196233 (spread dropped)
+2026-02-02 14:17:03.993 | WARNING  | exchanges.backpack:cancel_order:332 - Failed to cancel order 29755196233: {'code': 'INVALID_CLIENT_REQUEST', 'message': 'Order not found'}
+2026-02-02 14:17:03.996 | INFO     | strategies.var_backpack:_cancel_bp_order:247 - 📤 Cancelling BP order: 29755196233 (spread dropped)
+2026-02-02 14:17:05.056 | WARNING  | exchanges.backpack:cancel_order:332 - Failed to cancel order 29755196233: {'code': 'INVALID_CLIENT_REQUEST', 'message': 'Order not found'}
+2026-02-02 14:17:05.058 | INFO     | strategies.var_backpack:_cancel_bp_order:247 - 📤 Cancelling BP order: 29755196233 (spread dropped)
+2026-02-02 14:17:05.672 | WARNING  | exchanges.backpack:cancel_order:332 - Failed to cancel order 29755196233: {'code': 'INVALID_CLIENT_REQUEST', 'message': 'Order not found'}
+2026-02-02 14:17:05.672 | INFO     | strategies.var_backpack:_cancel_bp_order:247 - 📤 Cancelling BP order: 29755196233 (spread dropped)
+2026-02-02 14:17:06.438 | WARNING  | exchanges.backpack:cancel_order:332 - Failed to cancel order 29755196233: {'code': 'INVALID_CLIENT_REQUEST', 'message': 'Order not found'}
+2026-02-02 14:17:06.438 | INFO     | strategies.var_backpack:_cancel_bp_order:247 - 📤 Cancelling BP order: 29755196233 (spread dropped)
+2026-02-02 14:17:07.252 | WARNING  | exchanges.backpack:cancel_order:332 - Failed to cancel order 29755196233: {'code': 'INVALID_CLIENT_REQUEST', 'message': 'Order not found'}
+2026-02-02 14:17:07.253 | INFO     | strategies.var_backpack:_cancel_bp_order:247 - 📤 Cancelling BP order: 29755196233 (spread dropped)
+2026-02-02 14:17:08.231 | WARNING  | exchanges.backpack:cancel_order:332 - Failed to cancel order 29755196233: {'code': 'INVALID_CLIENT_REQUEST', 'message': 'Order not found'}
+2026-02-02 14:17:08.233 | INFO     | strategies.var_backpack:_cancel_bp_order:247 - 📤 Cancelling BP order: 29755196233 (spread dropped)
+2026-02-02 14:17:08.736 | WARNING  | exchanges.backpack:cancel_order:332 - Failed to cancel order 29755196233: {'code': 'INVALID_CLIENT_REQUEST', 'message': 'Order not found'}
+2026-02-02 14:17:08.736 | INFO     | strategies.var_backpack:_cancel_bp_order:247 - 📤 Cancelling BP order: 29755196233 (spread dropped)
+2026-02-02 14:17:09.939 | WARNING  | exchanges.backpack:cancel_order:332 - Failed to cancel order 29755196233: {'code': 'INVALID_CLIENT_REQUEST', 'message': 'Order not found'}
+2026-02-02 14:17:09.940 | INFO     | strategies.var_backpack:_cancel_bp_order:247 - 📤 Cancelling BP order: 29755196233 (spread dropped)
+2026-02-02 14:17:11.161 | WARNING  | exchanges.backpack:cancel_order:332 - Failed to cancel order 29755196233: {'code': 'INVALID_CLIENT_REQUEST', 'message': 'Order not found'}
+2026-02-02 14:17:11.162 | INFO     | strategies.var_backpack:_cancel_bp_order:247 - 📤 Cancelling BP order: 29755196233 (spread dropped)
+2026-02-02 14:17:11.553 | WARNING  | exchanges.backpack:cancel_order:332 - Failed to cancel order 29755196233: {'code': 'INVALID_CLIENT_REQUEST', 'message': 'Order not found'}
+2026-02-02 14:17:11.554 | INFO     | strategies.var_backpack:_cancel_bp_order:247 - 📤 Cancelling BP order: 29755196233 (spread dropped)
+2026-02-02 14:17:12.054 | WARNING  | exchanges.backpack:cancel_order:332 - Failed to cancel order 29755196233: {'code': 'INVALID_CLIENT_REQUEST', 'message': 'Order not found'}
+2026-02-02 14:17:12.055 | INFO     | strategies.var_backpack:_cancel_bp_order:247 - 📤 Cancelling BP order: 29755196233 (spread dropped)
+2026-02-02 14:17:12.522 | WARNING  | exchanges.backpack:cancel_order:332 - Failed to cancel order 29755196233: {'code': 'INVALID_CLIENT_REQUEST', 'message': 'Order not found'}
+2026-02-02 14:17:12.522 | INFO     | strategies.var_backpack:_cancel_bp_order:247 - 📤 Cancelling BP order: 29755196233 (spread dropped)
+2026-02-02 14:17:13.228 | WARNING  | exchanges.backpack:cancel_order:332 - Failed to cancel order 29755196233: {'code': 'INVALID_CLIENT_REQUEST', 'message': 'Order not found'}
+2026-02-02 14:17:13.229 | INFO     | strategies.var_backpack:_cancel_bp_order:247 - 📤 Cancelling BP order: 29755196233 (spread dropped)
+2026-02-02 14:17:14.208 | WARNING  | exchanges.backpack:cancel_order:332 - Failed to cancel order 29755196233: {'code': 'INVALID_CLIENT_REQUEST', 'message': 'Order not found'}
+2026-02-02 14:17:14.210 | INFO     | strategies.var_backpack:_cancel_bp_order:247 - 📤 Cancelling BP order: 29755196233 (spread dropped)
+2026-02-02 14:17:14.731 | WARNING  | strategies.var_backpack:stop:340 - Cannot cancel order 29755196233 - no async loop
+2026-02-02 14:17:14.731 | DEBUG    | strategies.var_backpack:_set_state:312 - State: pending → idle
+2026-02-02 14:17:14.731 | INFO     | strategies.var_backpack:stop:343 - 🛑 Strategy stopped. Trades: 0, Total PnL: +0.0000
+2026-02-02 14:17:15.346 | WARNING  | exchanges.backpack:cancel_order:332 - Failed to cancel order 29755196233: {'code': 'INVALID_CLIENT_REQUEST', 'message': 'Order not found'}
+2026-02-02 14:17:15.352 | DEBUG    | strategies.var_backpack:on_bp_order_update:159 - 📥 Order update received: id=29755196233, event=orderAccepted, filled=False, pending=
+2026-02-02 14:17:15.352 | DEBUG    | strategies.var_backpack:on_bp_order_update:163 - Ignoring order 29755196233 - not our pending order
+2026-02-02 14:17:15.353 | DEBUG    | strategies.var_backpack:on_bp_order_update:159 - 📥 Order update received: id=29755196233, event=orderFill, filled=True, pending=
+2026-02-02 14:17:15.353 | DEBUG    | strategies.var_backpack:on_bp_order_update:163 - Ignoring order 29755196233 - not our pending order
+2026-02-02 14:30:08.357 | INFO     | exchanges.backpack:_handle_order_message:257 - 📋 Order update: orderAccepted id=29757909363 Bid filled=0/1.000 @ 739.22
+2026-02-02 14:30:08.377 | DEBUG    | strategies.var_backpack:on_bp_order_update:159 - 📥 Order update received: id=29757909363, event=orderAccepted, filled=False, pending=
+2026-02-02 14:30:08.377 | DEBUG    | strategies.var_backpack:on_bp_order_update:163 - Ignoring order 29757909363 - not our pending order
+2026-02-02 14:30:14.795 | INFO     | exchanges.backpack:_handle_order_message:257 - 📋 Order update: orderFill id=29757909363 Bid filled=0.271/1.000 @ 739.22
+2026-02-02 14:30:14.797 | INFO     | exchanges.backpack:_handle_order_message:257 - 📋 Order update: orderFill id=29757909363 Bid filled=1.000/1.000 @ 739.22
+2026-02-02 14:30:14.798 | DEBUG    | strategies.var_backpack:on_bp_order_update:159 - 📥 Order update received: id=29757909363, event=orderFill, filled=False, pending=
+2026-02-02 14:30:14.798 | DEBUG    | strategies.var_backpack:on_bp_order_update:163 - Ignoring order 29757909363 - not our pending order
+2026-02-02 14:30:14.798 | DEBUG    | strategies.var_backpack:on_bp_order_update:159 - 📥 Order update received: id=29757909363, event=orderFill, filled=True, pending=
+2026-02-02 14:30:14.798 | DEBUG    | strategies.var_backpack:on_bp_order_update:163 - Ignoring order 29757909363 - not our pending order

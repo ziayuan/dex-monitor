@@ -1,0 +1,451 @@
+2026-02-26 00:24:39.247 | INFO     | exchanges.lighter:fetch_markets:135 - Fetched 149 Lighter markets
+2026-02-26 00:24:39.337 | INFO     | __main__:_main_task:485 - Lighter client initialized with 149 markets
+2026-02-26 00:24:39.339 | INFO     | __main__:_update_lig_subscription:523 - Resolving market ID for BTC...
+2026-02-26 00:24:39.342 | INFO     | exchanges.lighter:get_market_id:151 - Using dynamic ID for BTC: 1
+2026-02-26 00:24:39.342 | INFO     | __main__:_update_lig_subscription:532 - Subscribing to Lighter market 1
+2026-02-26 00:24:39.342 | INFO     | exchanges.lighter_ws:connect:87 - Connecting to Lighter WS for market 1...
+2026-02-26 00:24:39.357 | INFO     | core.data_feeds:start_local_receiver:131 - 🚀 Started Local WS Receiver on ws://127.0.0.1:8788 for Browser Extension
+2026-02-26 00:24:39.625 | INFO     | exchanges.lighter_ws:connect:96 - Connected to Lighter WS
+2026-02-26 00:24:39.865 | INFO     | exchanges.lighter_ws:connect:116 - Lighter snapshot loaded
+2026-02-26 00:24:42.329 | INFO     | core.data_feeds:handler:111 - 🟢 UserScript connected to Local WS Receiver
+2026-02-26 00:24:56.254 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-26 00:24:56.331 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -8.13 >= -10 -> EXECUTING CLICKS!
+2026-02-26 00:24:59.500 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -6.52 >= -10 -> EXECUTING CLICKS!
+2026-02-26 00:25:02.617 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -6.33 >= -10 -> EXECUTING CLICKS!
+2026-02-26 00:25:05.762 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -9.66 >= -10 -> EXECUTING CLICKS!
+2026-02-26 00:25:08.908 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -3.72 >= -10 -> EXECUTING CLICKS!
+2026-02-26 00:25:12.053 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 19.99 >= -10 -> EXECUTING CLICKS!
+2026-02-26 00:25:15.205 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 5.43 >= -10 -> EXECUTING CLICKS!
+2026-02-26 00:25:18.347 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 7.58 >= -10 -> EXECUTING CLICKS!
+2026-02-26 00:25:21.493 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 10.85 >= -10 -> EXECUTING CLICKS!
+2026-02-26 00:25:24.694 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.23 >= -10 -> EXECUTING CLICKS!
+2026-02-26 00:25:24.810 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-26 00:25:24.811 | INFO     | __main__:_on_trade:444 - 🔔 已达到最大交易次数，自动停止
+2026-02-26 00:26:53.572 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-26 00:26:53.588 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -4.55 >= -6 -> EXECUTING CLICKS!
+2026-02-26 00:26:56.697 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -4.91 >= -6 -> EXECUTING CLICKS!
+2026-02-26 00:26:59.846 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.61 >= -6 -> EXECUTING CLICKS!
+2026-02-26 00:27:03.207 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 18.86 >= -6 -> EXECUTING CLICKS!
+2026-02-26 00:27:06.355 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 7.23 >= -6 -> EXECUTING CLICKS!
+2026-02-26 00:27:09.498 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -1.73 >= -6 -> EXECUTING CLICKS!
+2026-02-26 00:27:12.644 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 3.90 >= -6 -> EXECUTING CLICKS!
+2026-02-26 00:27:15.791 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -4.20 >= -6 -> EXECUTING CLICKS!
+2026-02-26 00:27:18.990 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -2.35 >= -6 -> EXECUTING CLICKS!
+2026-02-26 00:27:22.090 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -1.38 >= -6 -> EXECUTING CLICKS!
+2026-02-26 00:27:22.208 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-26 00:27:22.209 | INFO     | __main__:_on_trade:444 - 🔔 已达到最大交易次数，自动停止
+2026-02-26 00:27:37.672 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-26 00:27:37.691 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 0.87 >= -6 -> EXECUTING CLICKS!
+2026-02-26 00:27:41.739 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -4.20 >= -6 -> EXECUTING CLICKS!
+2026-02-26 00:27:42.243 | ERROR    | exchanges.lighter_ws:connect:143 - Lighter WS error: no close frame received or sent
+2026-02-26 00:27:44.245 | INFO     | exchanges.lighter_ws:connect:87 - Connecting to Lighter WS for market 1...
+2026-02-26 00:27:44.714 | INFO     | exchanges.lighter_ws:connect:96 - Connected to Lighter WS
+2026-02-26 00:27:45.015 | INFO     | exchanges.lighter_ws:connect:116 - Lighter snapshot loaded
+2026-02-26 00:27:45.016 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -2.28 >= -6 -> EXECUTING CLICKS!
+2026-02-26 00:27:48.157 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -1.83 >= -6 -> EXECUTING CLICKS!
+2026-02-26 00:27:51.458 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -4.52 >= -6 -> EXECUTING CLICKS!
+2026-02-26 00:27:51.573 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-26 00:27:51.575 | INFO     | __main__:_on_trade:444 - 🔔 已达到最大交易次数，自动停止
+2026-02-26 00:28:07.322 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BTC-USD
+2026-02-26 00:28:07.366 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 3.46 >= -6 -> EXECUTING CLICKS!
+2026-02-26 00:28:07.486 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-26 00:28:07.491 | INFO     | __main__:_on_trade:444 - 🔔 已达到最大交易次数，自动停止
+2026-02-26 00:32:51.188 | INFO     | __main__:_cycle_pair:327 - Switched to ETH-USD
+2026-02-26 00:32:51.343 | INFO     | __main__:_update_lig_subscription:523 - Resolving market ID for ETH...
+2026-02-26 00:32:51.344 | INFO     | exchanges.lighter:get_market_id:151 - Using dynamic ID for ETH: 0
+2026-02-26 00:32:51.344 | INFO     | __main__:_update_lig_subscription:532 - Subscribing to Lighter market 0
+2026-02-26 00:32:51.344 | INFO     | exchanges.lighter_ws:connect:87 - Connecting to Lighter WS for market 0...
+2026-02-26 00:32:51.672 | INFO     | exchanges.lighter_ws:connect:96 - Connected to Lighter WS
+2026-02-26 00:32:51.965 | INFO     | exchanges.lighter_ws:connect:116 - Lighter snapshot loaded
+2026-02-26 00:32:52.689 | INFO     | __main__:_cycle_pair:327 - Switched to SOL-USD
+2026-02-26 00:32:52.767 | INFO     | __main__:_update_lig_subscription:523 - Resolving market ID for SOL...
+2026-02-26 00:32:52.768 | INFO     | exchanges.lighter:get_market_id:151 - Using dynamic ID for SOL: 2
+2026-02-26 00:32:52.768 | INFO     | __main__:_update_lig_subscription:532 - Subscribing to Lighter market 2
+2026-02-26 00:32:52.768 | INFO     | exchanges.lighter_ws:connect:87 - Connecting to Lighter WS for market 2...
+2026-02-26 00:32:53.008 | INFO     | exchanges.lighter_ws:connect:96 - Connected to Lighter WS
+2026-02-26 00:32:53.127 | INFO     | exchanges.lighter_ws:connect:116 - Lighter snapshot loaded
+2026-02-26 00:32:55.083 | INFO     | __main__:_cycle_pair:327 - Switched to AAVE-USD
+2026-02-26 00:32:55.165 | INFO     | __main__:_update_lig_subscription:523 - Resolving market ID for AAVE...
+2026-02-26 00:32:55.165 | INFO     | exchanges.lighter:get_market_id:151 - Using dynamic ID for AAVE: 27
+2026-02-26 00:32:55.166 | INFO     | __main__:_update_lig_subscription:532 - Subscribing to Lighter market 27
+2026-02-26 00:32:55.166 | INFO     | exchanges.lighter_ws:connect:87 - Connecting to Lighter WS for market 27...
+2026-02-26 00:32:55.409 | INFO     | exchanges.lighter_ws:connect:96 - Connected to Lighter WS
+2026-02-26 00:32:55.538 | INFO     | exchanges.lighter_ws:connect:116 - Lighter snapshot loaded
+2026-02-26 00:32:55.825 | INFO     | __main__:_cycle_pair:327 - Switched to BNB-USD
+2026-02-26 00:32:55.903 | INFO     | __main__:_update_lig_subscription:523 - Resolving market ID for BNB...
+2026-02-26 00:32:55.903 | INFO     | exchanges.lighter:get_market_id:151 - Using dynamic ID for BNB: 25
+2026-02-26 00:32:55.903 | INFO     | __main__:_update_lig_subscription:532 - Subscribing to Lighter market 25
+2026-02-26 00:32:55.904 | INFO     | exchanges.lighter_ws:connect:87 - Connecting to Lighter WS for market 25...
+2026-02-26 00:32:56.184 | INFO     | exchanges.lighter_ws:connect:96 - Connected to Lighter WS
+2026-02-26 00:32:56.269 | INFO     | exchanges.lighter_ws:connect:116 - Lighter snapshot loaded
+2026-02-26 00:33:07.661 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BNB-USD
+2026-02-26 00:33:21.982 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-26 00:33:24.841 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BNB-USD
+2026-02-26 00:33:27.679 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.19 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:33:27.859 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-26 00:33:27.892 | INFO     | __main__:_on_trade:444 - 🔔 已达到最大交易次数，自动停止
+2026-02-26 00:33:42.250 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BNB-USD
+2026-02-26 00:33:46.628 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.14 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:34:07.027 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.20 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:34:10.177 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.17 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:34:13.276 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.17 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:34:16.423 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.04 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:34:20.283 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.18 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:34:23.481 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.15 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:34:27.050 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.19 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:34:30.327 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.18 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:34:36.085 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-26 00:35:01.246 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BNB-USD
+2026-02-26 00:35:06.730 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.18 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:35:09.826 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.20 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:35:14.077 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.15 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:35:18.286 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.19 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:35:21.478 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.19 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:35:24.725 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.19 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:35:28.777 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.19 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:35:32.378 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.17 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:35:43.316 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.16 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:35:49.679 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.16 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:36:03.284 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.19 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:36:06.478 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.19 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:36:09.832 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.20 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:36:12.931 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.16 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:36:16.114 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.16 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:36:21.083 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.12 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:36:24.424 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.20 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:36:31.228 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.20 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:36:39.048 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.19 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:36:53.683 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.09 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:36:56.790 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.09 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:36:59.930 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.19 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:37:03.029 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.08 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:37:06.154 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.18 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:37:18.442 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.13 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:37:35.084 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.19 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:37:51.344 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.18 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:37:54.474 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.18 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:37:57.576 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.18 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:38:00.683 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.12 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:38:04.929 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.16 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:38:08.252 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.16 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:38:11.482 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.16 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:38:14.628 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.06 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:38:17.726 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.06 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:38:20.897 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.06 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:38:24.076 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.15 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:38:27.226 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.15 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:38:30.380 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.15 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:38:33.474 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.13 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:38:33.584 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-26 00:38:33.587 | INFO     | __main__:_on_trade:444 - 🔔 已达到最大交易次数，自动停止
+2026-02-26 00:43:09.293 | INFO     | exchanges.lighter:fetch_markets:135 - Fetched 149 Lighter markets
+2026-02-26 00:43:09.368 | INFO     | __main__:_main_task:485 - Lighter client initialized with 149 markets
+2026-02-26 00:43:09.369 | INFO     | __main__:_update_lig_subscription:523 - Resolving market ID for BTC...
+2026-02-26 00:43:09.369 | INFO     | exchanges.lighter:get_market_id:151 - Using dynamic ID for BTC: 1
+2026-02-26 00:43:09.369 | INFO     | __main__:_update_lig_subscription:532 - Subscribing to Lighter market 1
+2026-02-26 00:43:09.369 | INFO     | exchanges.lighter_ws:connect:87 - Connecting to Lighter WS for market 1...
+2026-02-26 00:43:09.384 | INFO     | core.data_feeds:start_local_receiver:131 - 🚀 Started Local WS Receiver on ws://127.0.0.1:8788 for Browser Extension
+2026-02-26 00:43:09.639 | INFO     | exchanges.lighter_ws:connect:96 - Connected to Lighter WS
+2026-02-26 00:43:09.851 | INFO     | exchanges.lighter_ws:connect:116 - Lighter snapshot loaded
+2026-02-26 00:43:10.992 | INFO     | core.data_feeds:handler:111 - 🟢 UserScript connected to Local WS Receiver
+2026-02-26 00:43:56.268 | INFO     | __main__:_cycle_pair:327 - Switched to ETH-USD
+2026-02-26 00:43:56.351 | INFO     | __main__:_update_lig_subscription:523 - Resolving market ID for ETH...
+2026-02-26 00:43:56.352 | INFO     | exchanges.lighter:get_market_id:151 - Using dynamic ID for ETH: 0
+2026-02-26 00:43:56.352 | INFO     | __main__:_update_lig_subscription:532 - Subscribing to Lighter market 0
+2026-02-26 00:43:56.352 | INFO     | exchanges.lighter_ws:connect:87 - Connecting to Lighter WS for market 0...
+2026-02-26 00:43:56.688 | INFO     | exchanges.lighter_ws:connect:96 - Connected to Lighter WS
+2026-02-26 00:43:56.867 | INFO     | exchanges.lighter_ws:connect:116 - Lighter snapshot loaded
+2026-02-26 00:48:58.761 | INFO     | exchanges.lighter:fetch_markets:135 - Fetched 149 Lighter markets
+2026-02-26 00:48:58.855 | INFO     | __main__:_main_task:485 - Lighter client initialized with 149 markets
+2026-02-26 00:48:58.856 | INFO     | __main__:_update_lig_subscription:523 - Resolving market ID for BTC...
+2026-02-26 00:48:58.856 | INFO     | exchanges.lighter:get_market_id:151 - Using dynamic ID for BTC: 1
+2026-02-26 00:48:58.856 | INFO     | __main__:_update_lig_subscription:532 - Subscribing to Lighter market 1
+2026-02-26 00:48:58.856 | INFO     | exchanges.lighter_ws:connect:87 - Connecting to Lighter WS for market 1...
+2026-02-26 00:48:58.877 | INFO     | core.data_feeds:start_local_receiver:131 - 🚀 Started Local WS Receiver on ws://127.0.0.1:8788 for Browser Extension
+2026-02-26 00:48:59.209 | INFO     | exchanges.lighter_ws:connect:96 - Connected to Lighter WS
+2026-02-26 00:48:59.417 | INFO     | exchanges.lighter_ws:connect:116 - Lighter snapshot loaded
+2026-02-26 00:49:00.375 | INFO     | core.data_feeds:handler:111 - 🟢 UserScript connected to Local WS Receiver
+2026-02-26 00:49:01.021 | INFO     | __main__:_cycle_pair:327 - Switched to ETH-USD
+2026-02-26 00:49:01.097 | INFO     | __main__:_update_lig_subscription:523 - Resolving market ID for ETH...
+2026-02-26 00:49:01.097 | INFO     | exchanges.lighter:get_market_id:151 - Using dynamic ID for ETH: 0
+2026-02-26 00:49:01.097 | INFO     | __main__:_update_lig_subscription:532 - Subscribing to Lighter market 0
+2026-02-26 00:49:01.097 | INFO     | exchanges.lighter_ws:connect:87 - Connecting to Lighter WS for market 0...
+2026-02-26 00:49:01.386 | INFO     | exchanges.lighter_ws:connect:96 - Connected to Lighter WS
+2026-02-26 00:49:01.563 | INFO     | exchanges.lighter_ws:connect:116 - Lighter snapshot loaded
+2026-02-26 00:49:01.920 | INFO     | __main__:_cycle_pair:327 - Switched to SOL-USD
+2026-02-26 00:49:01.993 | INFO     | __main__:_update_lig_subscription:523 - Resolving market ID for SOL...
+2026-02-26 00:49:01.993 | INFO     | exchanges.lighter:get_market_id:151 - Using dynamic ID for SOL: 2
+2026-02-26 00:49:01.994 | INFO     | __main__:_update_lig_subscription:532 - Subscribing to Lighter market 2
+2026-02-26 00:49:01.994 | INFO     | exchanges.lighter_ws:connect:87 - Connecting to Lighter WS for market 2...
+2026-02-26 00:49:02.239 | INFO     | exchanges.lighter_ws:connect:96 - Connected to Lighter WS
+2026-02-26 00:49:02.370 | INFO     | exchanges.lighter_ws:connect:116 - Lighter snapshot loaded
+2026-02-26 00:49:02.621 | INFO     | __main__:_cycle_pair:327 - Switched to AAVE-USD
+2026-02-26 00:49:02.697 | INFO     | __main__:_update_lig_subscription:523 - Resolving market ID for AAVE...
+2026-02-26 00:49:02.697 | INFO     | exchanges.lighter:get_market_id:151 - Using dynamic ID for AAVE: 27
+2026-02-26 00:49:02.697 | INFO     | __main__:_update_lig_subscription:532 - Subscribing to Lighter market 27
+2026-02-26 00:49:02.697 | INFO     | exchanges.lighter_ws:connect:87 - Connecting to Lighter WS for market 27...
+2026-02-26 00:49:02.961 | INFO     | exchanges.lighter_ws:connect:96 - Connected to Lighter WS
+2026-02-26 00:49:03.050 | INFO     | exchanges.lighter_ws:connect:116 - Lighter snapshot loaded
+2026-02-26 00:49:03.238 | INFO     | __main__:_cycle_pair:327 - Switched to BNB-USD
+2026-02-26 00:49:03.404 | INFO     | __main__:_update_lig_subscription:523 - Resolving market ID for BNB...
+2026-02-26 00:49:03.404 | INFO     | exchanges.lighter:get_market_id:151 - Using dynamic ID for BNB: 25
+2026-02-26 00:49:03.404 | INFO     | __main__:_update_lig_subscription:532 - Subscribing to Lighter market 25
+2026-02-26 00:49:03.405 | INFO     | exchanges.lighter_ws:connect:87 - Connecting to Lighter WS for market 25...
+2026-02-26 00:49:03.650 | INFO     | exchanges.lighter_ws:connect:96 - Connected to Lighter WS
+2026-02-26 00:49:03.736 | INFO     | exchanges.lighter_ws:connect:116 - Lighter snapshot loaded
+2026-02-26 00:49:11.571 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BNB-USD
+2026-02-26 00:49:13.231 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.18 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:49:16.394 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.18 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:49:20.740 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.17 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:49:24.376 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.15 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:49:27.519 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.13 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:49:30.667 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.15 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:49:36.743 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.14 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:49:39.857 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.14 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:49:45.594 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.15 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:49:52.687 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.15 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:49:52.813 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-26 00:49:52.814 | INFO     | __main__:_on_trade:444 - 🔔 已达到最大交易次数，自动停止
+2026-02-26 00:50:21.122 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BNB-USD
+2026-02-26 00:50:21.147 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.16 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:50:27.299 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.16 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:50:31.786 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.13 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:50:34.897 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.17 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:50:41.839 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.16 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:50:54.261 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.19 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:50:57.391 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.19 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:51:00.550 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.19 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:51:03.650 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.15 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:51:24.449 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.09 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:51:28.635 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.19 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:51:58.922 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-26 00:52:33.106 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BNB-USD
+2026-02-26 00:52:42.904 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.19 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:52:46.091 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.19 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:52:58.624 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.20 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:53:40.098 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.17 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:53:49.379 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.18 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:53:52.499 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.18 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:53:55.641 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.18 >= -0.2 -> EXECUTING CLICKS!
+2026-02-26 00:54:14.242 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-26 09:38:27.740 | INFO     | exchanges.lighter:fetch_markets:135 - Fetched 149 Lighter markets
+2026-02-26 09:38:27.814 | INFO     | __main__:_main_task:485 - Lighter client initialized with 149 markets
+2026-02-26 09:38:27.814 | INFO     | __main__:_update_lig_subscription:523 - Resolving market ID for BTC...
+2026-02-26 09:38:27.815 | INFO     | exchanges.lighter:get_market_id:151 - Using dynamic ID for BTC: 1
+2026-02-26 09:38:27.815 | INFO     | __main__:_update_lig_subscription:532 - Subscribing to Lighter market 1
+2026-02-26 09:38:27.815 | INFO     | exchanges.lighter_ws:connect:87 - Connecting to Lighter WS for market 1...
+2026-02-26 09:38:27.841 | INFO     | core.data_feeds:start_local_receiver:131 - 🚀 Started Local WS Receiver on ws://127.0.0.1:8788 for Browser Extension
+2026-02-26 09:38:28.140 | INFO     | exchanges.lighter_ws:connect:96 - Connected to Lighter WS
+2026-02-26 09:38:28.251 | INFO     | core.data_feeds:handler:111 - 🟢 UserScript connected to Local WS Receiver
+2026-02-26 09:38:28.353 | INFO     | exchanges.lighter_ws:connect:116 - Lighter snapshot loaded
+2026-02-26 09:38:38.721 | INFO     | __main__:_cycle_pair:327 - Switched to ETH-USD
+2026-02-26 09:38:38.807 | INFO     | __main__:_update_lig_subscription:523 - Resolving market ID for ETH...
+2026-02-26 09:38:38.807 | INFO     | exchanges.lighter:get_market_id:151 - Using dynamic ID for ETH: 0
+2026-02-26 09:38:38.807 | INFO     | __main__:_update_lig_subscription:532 - Subscribing to Lighter market 0
+2026-02-26 09:38:38.807 | INFO     | exchanges.lighter_ws:connect:87 - Connecting to Lighter WS for market 0...
+2026-02-26 09:38:39.039 | INFO     | exchanges.lighter_ws:connect:96 - Connected to Lighter WS
+2026-02-26 09:38:39.282 | INFO     | exchanges.lighter_ws:connect:116 - Lighter snapshot loaded
+2026-02-26 09:38:39.624 | INFO     | __main__:_cycle_pair:327 - Switched to SOL-USD
+2026-02-26 09:38:39.695 | INFO     | __main__:_update_lig_subscription:523 - Resolving market ID for SOL...
+2026-02-26 09:38:39.695 | INFO     | exchanges.lighter:get_market_id:151 - Using dynamic ID for SOL: 2
+2026-02-26 09:38:39.695 | INFO     | __main__:_update_lig_subscription:532 - Subscribing to Lighter market 2
+2026-02-26 09:38:39.695 | INFO     | exchanges.lighter_ws:connect:87 - Connecting to Lighter WS for market 2...
+2026-02-26 09:38:40.064 | INFO     | exchanges.lighter_ws:connect:96 - Connected to Lighter WS
+2026-02-26 09:38:40.173 | INFO     | exchanges.lighter_ws:connect:116 - Lighter snapshot loaded
+2026-02-26 09:38:40.288 | INFO     | __main__:_cycle_pair:327 - Switched to AAVE-USD
+2026-02-26 09:38:40.379 | INFO     | __main__:_update_lig_subscription:523 - Resolving market ID for AAVE...
+2026-02-26 09:38:40.380 | INFO     | exchanges.lighter:get_market_id:151 - Using dynamic ID for AAVE: 27
+2026-02-26 09:38:40.380 | INFO     | __main__:_update_lig_subscription:532 - Subscribing to Lighter market 27
+2026-02-26 09:38:40.380 | INFO     | exchanges.lighter_ws:connect:87 - Connecting to Lighter WS for market 27...
+2026-02-26 09:38:40.608 | INFO     | exchanges.lighter_ws:connect:96 - Connected to Lighter WS
+2026-02-26 09:38:40.687 | INFO     | exchanges.lighter_ws:connect:116 - Lighter snapshot loaded
+2026-02-26 09:38:40.971 | INFO     | __main__:_cycle_pair:327 - Switched to BNB-USD
+2026-02-26 09:38:41.097 | INFO     | __main__:_update_lig_subscription:523 - Resolving market ID for BNB...
+2026-02-26 09:38:41.097 | INFO     | exchanges.lighter:get_market_id:151 - Using dynamic ID for BNB: 25
+2026-02-26 09:38:41.097 | INFO     | __main__:_update_lig_subscription:532 - Subscribing to Lighter market 25
+2026-02-26 09:38:41.097 | INFO     | exchanges.lighter_ws:connect:87 - Connecting to Lighter WS for market 25...
+2026-02-26 09:38:41.363 | INFO     | exchanges.lighter_ws:connect:96 - Connected to Lighter WS
+2026-02-26 09:38:41.449 | INFO     | exchanges.lighter_ws:connect:116 - Lighter snapshot loaded
+2026-02-26 09:38:52.838 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BNB-USD
+2026-02-26 09:39:01.481 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.23 >= -0.3 -> EXECUTING CLICKS!
+2026-02-26 09:39:01.727 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-26 09:39:01.760 | INFO     | __main__:_on_trade:444 - 🔔 已达到最大交易次数，自动停止
+2026-02-26 09:39:23.139 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BNB-USD
+2026-02-26 09:39:39.901 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.29 >= -0.3 -> EXECUTING CLICKS!
+2026-02-26 09:39:40.095 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-26 09:39:40.097 | INFO     | __main__:_on_trade:444 - 🔔 已达到最大交易次数，自动停止
+2026-02-26 09:39:47.788 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BNB-USD
+2026-02-26 09:39:48.159 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.24 >= -0.3 -> EXECUTING CLICKS!
+2026-02-26 09:40:00.359 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.20 >= -0.3 -> EXECUTING CLICKS!
+2026-02-26 09:40:03.499 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.26 >= -0.3 -> EXECUTING CLICKS!
+2026-02-26 09:40:10.205 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.26 >= -0.3 -> EXECUTING CLICKS!
+2026-02-26 09:40:25.534 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.27 >= -0.3 -> EXECUTING CLICKS!
+2026-02-26 09:40:29.957 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.29 >= -0.3 -> EXECUTING CLICKS!
+2026-02-26 09:40:56.881 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.25 >= -0.3 -> EXECUTING CLICKS!
+2026-02-26 09:41:22.003 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.22 >= -0.3 -> EXECUTING CLICKS!
+2026-02-26 09:41:43.305 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.25 >= -0.3 -> EXECUTING CLICKS!
+2026-02-26 09:41:46.440 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.28 >= -0.3 -> EXECUTING CLICKS!
+2026-02-26 09:41:46.553 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-26 09:41:46.554 | INFO     | __main__:_on_trade:444 - 🔔 已达到最大交易次数，自动停止
+2026-02-26 09:43:11.792 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BNB-USD
+2026-02-26 09:43:22.390 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.27 >= -0.3 -> EXECUTING CLICKS!
+2026-02-26 09:44:39.130 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.29 >= -0.3 -> EXECUTING CLICKS!
+2026-02-26 09:44:42.450 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.29 >= -0.3 -> EXECUTING CLICKS!
+2026-02-26 09:44:51.107 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.26 >= -0.3 -> EXECUTING CLICKS!
+2026-02-26 09:44:54.517 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 0.04 >= -0.3 -> EXECUTING CLICKS!
+2026-02-26 09:45:01.150 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.27 >= -0.3 -> EXECUTING CLICKS!
+2026-02-26 09:45:04.980 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.22 >= -0.3 -> EXECUTING CLICKS!
+2026-02-26 09:45:36.808 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.25 >= -0.3 -> EXECUTING CLICKS!
+2026-02-26 09:46:12.789 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.27 >= -0.3 -> EXECUTING CLICKS!
+2026-02-26 09:46:21.883 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.29 >= -0.3 -> EXECUTING CLICKS!
+2026-02-26 09:46:22.005 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-26 09:46:22.007 | INFO     | __main__:_on_trade:444 - 🔔 已达到最大交易次数，自动停止
+2026-02-26 09:46:54.379 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BNB-USD
+2026-02-26 09:47:22.282 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-26 09:47:45.780 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BNB-USD
+2026-02-26 09:47:46.292 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.29 >= -0.3 -> EXECUTING CLICKS!
+2026-02-26 09:48:14.738 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.25 >= -0.3 -> EXECUTING CLICKS!
+2026-02-26 09:48:50.270 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-26 09:48:54.729 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BNB-USD
+2026-02-26 09:48:56.129 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.37 >= -0.47 -> EXECUTING CLICKS!
+2026-02-26 09:48:59.340 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.36 >= -0.47 -> EXECUTING CLICKS!
+2026-02-26 09:49:02.539 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.39 >= -0.47 -> EXECUTING CLICKS!
+2026-02-26 09:49:04.328 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-26 09:49:31.049 | INFO     | exchanges.lighter:fetch_markets:135 - Fetched 149 Lighter markets
+2026-02-26 09:49:31.154 | INFO     | __main__:_main_task:485 - Lighter client initialized with 149 markets
+2026-02-26 09:49:31.154 | INFO     | __main__:_update_lig_subscription:523 - Resolving market ID for BTC...
+2026-02-26 09:49:31.154 | INFO     | exchanges.lighter:get_market_id:151 - Using dynamic ID for BTC: 1
+2026-02-26 09:49:31.154 | INFO     | __main__:_update_lig_subscription:532 - Subscribing to Lighter market 1
+2026-02-26 09:49:31.154 | INFO     | exchanges.lighter_ws:connect:87 - Connecting to Lighter WS for market 1...
+2026-02-26 09:49:31.192 | INFO     | core.data_feeds:start_local_receiver:131 - 🚀 Started Local WS Receiver on ws://127.0.0.1:8788 for Browser Extension
+2026-02-26 09:49:31.487 | INFO     | exchanges.lighter_ws:connect:96 - Connected to Lighter WS
+2026-02-26 09:49:31.704 | INFO     | exchanges.lighter_ws:connect:116 - Lighter snapshot loaded
+2026-02-26 09:49:32.835 | INFO     | core.data_feeds:handler:111 - 🟢 UserScript connected to Local WS Receiver
+2026-02-26 09:53:32.665 | INFO     | exchanges.lighter:fetch_markets:135 - Fetched 149 Lighter markets
+2026-02-26 09:53:32.737 | INFO     | __main__:_main_task:485 - Lighter client initialized with 149 markets
+2026-02-26 09:53:32.738 | INFO     | __main__:_update_lig_subscription:523 - Resolving market ID for BTC...
+2026-02-26 09:53:32.738 | INFO     | exchanges.lighter:get_market_id:151 - Using dynamic ID for BTC: 1
+2026-02-26 09:53:32.738 | INFO     | __main__:_update_lig_subscription:532 - Subscribing to Lighter market 1
+2026-02-26 09:53:32.739 | INFO     | exchanges.lighter_ws:connect:87 - Connecting to Lighter WS for market 1...
+2026-02-26 09:53:32.779 | INFO     | core.data_feeds:start_local_receiver:131 - 🚀 Started Local WS Receiver on ws://127.0.0.1:8788 for Browser Extension
+2026-02-26 09:53:33.073 | INFO     | exchanges.lighter_ws:connect:96 - Connected to Lighter WS
+2026-02-26 09:53:33.289 | INFO     | exchanges.lighter_ws:connect:116 - Lighter snapshot loaded
+2026-02-26 09:53:38.373 | INFO     | core.data_feeds:handler:111 - 🟢 UserScript connected to Local WS Receiver
+2026-02-26 09:54:08.631 | INFO     | __main__:_cycle_pair:327 - Switched to ETH-USD
+2026-02-26 09:54:08.704 | INFO     | __main__:_update_lig_subscription:523 - Resolving market ID for ETH...
+2026-02-26 09:54:08.705 | INFO     | exchanges.lighter:get_market_id:151 - Using dynamic ID for ETH: 0
+2026-02-26 09:54:08.705 | INFO     | __main__:_update_lig_subscription:532 - Subscribing to Lighter market 0
+2026-02-26 09:54:08.705 | INFO     | exchanges.lighter_ws:connect:87 - Connecting to Lighter WS for market 0...
+2026-02-26 09:54:09.033 | INFO     | exchanges.lighter_ws:connect:96 - Connected to Lighter WS
+2026-02-26 09:54:09.207 | INFO     | exchanges.lighter_ws:connect:116 - Lighter snapshot loaded
+2026-02-26 09:54:09.379 | INFO     | __main__:_cycle_pair:327 - Switched to SOL-USD
+2026-02-26 09:54:09.452 | INFO     | __main__:_update_lig_subscription:523 - Resolving market ID for SOL...
+2026-02-26 09:54:09.453 | INFO     | exchanges.lighter:get_market_id:151 - Using dynamic ID for SOL: 2
+2026-02-26 09:54:09.453 | INFO     | __main__:_update_lig_subscription:532 - Subscribing to Lighter market 2
+2026-02-26 09:54:09.453 | INFO     | exchanges.lighter_ws:connect:87 - Connecting to Lighter WS for market 2...
+2026-02-26 09:54:09.763 | INFO     | exchanges.lighter_ws:connect:96 - Connected to Lighter WS
+2026-02-26 09:54:09.904 | INFO     | exchanges.lighter_ws:connect:116 - Lighter snapshot loaded
+2026-02-26 09:54:09.947 | INFO     | __main__:_cycle_pair:327 - Switched to AAVE-USD
+2026-02-26 09:54:10.082 | INFO     | __main__:_update_lig_subscription:523 - Resolving market ID for AAVE...
+2026-02-26 09:54:10.083 | INFO     | exchanges.lighter:get_market_id:151 - Using dynamic ID for AAVE: 27
+2026-02-26 09:54:10.083 | INFO     | __main__:_update_lig_subscription:532 - Subscribing to Lighter market 27
+2026-02-26 09:54:10.084 | INFO     | exchanges.lighter_ws:connect:87 - Connecting to Lighter WS for market 27...
+2026-02-26 09:54:10.413 | INFO     | exchanges.lighter_ws:connect:96 - Connected to Lighter WS
+2026-02-26 09:54:10.492 | INFO     | exchanges.lighter_ws:connect:116 - Lighter snapshot loaded
+2026-02-26 09:54:10.530 | INFO     | __main__:_cycle_pair:327 - Switched to BNB-USD
+2026-02-26 09:54:10.673 | INFO     | __main__:_update_lig_subscription:523 - Resolving market ID for BNB...
+2026-02-26 09:54:10.673 | INFO     | exchanges.lighter:get_market_id:151 - Using dynamic ID for BNB: 25
+2026-02-26 09:54:10.674 | INFO     | __main__:_update_lig_subscription:532 - Subscribing to Lighter market 25
+2026-02-26 09:54:10.674 | INFO     | exchanges.lighter_ws:connect:87 - Connecting to Lighter WS for market 25...
+2026-02-26 09:54:10.944 | INFO     | exchanges.lighter_ws:connect:96 - Connected to Lighter WS
+2026-02-26 09:54:11.029 | INFO     | exchanges.lighter_ws:connect:116 - Lighter snapshot loaded
+2026-02-26 09:54:24.862 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BNB-USD
+2026-02-26 09:54:25.096 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 0.11 >= -0.46 -> EXECUTING CLICKS!
+2026-02-26 09:54:28.440 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 0.11 >= -0.46 -> EXECUTING CLICKS!
+2026-02-26 09:54:31.762 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 0.11 >= -0.46 -> EXECUTING CLICKS!
+2026-02-26 09:54:35.410 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 0.11 >= -0.46 -> EXECUTING CLICKS!
+2026-02-26 09:54:38.557 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 0.04 >= -0.46 -> EXECUTING CLICKS!
+2026-02-26 09:54:41.871 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 0.04 >= -0.46 -> EXECUTING CLICKS!
+2026-02-26 09:54:45.017 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread -0.01 >= -0.46 -> EXECUTING CLICKS!
+2026-02-26 09:54:48.161 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 0.09 >= -0.46 -> EXECUTING CLICKS!
+2026-02-26 09:54:51.506 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 0.09 >= -0.46 -> EXECUTING CLICKS!
+2026-02-26 09:54:54.650 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 0.09 >= -0.46 -> EXECUTING CLICKS!
+2026-02-26 09:54:54.763 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-26 09:54:54.764 | INFO     | __main__:_on_trade:444 - 🔔 已达到最大交易次数，自动停止
+2026-02-26 09:55:00.845 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BNB-USD
+2026-02-26 09:55:00.955 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 0.04 >= -0.46 -> EXECUTING CLICKS!
+2026-02-26 09:55:01.100 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-26 09:55:01.101 | INFO     | __main__:_on_trade:444 - 🔔 已达到最大交易次数，自动停止
+2026-02-26 09:55:12.947 | INFO     | strategies.var_lighter:start:176 - 🚀 Strategy started: BNB-USD
+2026-02-26 09:55:13.057 | INFO     | strategies.var_lighter:_execute_hedge:149 - ⚡️ Spread 0.11 >= -0.46 -> EXECUTING CLICKS!
+2026-02-26 09:55:13.242 | INFO     | strategies.var_lighter:stop:180 - 🛑 Strategy stopped
+2026-02-26 09:55:13.243 | INFO     | __main__:_on_trade:444 - 🔔 已达到最大交易次数，自动停止
+2026-02-26 09:57:42.467 | INFO     | __main__:_cycle_pair:327 - Switched to BTC-USD
+2026-02-26 09:57:42.549 | INFO     | __main__:_update_lig_subscription:523 - Resolving market ID for BTC...
+2026-02-26 09:57:42.549 | INFO     | exchanges.lighter:get_market_id:151 - Using dynamic ID for BTC: 1
+2026-02-26 09:57:42.549 | INFO     | __main__:_update_lig_subscription:532 - Subscribing to Lighter market 1
+2026-02-26 09:57:42.549 | INFO     | exchanges.lighter_ws:connect:87 - Connecting to Lighter WS for market 1...
+2026-02-26 09:57:42.851 | INFO     | exchanges.lighter_ws:connect:96 - Connected to Lighter WS
+2026-02-26 09:57:43.084 | INFO     | exchanges.lighter_ws:connect:116 - Lighter snapshot loaded
+2026-02-26 09:57:44.731 | INFO     | __main__:_cycle_pair:327 - Switched to ETH-USD
+2026-02-26 09:57:44.856 | INFO     | __main__:_update_lig_subscription:523 - Resolving market ID for ETH...
+2026-02-26 09:57:44.856 | INFO     | exchanges.lighter:get_market_id:151 - Using dynamic ID for ETH: 0
+2026-02-26 09:57:44.856 | INFO     | __main__:_update_lig_subscription:532 - Subscribing to Lighter market 0
+2026-02-26 09:57:44.857 | INFO     | exchanges.lighter_ws:connect:87 - Connecting to Lighter WS for market 0...
+2026-02-26 09:57:45.128 | INFO     | exchanges.lighter_ws:connect:96 - Connected to Lighter WS
+2026-02-26 09:57:45.378 | INFO     | exchanges.lighter_ws:connect:116 - Lighter snapshot loaded
+2026-02-26 10:06:22.874 | INFO     | exchanges.lighter:fetch_markets:135 - Fetched 149 Lighter markets
+2026-02-26 10:06:22.949 | INFO     | __main__:_main_task:485 - Lighter client initialized with 149 markets
+2026-02-26 10:06:22.950 | INFO     | __main__:_update_lig_subscription:523 - Resolving market ID for BTC...
+2026-02-26 10:06:22.950 | INFO     | exchanges.lighter:get_market_id:151 - Using dynamic ID for BTC: 1
+2026-02-26 10:06:22.950 | INFO     | __main__:_update_lig_subscription:532 - Subscribing to Lighter market 1
+2026-02-26 10:06:22.950 | INFO     | exchanges.lighter_ws:connect:87 - Connecting to Lighter WS for market 1...
+2026-02-26 10:06:22.976 | INFO     | core.data_feeds:start_local_receiver:131 - 🚀 Started Local WS Receiver on ws://127.0.0.1:8788 for Browser Extension
+2026-02-26 10:06:23.268 | INFO     | exchanges.lighter_ws:connect:96 - Connected to Lighter WS
+2026-02-26 10:06:23.490 | INFO     | exchanges.lighter_ws:connect:116 - Lighter snapshot loaded
+2026-02-26 10:06:24.666 | INFO     | core.data_feeds:handler:111 - 🟢 UserScript connected to Local WS Receiver
+2026-02-26 10:27:12.869 | INFO     | exchanges.lighter:fetch_markets:135 - Fetched 149 Lighter markets
+2026-02-26 10:27:12.976 | INFO     | __main__:_main_task:485 - Lighter client initialized with 149 markets
+2026-02-26 10:27:12.977 | INFO     | __main__:_update_lig_subscription:523 - Resolving market ID for BTC...
+2026-02-26 10:27:12.977 | INFO     | exchanges.lighter:get_market_id:151 - Using dynamic ID for BTC: 1
+2026-02-26 10:27:12.978 | INFO     | __main__:_update_lig_subscription:532 - Subscribing to Lighter market 1
+2026-02-26 10:27:12.978 | INFO     | exchanges.lighter_ws:connect:87 - Connecting to Lighter WS for market 1...
+2026-02-26 10:27:12.991 | INFO     | core.data_feeds:monitor_variational:112 - 🚀 Starting Variational direct API polling (no browser needed)
+2026-02-26 10:27:13.312 | INFO     | exchanges.lighter_ws:connect:96 - Connected to Lighter WS
+2026-02-26 10:27:13.529 | INFO     | exchanges.lighter_ws:connect:116 - Lighter snapshot loaded
+2026-02-26 16:16:38.316 | INFO     | exchanges.lighter:fetch_markets:135 - Fetched 149 Lighter markets
+2026-02-26 16:16:38.393 | INFO     | __main__:_main_task:485 - Lighter client initialized with 149 markets
+2026-02-26 16:16:38.393 | INFO     | __main__:_update_lig_subscription:523 - Resolving market ID for BTC...
+2026-02-26 16:16:38.393 | INFO     | exchanges.lighter:get_market_id:151 - Using dynamic ID for BTC: 1
+2026-02-26 16:16:38.393 | INFO     | __main__:_update_lig_subscription:532 - Subscribing to Lighter market 1
+2026-02-26 16:16:38.393 | INFO     | exchanges.lighter_ws:connect:87 - Connecting to Lighter WS for market 1...
+2026-02-26 16:16:38.397 | INFO     | core.data_feeds:monitor_variational:112 - 🚀 Starting Variational direct API polling (no browser needed)
+2026-02-26 16:16:38.747 | INFO     | exchanges.lighter_ws:connect:96 - Connected to Lighter WS
+2026-02-26 16:16:39.016 | INFO     | exchanges.lighter_ws:connect:116 - Lighter snapshot loaded
+2026-02-26 16:21:46.428 | INFO     | exchanges.lighter:fetch_markets:135 - Fetched 149 Lighter markets
+2026-02-26 16:21:46.500 | INFO     | __main__:_main_task:485 - Lighter client initialized with 149 markets
+2026-02-26 16:21:46.500 | INFO     | __main__:_update_lig_subscription:523 - Resolving market ID for BTC...
+2026-02-26 16:21:46.500 | INFO     | exchanges.lighter:get_market_id:151 - Using dynamic ID for BTC: 1
+2026-02-26 16:21:46.500 | INFO     | __main__:_update_lig_subscription:532 - Subscribing to Lighter market 1
+2026-02-26 16:21:46.501 | INFO     | exchanges.lighter_ws:connect:87 - Connecting to Lighter WS for market 1...
+2026-02-26 16:21:46.502 | INFO     | core.data_feeds:monitor_variational:112 - 🚀 Starting Variational direct API polling (no browser needed)
+2026-02-26 16:21:46.821 | INFO     | exchanges.lighter_ws:connect:96 - Connected to Lighter WS
+2026-02-26 16:21:47.025 | INFO     | exchanges.lighter_ws:connect:116 - Lighter snapshot loaded
+2026-02-26 16:31:04.031 | INFO     | exchanges.lighter:fetch_markets:135 - Fetched 149 Lighter markets
+2026-02-26 16:31:04.106 | INFO     | __main__:_main_task:485 - Lighter client initialized with 149 markets
+2026-02-26 16:31:04.107 | INFO     | __main__:_update_lig_subscription:523 - Resolving market ID for BTC...
+2026-02-26 16:31:04.107 | INFO     | exchanges.lighter:get_market_id:151 - Using dynamic ID for BTC: 1
+2026-02-26 16:31:04.107 | INFO     | __main__:_update_lig_subscription:532 - Subscribing to Lighter market 1
+2026-02-26 16:31:04.107 | INFO     | exchanges.lighter_ws:connect:87 - Connecting to Lighter WS for market 1...
+2026-02-26 16:31:04.109 | INFO     | core.data_feeds:monitor_variational:112 - 🚀 Starting Variational direct API polling (no browser needed)
+2026-02-26 16:31:04.355 | INFO     | exchanges.lighter_ws:connect:96 - Connected to Lighter WS
+2026-02-26 16:31:04.587 | INFO     | exchanges.lighter_ws:connect:116 - Lighter snapshot loaded
+2026-02-26 19:37:47.568 | INFO     | exchanges.lighter:fetch_markets:135 - Fetched 149 Lighter markets
+2026-02-26 19:37:47.727 | INFO     | __main__:_main_task:485 - Lighter client initialized with 149 markets
+2026-02-26 19:37:47.727 | INFO     | __main__:_update_lig_subscription:523 - Resolving market ID for BTC...
+2026-02-26 19:37:47.727 | INFO     | exchanges.lighter:get_market_id:151 - Using dynamic ID for BTC: 1
+2026-02-26 19:37:47.727 | INFO     | __main__:_update_lig_subscription:532 - Subscribing to Lighter market 1
+2026-02-26 19:37:47.728 | INFO     | exchanges.lighter_ws:connect:87 - Connecting to Lighter WS for market 1...
+2026-02-26 19:37:47.730 | INFO     | core.data_feeds:monitor_variational:112 - 🚀 Starting Variational direct API polling (no browser needed)
+2026-02-26 19:37:50.555 | INFO     | exchanges.lighter_ws:connect:96 - Connected to Lighter WS
+2026-02-26 19:37:51.113 | INFO     | exchanges.lighter_ws:connect:116 - Lighter snapshot loaded
