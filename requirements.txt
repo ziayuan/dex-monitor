@@ -8,3 +8,7 @@ pyTelegramBotAPI>=4.14.0
 
 # Optional: requests for fallback HTTP
 requests>=2.31.0
+
+# Logging & Env
+loguru>=0.7.2
+python-dotenv>=1.0.1
