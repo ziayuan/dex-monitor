@@ -1,0 +1,179 @@
+{
+    "var_url": "https://omni.variational.io/api/quotes/indicative",
+    "var_ws_url": "wss://omni-ws-server.prod.ap-northeast-1.variational.io/portfolio",
+    "var_http_proxy": "http://127.0.0.1:7897",
+    "var_headers": {
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+        "origin": "https://omni.variational.io",
+        "referer": "https://omni.variational.io/perpetual/ETH",
+        "accept-language": "zh-CN,zh;q=0.9,en;q=0.8",
+        "accept": "*/*"
+    },
+    "paradex_ws_url": "wss://ws.api.prod.paradex.trade/v1",
+    "paradex_subscribe_template": {
+        "jsonrpc": "2.0",
+        "method": "subscribe",
+        "params": {
+            "channel": "bbo.{market}"
+        }
+    },
+    "poll_interval_s": 0.5,
+    "alert_threshold_net_qty": 0.00001,
+    "alert_threshold_single_pos_upnl": 2000.0,
+    "alert_cooldown_s": 5,
+    "stale_timeout_s": 2,
+    "stale_resub_limit": 3,
+    "ws_backoff_start": 1,
+    "ws_backoff_max": 30,
+    "stats_window": 100,
+    "local_ws_port": 8789,
+    "pairs": [
+        {
+            "symbol": "ETH-USD",
+            "underlying": "ETH",
+            "qty": "0.5",
+            "paradex_market": "ETH-USD-PERP"
+        },
+        {
+            "symbol": "BTC-USD",
+            "underlying": "BTC",
+            "qty": "0.05",
+            "paradex_market": "BTC-USD-PERP"
+        },
+        {
+            "symbol": "SOL-USD",
+            "underlying": "SOL",
+            "qty": "5",
+            "paradex_market": "SOL-USD-PERP"
+        },
+        {
+            "symbol": "BNB-USD",
+            "underlying": "BNB",
+            "qty": "1",
+            "paradex_market": "BNB-USD-PERP"
+        },
+        {
+            "symbol": "HYPE-USD",
+            "underlying": "HYPE",
+            "qty": "30",
+            "paradex_market": "HYPE-USD-PERP"
+        },
+        {
+            "symbol": "AAVE-USD",
+            "underlying": "AAVE",
+            "qty": "1",
+            "paradex_market": "AAVE-USD-PERP"
+        },
+        {
+            "symbol": "ZEC-USD",
+            "underlying": "ZEC",
+            "qty": "1",
+            "paradex_market": "ZEC-USD-PERP"
+        },
+        {
+            "symbol": "XRP-USD",
+            "underlying": "XRP",
+            "qty": "200",
+            "paradex_market": "XRP-USD-PERP"
+        },
+        {
+            "symbol": "SUI-USD",
+            "underlying": "SUI",
+            "qty": "200",
+            "paradex_market": "SUI-USD-PERP"
+        }
+    ],
+    "backpack": {
+        "ws_url": "wss://ws.backpack.exchange",
+        "pairs": [
+            {
+                "symbol": "BTC_USDC_PERP",
+                "var_symbol": "BTC-USD",
+                "tick_size": "0.1",
+                "min_qty": "0.001"
+            },
+            {
+                "symbol": "ETH_USDC_PERP",
+                "var_symbol": "ETH-USD",
+                "tick_size": "0.01",
+                "min_qty": "0.01"
+            },
+            {
+                "symbol": "SOL_USDC_PERP",
+                "var_symbol": "SOL-USD",
+                "tick_size": "0.001",
+                "min_qty": "0.1"
+            },
+            {
+                "symbol": "BNB_USDC_PERP",
+                "var_symbol": "BNB-USD",
+                "tick_size": "1.0",
+                "min_qty": "0.1"
+            }
+        ]
+    },
+    "lighter": {
+        "pairs": [
+            {
+                "symbol": "BTC-USD",
+                "var_symbol": "BTC-USD",
+                "lig_symbol": "BTC",
+                "tick_size": "0.1"
+            },
+            {
+                "symbol": "ETH-USD",
+                "var_symbol": "ETH-USD",
+                "lig_symbol": "ETH",
+                "tick_size": "0.01"
+            },
+            {
+                "symbol": "SOL-USD",
+                "var_symbol": "SOL-USD",
+                "lig_symbol": "SOL",
+                "tick_size": "0.001"
+            },
+            {
+                "symbol": "AAVE-USD",
+                "var_symbol": "AAVE-USD",
+                "lig_symbol": "AAVE",
+                "tick_size": "0.001"
+            },
+            {
+                "symbol": "BNB-USD",
+                "var_symbol": "BNB-USD",
+                "lig_symbol": "BNB",
+                "tick_size": "0.01"
+            },
+            {
+                "symbol": "HYPE-USD",
+                "var_symbol": "HYPE-USD",
+                "lig_symbol": "HYPE",
+                "tick_size": "0.01"
+            },
+            {
+                "symbol": "ZEC-USD",
+                "var_symbol": "ZEC-USD",
+                "lig_symbol": "ZEC",
+                "tick_size": "0.01"
+            },
+            {
+                "symbol": "XRP-USD",
+                "var_symbol": "XRP-USD",
+                "lig_symbol": "XRP",
+                "tick_size": "0.0001"
+            },
+            {
+                "symbol": "SUI-USD",
+                "var_symbol": "SUI-USD",
+                "lig_symbol": "SUI",
+                "tick_size": "0.0001"
+            }
+        ]
+    },
+    "hedge_defaults": {
+        "threshold": 5.0,
+        "quantity": "0.01",
+        "max_trades": 10,
+        "cooldown_seconds": 5.0
+    }
+}

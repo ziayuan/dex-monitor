@@ -1,8 +1,22 @@
 """Unified configuration management."""
 import json
+import os
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
+
+
+def _read_env_file() -> dict:
+    """Read key=value pairs from .env file."""
+    env_path = Path(__file__).parent.parent / ".env"
+    values = {}
+    if env_path.exists():
+        for line in env_path.read_text().splitlines():
+            line = line.strip()
+            if line and not line.startswith("#") and "=" in line:
+                k, v = line.split("=", 1)
+                values[k.strip()] = v.strip()
+    return values
 
 DEFAULT_CONFIG = {
     # Variational
@@ -112,6 +126,13 @@ def load_config(config_path: Path | None = None) -> Config:
             merged["pairs"] = user_cfg.get("pairs", DEFAULT_CONFIG["pairs"])
         except Exception as e:
             print(f"Config Load Error: {e}")
+
+    # Override secrets from .env (takes priority over config.json)
+    env_vals = _read_env_file()
+    if env_vals.get("VAR_COOKIE"):
+        merged["var_cookie"] = env_vals["VAR_COOKIE"]
+    if env_vals.get("VAR_USER_AGENT"):
+        merged["var_headers"]["user-agent"] = env_vals["VAR_USER_AGENT"]
 
     return Config(
         var_url=merged["var_url"],

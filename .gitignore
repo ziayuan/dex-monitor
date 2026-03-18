@@ -4,3 +4,15 @@ __pycache__/
 .DS_Store
 .env
 venv/
+
+# Sensitive Config
+config.json
+coordinates.json
+
+# Large Database Files
+*.db
+logs/*.db
+
+# Log files
+logs/
+apps/logs/

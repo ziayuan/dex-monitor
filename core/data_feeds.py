@@ -29,7 +29,7 @@ def init(config: Config | None = None, default_symbol: str = "BTC-USD"):
     # Initialize price storage
     _prices = {
         s: {
-            "var": {"bid": 0.0, "ask": 0.0},
+            "var": {"bid": 0.0, "ask": 0.0, "mark": 0.0},
             "para": {"bid": 0.0, "ask": 0.0},
         }
         for s in _pairs
@@ -73,7 +73,7 @@ def DataStore() -> dict:
 
 
 async def fetch_variational(session: AsyncSession, symbol: str | None = None) -> bool:
-    """Fetch Variational quote for a single symbol."""
+    """Fetch Variational quote for a single symbol via public API (no cookies needed)."""
     global _prices
     
     sym = symbol or _current_symbol
@@ -81,11 +81,10 @@ async def fetch_variational(session: AsyncSession, symbol: str | None = None) ->
     if not pair:
         return False
 
-    headers = dict(_config.var_headers)
-    headers["cookie"] = _config.var_cookie
+    underlying = sym.replace("-USD", "")
     payload = {
         "instrument": {
-            "underlying": pair["underlying"],
+            "underlying": underlying,
             "funding_interval_s": 3600,
             "settlement_asset": "USDC",
             "instrument_type": "perpetual_future",
@@ -93,23 +92,17 @@ async def fetch_variational(session: AsyncSession, symbol: str | None = None) ->
         "qty": pair.get("qty", "0.01"),
     }
     try:
-        proxies = None
-        if _config.var_http_proxy:
-            proxies = {"http": _config.var_http_proxy, "https": _config.var_http_proxy}
-        
         resp = await session.post(
-            _config.var_url,
-            headers=headers,
+            "https://omni.variational.io/api/quotes/simple",
             json=payload,
-            proxies=proxies,
-            impersonate="chrome120",
+            impersonate="chrome116",
             timeout=5,
-            verify=False,
         )
         if resp.status_code == 200:
             data = resp.json()
             _prices[sym]["var"]["bid"] = float(data.get("bid", 0))
             _prices[sym]["var"]["ask"] = float(data.get("ask", 0))
+            _prices[sym]["var"]["mark"] = float(data.get("mark_price", 0))
             if _on_price_update:
                 _on_price_update()
             return True
@@ -119,11 +112,20 @@ async def fetch_variational(session: AsyncSession, symbol: str | None = None) ->
 
 
 async def monitor_variational():
-    """Continuously poll Variational for current symbol."""
+    """Continuously poll Variational for current symbol (used by floating window)."""
     async with AsyncSession() as session:
         while True:
             await fetch_variational(session)
             await asyncio.sleep(_config.poll_interval_s)
+
+
+async def monitor_variational_all():
+    """Continuously poll Variational for ALL configured pairs (used by spread recorder)."""
+    async with AsyncSession() as session:
+        while True:
+            for sym in _pairs:
+                await fetch_variational(session, symbol=sym)
+            await asyncio.sleep(1)
 
 
 async def monitor_paradex():

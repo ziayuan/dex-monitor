@@ -79,6 +79,9 @@ class LigHedgeWindow:
         
         # Click guard flag – prevents drag events during automated clicks
         self._clicking = False
+        # Drag state (initialized to prevent AttributeError)
+        self.x = 0
+        self.y = 0
         
         # Strategy
         self.strategy = VarLighterStrategy(

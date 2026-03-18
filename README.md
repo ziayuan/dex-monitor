@@ -1,90 +1,86 @@
-# 🎯 Variational-Paradex 套利交易工具
+# 🎯 Variational & Lighter 套利交易与套保监控工具
 
-自动化套利下单工具，支持 Variational 和 Paradex 交易所的价差监控与自动点击。
+自动化套利下单与数据监控工具库，支持 **Variational** 和 **Lighter** 交易所的价差监控、自动对冲点击，以及 **Lighter** 与 **TradeXYZ(Hyperliquid)** 的资金费率与价格区间监控。
 
-## 📁 目录结构
+## 📁 核心功能模块
 
-```
-├── core/                   # 共享核心模块
-│   ├── config.py          # 统一配置管理
-│   ├── clicker.py         # 点击逻辑 + 安全检测
-│   ├── data_feeds.py      # Var HTTP + Paradex WS 数据源
-│   └── alerts.py          # Telegram 报警
-│
-├── strategies/            # 策略模块
-│   ├── base.py            # 策略基类
-│   ├── var_paradex.py     # Var-Paradex 价差策略
-│   └── var_backpack.py    # [预留] Var-Backpack 策略
-│
-├── apps/                  # 应用入口
-│   ├── floating_window.py # GUI 浮窗监控
-│   ├── simple_click.py    # 控制台点击工具
-│   └── position_monitor.py # Telegram 持仓监控
-│
-├── var_extension/         # Chrome 扩展 (流量镜像)
-├── config.json            # 用户配置
-├── coordinates.json       # 点击坐标
-└── dashboard_paradex.html # 价差可视化面板
-```
+### 1. 资金费率与价格监控 (Funding & Price Monitor)
+- **脚本:** `apps/funding_rate_monitor.py`
+- **功能:**
+  - 监控 Lighter vs TradeXYZ 的资金费率差（支持 `EURUSD` / `USDJPY` 等品种）。
+  - 监控 Lighter 上特定合约的价格范围。
+  - 支持 Telegram Bot 实时报警与动态下发配置指令 (`/addprice`, `/setdir`, `/list` 等)。
+
+### 2. 跨所自动对冲点击 (Hedge Clicker)
+- **脚本:** `apps/lig_hedge_window.py`
+- **功能:**
+  - 浮窗界面 (PyQt5) 实时显示 Variational 和 Lighter 的买卖盘数据与跨所价差。
+  - 自动基于坐标点击网页下单按钮，实现屏幕级的物理级自动交易。
+  - 支持设置安全点击间隔、滑点容忍、最大执行次数。
+
+### 3. 持仓不平衡监控 (Position Monitor)
+- **脚本:** `apps/lig_position_monitor.py`  
+- **功能:**
+  - 监控长线双边持仓，如一方未成交或偏差过大，通过 Telegram 进行告警。
+
+### 4. 数据采集与分发 (Spread Recorder)
+- **脚本:** `apps/lig_spread_recorder.py`
+- **功能:**
+  - 后台录制与收集实时 Orderbook 和盘口报价历史。
+  - 提供 WebSocket 接口供 Frontend 或其他 Dashboard 使用。
 
 ## 🚀 快速开始
 
-### 1. 安装依赖
+### 1. 配置环境
+
+本工具推荐使用 Python 3.10+。
+
 ```bash
+python3 -m venv venv
+source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 2. 配置
-编辑 `config.json`：
-- `var_cookie`: Variational 的有效 Cookie
-- `telegram_bot_token` / `telegram_chat_id`: Telegram 报警配置
-- `pairs`: 监控的交易对列表
+### 2. 初始化配置文件
 
-### 3. 运行
+工具的核心配置分离在环境变量 `.env` 和 `config.json` 中。
+系统默认忽略了敏感文件，避免上传到远程仓库。
 
-**浮窗监控（推荐）**
 ```bash
-python apps/floating_window.py
-```
-- 实时显示 Var/Para 盘口价格和价差
-- 支持自动点击下单
-- 始终置顶，可拖动
+# 1. 复制配置示例文件
+cp .env.example .env
+cp config.example.json config.json
 
-**控制台点击工具**
+# 2. 填写你自己的 API Key / Telegram Token / 代理地址
+vim .env
+```
+
+`.env` 示例需要包含：
+- `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`
+- `LIGHTER_PRIVATE_KEY` / `VAR_LIG_TOKEN`
+- `var_http_proxy` / `FUNDING_PROXY` (如果在国内需要走代理连 Hyperliquid)
+
+### 3. 运行任意模块
+
+**启动资金费率监控:**
 ```bash
-python apps/simple_click.py
+python apps/funding_rate_monitor.py
 ```
-- 模式 1/2：自动循环下单
-- 模式 3：手动回车触发
-- 模式 4：监听价差自动点击
 
-**持仓监控 (Telegram)**
+**启动自动点击对冲浮窗:**
 ```bash
-python apps/position_monitor.py
+python apps/lig_hedge_window.py
 ```
-- 持仓不平衡报警
-- Telegram `/status` 查询
-- `/get` 静音
 
-## ⚙️ 参数配置
+## ⚠️ 安全说明 (Security Notice)
 
-| 参数 | 位置 | 说明 |
-|------|------|------|
-| 价差阈值 | 浮窗 UI | 触发点击的最小价差 |
-| Max Clicks | 浮窗 UI | 最大点击次数 |
-| Cd (Cooldown) | 浮窗 UI | 两次点击的冷却时间 |
-| Cf (Confirm) | 浮窗 UI | 连续确认次数 |
+1. **绝对不要**将 `.env` 或 `config.json` 提交到公开的 Git 仓库（它们已在 `.gitignore` 中默认被忽略）。
+2. 在使用 `lig_hedge_window.py` 自动点击下单前，务必先校准屏幕坐标 (`coordinates.json`)，测试期间请将交易额设为最小值。
+3. `funding_rate_monitor.py` 对于 TradeXYZ (Hyperliquid) 接口使用 `curl_cffi` 模拟指纹，如果请求偶尔超时请检查 `.env` 中的代理连通性。
 
-## ⚠️ 注意事项
+## 🔧 开发与扩展
 
-1. 首次运行需记录按钮坐标 (模式 2)
-2. 快速晃动鼠标可紧急中断
-3. 需配合代理使用 (`var_http_proxy`)
-4. macOS 完成时会播放提示音
-
-## 🔧 扩展开发
-
-添加新策略：
-1. 在 `strategies/` 创建新文件
-2. 继承 `BaseStrategy` 基类
-3. 实现 `calculate_signal()` 方法
+增加新策略或监控指标：
+1. 核心的底层行情 Client 封装在 `exchanges/` 和 `core/data_feeds.py`。
+2. 配置参数集中由 `core/config.py` 解析。
+3. 可根据需求在 `apps/` 目录下新增独立脚本。

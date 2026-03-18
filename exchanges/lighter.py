@@ -62,6 +62,88 @@ class LighterClient:
         # Removed unsupported lighter SDK to prevent supply chain risks
         self.api_client = None
 
+    async def get_funding_rates(self) -> dict:
+        """Fetch funding rates from Lighter REST API.
+
+        Returns:
+            {symbol: {"lighter": rate, "hyperliquid": rate, "binance": rate, "bybit": rate}}
+            Rates are per-funding-period (hourly for lighter/hl, varies for cex).
+        """
+        url = f"{self.base_url}/api/v1/funding-rates"
+        try:
+            from curl_cffi.requests import AsyncSession
+
+            async with AsyncSession() as session:
+                resp = await session.get(
+                    url,
+                    headers={"accept": "application/json"},
+                    impersonate="chrome116",
+                    timeout=15,
+                )
+
+                if resp.status_code == 200:
+                    data = resp.json()
+                    rates = {}
+                    for item in data.get("funding_rates", []):
+                        symbol = item.get("symbol")
+                        exchange = item.get("exchange", "unknown")
+                        rate = item.get("rate", 0)
+                        if symbol:
+                            if symbol not in rates:
+                                rates[symbol] = {}
+                            rates[symbol][exchange] = rate
+                    logger.info(f"Fetched Lighter funding rates for {len(rates)} symbols")
+                    return rates
+                else:
+                    logger.error(f"Lighter funding-rates API error: {resp.status_code}")
+
+        except ImportError:
+            logger.error("curl_cffi not installed")
+        except Exception as e:
+            logger.error(f"Error fetching Lighter funding rates: {e}")
+
+        return {}
+
+    async def get_market_prices(self) -> dict:
+        """Fetch mark/index prices for all markets via WS market_stats.
+
+        Returns:
+            {symbol: {"mark": float, "index": float}}
+        """
+        try:
+            async with websockets.connect(self.ws_url) as ws:
+                await ws.send(json.dumps({
+                    "type": "subscribe",
+                    "channel": "market_stats/all"
+                }))
+
+                for _ in range(3):
+                    msg = await asyncio.wait_for(ws.recv(), timeout=5)
+                    data = json.loads(msg)
+
+                    if data.get("type") == "connected":
+                        continue
+
+                    stats = data.get("market_stats", {})
+                    if stats:
+                        prices = {}
+                        for k, v in stats.items():
+                            sym = v.get("symbol")
+                            mark = v.get("mark_price")
+                            index = v.get("index_price")
+                            if sym and mark:
+                                prices[sym] = {
+                                    "mark": float(mark),
+                                    "index": float(index) if index else None,
+                                }
+                        logger.info(f"Fetched {len(prices)} Lighter market prices")
+                        return prices
+
+        except Exception as e:
+            logger.error(f"Failed to fetch Lighter market prices: {e}")
+
+        return {}
+
     async def get_positions(self) -> dict:
         """Fetch positions via Public API (using L1 Address). Returns dict {symbol: qty}."""
         if not self.l1_address:
@@ -72,7 +154,7 @@ class LighterClient:
         try:
              from curl_cffi.requests import AsyncSession
              async with AsyncSession() as session:
-                 resp = await session.get(url, headers={"accept": "application/json"}, impersonate="chrome120")
+                 resp = await session.get(url, headers={"accept": "application/json"}, impersonate="chrome116")
                  
                  if resp.status_code == 200:
                      data = resp.json()

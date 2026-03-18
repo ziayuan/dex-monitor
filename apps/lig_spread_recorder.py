@@ -236,8 +236,8 @@ class SpreadRecorder:
             else:
                 logger.error(f"Could not resolve Lighter market ID for {lig_sym}")
 
-        # Start Variational direct API polling
-        asyncio.create_task(data_feeds.monitor_variational())
+        # Start Variational direct API polling (all pairs)
+        asyncio.create_task(data_feeds.monitor_variational_all())
 
         # Start periodic stats broadcaster
         asyncio.create_task(self._broadcast_stats())
